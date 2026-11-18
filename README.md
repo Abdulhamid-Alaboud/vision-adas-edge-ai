@@ -117,11 +117,11 @@ All four architectures were evaluated on CPU to verify compliance with the `< 15
 | Name | Role |
 | :--- | :--- |
 | **Abdulhamid Alaboud** | Lead Architect & AI Systems Engineer |
-| **Ahmed Al-Aqlan** | Database & Backend Engineer |
-| **Idris Khawaji** | Security & Cloud Telemetry Engineer |
-| **Faisal Aqili** | QA & Verification Engineer |
+| **Ahmed Alaglan** | Database & Backend Engineer |
+| **Edris Khawaji** | Security & Cloud Telemetry Analyst |
+| **Faisal Ageeli** | QA & Verification Engineer |
 | **Abdullah Arishi** | Systems Architect & Data Curator |
-| **Hussein Abu-Talib** | UI/UX & Audio Designer |
+| **Hussain Abutaleb** | UI/UX & Audio Designer |
 
 ---
 
