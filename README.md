@@ -37,15 +37,15 @@ On a strictly held-out, unaugmented test split of **884 Arabic road images**, th
 ## System Architecture
 
 <p align="center">
-  <img src="docs/diagrams/system_architecture.png" alt="VISION 3-Tier System Architecture" width="90%"/>
+  <img src="diagrams/system_architecture.png" alt="VISION 3-Tier System Architecture" width="90%"/>
 </p>
 
 <details>
 <summary><b>Additional Architecture & Pipeline Diagrams</b></summary>
 
-- **End-to-End ML Process Flow:** [`docs/diagrams/ml_pipeline_process_flow.png`](docs/diagrams/ml_pipeline_process_flow.png)
-- **Bayesian & OCR Verification Pipeline:** [`docs/diagrams/pipeline_bayesian.png`](docs/diagrams/pipeline_bayesian.png)
-- **Security & Privacy Architecture:** [`docs/diagrams/security_architecture.png`](docs/diagrams/security_architecture.png)
+- **End-to-End ML Process Flow:** [`diagrams/ml_pipeline_process_flow.png`](diagrams/ml_pipeline_process_flow.png)
+- **Bayesian & OCR Verification Pipeline:** [`diagrams/pipeline_bayesian.png`](diagrams/pipeline_bayesian.png)
+- **Security & Privacy Architecture:** [`diagrams/security_architecture.png`](diagrams/security_architecture.png)
 
 </details>
 
@@ -85,8 +85,7 @@ All four architectures were evaluated on CPU to verify compliance with the `< 15
 ├── android-app/            # Kotlin + Jetpack Compose Android application & ONNX engine
 ├── training/               # Model training & ONNX export notebooks (YOLOv11, YOLO26, D-FINE, RT-DETRv2)
 ├── dataset/                # Dataset export script (full archive in GitHub Releases)
-├── docs/
-│   └── diagrams/           # System architecture, ML pipeline, Bayesian & security diagrams
+├── diagrams/               # System architecture, ML pipeline, Bayesian & security diagrams
 ├── CITATION.cff            # Academic citation metadata
 ├── LICENSE                 # MIT License
 └── README.md               # Technical report & documentation
@@ -113,9 +112,16 @@ All four architectures were evaluated on CPU to verify compliance with the `< 15
 
 ---
 
-## Author & Maintainer
+## Authors
 
-**Abdulhamid Alaboud** — Lead Architect & AI Systems Engineer
+| Name | Role |
+| :--- | :--- |
+| **Abdulhamid Alaboud** | Lead Architect & AI Systems Engineer |
+| **Ahmed Al-Aqlan** | Database & Backend Engineer |
+| **Idris Khawaji** | Security & Cloud Telemetry Engineer |
+| **Faisal Aqili** | QA & Verification Engineer |
+| **Abdullah Arishi** | Systems Architect & Data Curator |
+| **Hussein Abu-Talib** | UI/UX & Audio Designer |
 
 ---
 
