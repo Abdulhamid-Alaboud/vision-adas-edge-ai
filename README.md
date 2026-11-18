@@ -116,7 +116,7 @@ All four architectures were evaluated on CPU to verify compliance with the `< 15
 
 | Name | Role |
 | :--- | :--- |
-| **Abdulhamid Alaboud** | Lead Architect & AI Systems Engineer |
+| **Abdulhamid Alaboud** | **Project Manager, Lead Architect & AI/ML Engineer** *(End-to-End AI Pipeline, Multi-Model Training, Benchmarking & ONNX Edge Deployment)* |
 | **Ahmed Alaglan** | Database & Backend Engineer |
 | **Edris Khawaji** | Security & Cloud Telemetry Analyst |
 | **Faisal Ageeli** | QA & Verification Engineer |
