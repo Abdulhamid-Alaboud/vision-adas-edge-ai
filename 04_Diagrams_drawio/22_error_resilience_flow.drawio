@@ -1,0 +1,98 @@
+<?xml version="1.0" ?>
+<mxfile host="app.diagrams.net" modified="2026-11-14T06:00:00Z" agent="draw.io" version="24.7.0">
+  <diagram id="22_error_resilience_flow" name="Global System Resilience &amp; Graceful Fallback Flo">
+    <mxGraphModel dx="1420" dy="820" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="1180" pageHeight="560" background="#FFFFFF">
+      <root>
+        <mxCell id="0"/>
+        <mxCell id="1" parent="0"/>
+        <mxCell id="22_error_resilience_flow_2" value="Global System Resilience &amp; Graceful Fallback Flow" style="rounded=1;whiteSpace=wrap;html=0;fillColor=#1B365D;strokeColor=#1B365D;fontColor=#FFFFFF;fontSize=15;fontStyle=1;align=left;spacingLeft=18;fontFamily=Segoe UI;" parent="1" vertex="1">
+          <mxGeometry x="16" y="12" width="1148" height="38" as="geometry"/>
+        </mxCell>
+        <mxCell id="22_error_resilience_flow_3" value="Runtime Event&#10;(Camera / ORT)" style="ellipse;whiteSpace=wrap;html=0;fillColor=#1B365D;strokeColor=#1B365D;strokeWidth=2;fontColor=#FFFFFF;fontSize=10.8;fontStyle=1;spacing=6;fontFamily=Segoe UI;" parent="1" vertex="1">
+          <mxGeometry x="42" y="230" width="120" height="56" as="geometry"/>
+        </mxCell>
+        <mxCell id="22_error_resilience_flow_4" value="Runtime Fault or&#10;Sensor Timeout?" style="rhombus;whiteSpace=wrap;html=0;fillColor=#F1F5F9;strokeColor=#475569;strokeWidth=2;fontColor=#0F172A;fontSize=11;fontStyle=1;spacing=4;fontFamily=Segoe UI;" parent="1" vertex="1">
+          <mxGeometry x="220" y="198" width="175" height="118" as="geometry"/>
+        </mxCell>
+        <mxCell id="22_error_resilience_flow_5" value="Continue Normal&#10;&lt;150ms Detection Cycle" style="rounded=1;arcSize=12;whiteSpace=wrap;html=0;fillColor=#EEF5F2;strokeColor=#2C5E50;strokeWidth=2;fontColor=#0F172A;fontSize=10.8;fontStyle=1;align=center;verticalAlign=middle;spacing=6;fontFamily=Segoe UI;" parent="1" vertex="1">
+          <mxGeometry x="200" y="74" width="215" height="62" as="geometry"/>
+        </mxCell>
+        <mxCell id="22_error_resilience_flow_6" value="Centralized Try/Catch&#10;&amp; Exception Classifier&#10;Log Diagnostics Safely" style="rounded=1;arcSize=12;whiteSpace=wrap;html=0;fillColor=#EDF3F9;strokeColor=#335C81;strokeWidth=2;fontColor=#0F172A;fontSize=10.8;fontStyle=1;align=center;verticalAlign=middle;spacing=6;fontFamily=Segoe UI;" parent="1" vertex="1">
+          <mxGeometry x="455" y="212" width="220" height="88" as="geometry"/>
+        </mxCell>
+        <mxCell id="22_error_resilience_flow_7" value="Fault Severity&#10;Category?" style="rhombus;whiteSpace=wrap;html=0;fillColor=#F1F5F9;strokeColor=#475569;strokeWidth=2;fontColor=#0F172A;fontSize=11;fontStyle=1;spacing=4;fontFamily=Segoe UI;" parent="1" vertex="1">
+          <mxGeometry x="730" y="198" width="170" height="118" as="geometry"/>
+        </mxCell>
+        <mxCell id="22_error_resilience_flow_8" value="GPS / Provider Fallback&#10;Graceful Degrade:&#10;Last Cached Fix / CPU ORT" style="rounded=1;arcSize=12;whiteSpace=wrap;html=0;fillColor=#E8EEF5;strokeColor=#2B5B84;strokeWidth=2;fontColor=#0F172A;fontSize=10.5;fontStyle=1;align=center;verticalAlign=middle;spacing=6;fontFamily=Segoe UI;" parent="1" vertex="1">
+          <mxGeometry x="945" y="92" width="210" height="96" as="geometry"/>
+        </mxCell>
+        <mxCell id="22_error_resilience_flow_9" value="OCR / Verifier Timeout&#10;Keep Raw CNN Class &amp;&#10;Calibrated Safety Floor" style="rounded=1;arcSize=12;whiteSpace=wrap;html=0;fillColor=#EEF1F7;strokeColor=#3B4D75;strokeWidth=2;fontColor=#0F172A;fontSize=10.5;fontStyle=1;align=center;verticalAlign=middle;spacing=6;fontFamily=Segoe UI;" parent="1" vertex="1">
+          <mxGeometry x="945" y="216" width="210" height="92" as="geometry"/>
+        </mxCell>
+        <mxCell id="22_error_resilience_flow_10" value="Camera / Audio Fault&#10;Recover Analyzer / Re-init&#10;SoundPool + Local Audit" style="rounded=1;arcSize=12;whiteSpace=wrap;html=0;fillColor=#FAF2F2;strokeColor=#8B3A3A;strokeWidth=2;fontColor=#0F172A;fontSize=10.5;fontStyle=1;align=center;verticalAlign=middle;spacing=6;fontFamily=Segoe UI;" parent="1" vertex="1">
+          <mxGeometry x="945" y="336" width="210" height="92" as="geometry"/>
+        </mxCell>
+        <mxCell id="22_error_resilience_flow_11" value="Safety-Critical&#10;State Preserved" style="ellipse;whiteSpace=wrap;html=0;fillColor=#1B365D;strokeColor=#1B365D;strokeWidth=2;fontColor=#FFFFFF;fontSize=10.8;fontStyle=1;spacing=6;fontFamily=Segoe UI;" parent="1" vertex="1">
+          <mxGeometry x="485" y="438" width="160" height="56" as="geometry"/>
+        </mxCell>
+        <mxCell id="22_error_resilience_flow_12" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=1;orthogonalLoop=1;jettySize=auto;html=0;strokeColor=#1B365D;strokeWidth=1.9;startArrow=none;endArrow=classic;fontSize=10.5;fontColor=#0F172A;fontStyle=1;fontFamily=Segoe UI;labelBackgroundColor=#FFFFFF;labelBorderColor=none;" edge="1" parent="1">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="162" y="258" as="sourcePoint"/>
+            <mxPoint x="220" y="258" as="targetPoint"/>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="22_error_resilience_flow_13" value="No" style="edgeStyle=orthogonalEdgeStyle;rounded=1;orthogonalLoop=1;jettySize=auto;html=0;strokeColor=#2C5E50;strokeWidth=1.9;startArrow=none;endArrow=classic;fontSize=10.5;fontColor=#0F172A;fontStyle=1;fontFamily=Segoe UI;labelBackgroundColor=#FFFFFF;labelBorderColor=none;" edge="1" parent="1">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="307" y="198" as="sourcePoint"/>
+            <mxPoint x="307" y="136" as="targetPoint"/>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="22_error_resilience_flow_14" value="Yes" style="edgeStyle=orthogonalEdgeStyle;rounded=1;orthogonalLoop=1;jettySize=auto;html=0;strokeColor=#8B3A3A;strokeWidth=1.9;startArrow=none;endArrow=classic;fontSize=10.5;fontColor=#0F172A;fontStyle=1;fontFamily=Segoe UI;labelBackgroundColor=#FFFFFF;labelBorderColor=none;" edge="1" parent="1">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="395" y="258" as="sourcePoint"/>
+            <mxPoint x="455" y="258" as="targetPoint"/>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="22_error_resilience_flow_15" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=1;orthogonalLoop=1;jettySize=auto;html=0;strokeColor=#335C81;strokeWidth=1.9;startArrow=none;endArrow=classic;fontSize=10.5;fontColor=#0F172A;fontStyle=1;fontFamily=Segoe UI;labelBackgroundColor=#FFFFFF;labelBorderColor=none;" edge="1" parent="1">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="675" y="258" as="sourcePoint"/>
+            <mxPoint x="730" y="258" as="targetPoint"/>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="22_error_resilience_flow_16" value="Sensor / ORT" style="edgeStyle=orthogonalEdgeStyle;rounded=1;orthogonalLoop=1;jettySize=auto;html=0;strokeColor=#2B5B84;strokeWidth=1.9;startArrow=none;endArrow=classic;fontSize=10.5;fontColor=#0F172A;fontStyle=1;fontFamily=Segoe UI;labelBackgroundColor=#FFFFFF;labelBorderColor=none;" edge="1" parent="1">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="815" y="198" as="sourcePoint"/>
+            <mxPoint x="945" y="140" as="targetPoint"/>
+            <Array as="points">
+              <mxPoint x="815" y="140"/>
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="22_error_resilience_flow_17" value="OCR Fail" style="edgeStyle=orthogonalEdgeStyle;rounded=1;orthogonalLoop=1;jettySize=auto;html=0;strokeColor=#3B4D75;strokeWidth=1.9;startArrow=none;endArrow=classic;fontSize=10.5;fontColor=#0F172A;fontStyle=1;fontFamily=Segoe UI;labelBackgroundColor=#FFFFFF;labelBorderColor=none;" edge="1" parent="1">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="900" y="258" as="sourcePoint"/>
+            <mxPoint x="945" y="262" as="targetPoint"/>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="22_error_resilience_flow_18" value="IO / Audio" style="edgeStyle=orthogonalEdgeStyle;rounded=1;orthogonalLoop=1;jettySize=auto;html=0;strokeColor=#8B3A3A;strokeWidth=1.9;startArrow=none;endArrow=classic;fontSize=10.5;fontColor=#0F172A;fontStyle=1;fontFamily=Segoe UI;labelBackgroundColor=#FFFFFF;labelBorderColor=none;" edge="1" parent="1">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="815" y="316" as="sourcePoint"/>
+            <mxPoint x="945" y="382" as="targetPoint"/>
+            <Array as="points">
+              <mxPoint x="815" y="382"/>
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="22_error_resilience_flow_19" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=1;orthogonalLoop=1;jettySize=auto;html=0;strokeColor=#1B365D;strokeWidth=1.9;startArrow=none;endArrow=classic;fontSize=10.5;fontColor=#0F172A;fontStyle=1;fontFamily=Segoe UI;labelBackgroundColor=#FFFFFF;labelBorderColor=none;" edge="1" parent="1">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="1050" y="428" as="sourcePoint"/>
+            <mxPoint x="645" y="466" as="targetPoint"/>
+            <Array as="points">
+              <mxPoint x="1050" y="466"/>
+            </Array>
+          </mxGeometry>
+        </mxCell>
+      </root>
+    </mxGraphModel>
+  </diagram>
+</mxfile>

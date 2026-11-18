@@ -1,0 +1,99 @@
+<?xml version="1.0" ?>
+<mxfile host="app.diagrams.net" modified="2026-11-14T06:00:00Z" agent="draw.io" version="24.7.0">
+  <diagram id="04_dfd_level0" name="Context Diagram (DFD Level 0) - VISION Intellige">
+    <mxGraphModel dx="1420" dy="820" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="1180" pageHeight="540" background="#FFFFFF">
+      <root>
+        <mxCell id="0"/>
+        <mxCell id="1" parent="0"/>
+        <mxCell id="04_dfd_level0_2" value="Context Diagram (DFD Level 0) - VISION Intelligent Driving Agent" style="rounded=1;whiteSpace=wrap;html=0;fillColor=#1B365D;strokeColor=#1B365D;fontColor=#FFFFFF;fontSize=15;fontStyle=1;align=left;spacingLeft=18;fontFamily=Segoe UI;" parent="1" vertex="1">
+          <mxGeometry x="16" y="12" width="1148" height="38" as="geometry"/>
+        </mxCell>
+        <mxCell id="04_dfd_level0_3" value="0.0&#10;VISION&#10;Intelligent Driving Agent&#10;(Android Edge AI + Alerting)" style="ellipse;whiteSpace=wrap;html=0;fillColor=#1B365D;strokeColor=#1B365D;strokeWidth=2;fontColor=#FFFFFF;fontSize=13;fontStyle=1;spacing=6;fontFamily=Segoe UI;" parent="1" vertex="1">
+          <mxGeometry x="435" y="190" width="310" height="165" as="geometry"/>
+        </mxCell>
+        <mxCell id="04_dfd_level0_4" value="CameraX &amp; GPS Sensors&#10;(External Input Source)" style="rounded=1;arcSize=12;whiteSpace=wrap;html=0;fillColor=#EDF3F9;strokeColor=#335C81;strokeWidth=2;fontColor=#0F172A;fontSize=11.5;fontStyle=1;align=center;verticalAlign=middle;spacing=6;fontFamily=Segoe UI;" parent="1" vertex="1">
+          <mxGeometry x="36" y="95" width="225" height="76" as="geometry"/>
+        </mxCell>
+        <mxCell id="04_dfd_level0_5" value="Driver / Guest User&#10;(Vehicle Cab Operator)" style="rounded=1;arcSize=12;whiteSpace=wrap;html=0;fillColor=#E8EEF5;strokeColor=#2B5B84;strokeWidth=2;fontColor=#0F172A;fontSize=11.5;fontStyle=1;align=center;verticalAlign=middle;spacing=6;fontFamily=Segoe UI;" parent="1" vertex="1">
+          <mxGeometry x="36" y="365" width="225" height="76" as="geometry"/>
+        </mxCell>
+        <mxCell id="04_dfd_level0_6" value="Administrator&#10;(Calibration &amp; Fleet Logs)" style="rounded=1;arcSize=12;whiteSpace=wrap;html=0;fillColor=#EEF1F7;strokeColor=#3B4D75;strokeWidth=2;fontColor=#0F172A;fontSize=11.5;fontStyle=1;align=center;verticalAlign=middle;spacing=6;fontFamily=Segoe UI;" parent="1" vertex="1">
+          <mxGeometry x="918" y="95" width="225" height="76" as="geometry"/>
+        </mxCell>
+        <mxCell id="04_dfd_level0_7" value="Firebase RTDB Cloud&#10;(Optional Telemetry Mirror)" style="rounded=1;arcSize=12;whiteSpace=wrap;html=0;fillColor=#F1F5F9;strokeColor=#475569;strokeWidth=2;fontColor=#0F172A;fontSize=11.5;fontStyle=1;align=center;verticalAlign=middle;spacing=6;fontFamily=Segoe UI;" parent="1" vertex="1">
+          <mxGeometry x="918" y="365" width="225" height="76" as="geometry"/>
+        </mxCell>
+        <mxCell id="04_dfd_level0_8" value="640x640 RGB + GPS Fix" style="edgeStyle=orthogonalEdgeStyle;rounded=1;orthogonalLoop=1;jettySize=auto;html=0;strokeColor=#335C81;strokeWidth=1.9;startArrow=none;endArrow=classic;fontSize=10.5;fontColor=#0F172A;fontStyle=1;fontFamily=Segoe UI;labelBackgroundColor=#FFFFFF;labelBorderColor=none;" edge="1" parent="1">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="261" y="133" as="sourcePoint"/>
+            <mxPoint x="446" y="232" as="targetPoint"/>
+            <Array as="points">
+              <mxPoint x="360" y="133"/>
+              <mxPoint x="360" y="232"/>
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="04_dfd_level0_9" value="Auth, Mode, Thresholds" style="edgeStyle=orthogonalEdgeStyle;rounded=1;orthogonalLoop=1;jettySize=auto;html=0;strokeColor=#2B5B84;strokeWidth=1.9;startArrow=none;endArrow=classic;fontSize=10.5;fontColor=#0F172A;fontStyle=1;fontFamily=Segoe UI;labelBackgroundColor=#FFFFFF;labelBorderColor=none;" edge="1" parent="1">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="261" y="385" as="sourcePoint"/>
+            <mxPoint x="440" y="290" as="targetPoint"/>
+            <Array as="points">
+              <mxPoint x="345" y="385"/>
+              <mxPoint x="345" y="290"/>
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="04_dfd_level0_10" value="AR/EN SoundPool + HUD" style="edgeStyle=orthogonalEdgeStyle;rounded=1;orthogonalLoop=1;jettySize=auto;html=0;strokeColor=#2C5E50;strokeWidth=1.9;startArrow=none;endArrow=classic;fontSize=10.5;fontColor=#0F172A;fontStyle=1;fontFamily=Segoe UI;labelBackgroundColor=#FFFFFF;labelBorderColor=none;" edge="1" parent="1">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="446" y="318" as="sourcePoint"/>
+            <mxPoint x="261" y="422" as="targetPoint"/>
+            <Array as="points">
+              <mxPoint x="370" y="318"/>
+              <mxPoint x="370" y="422"/>
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="04_dfd_level0_11" value="Class Calib &amp; RBAC" style="edgeStyle=orthogonalEdgeStyle;rounded=1;orthogonalLoop=1;jettySize=auto;html=0;strokeColor=#3B4D75;strokeWidth=1.9;startArrow=none;endArrow=classic;fontSize=10.5;fontColor=#0F172A;fontStyle=1;fontFamily=Segoe UI;labelBackgroundColor=#FFFFFF;labelBorderColor=none;" edge="1" parent="1">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="918" y="120" as="sourcePoint"/>
+            <mxPoint x="734" y="232" as="targetPoint"/>
+            <Array as="points">
+              <mxPoint x="820" y="120"/>
+              <mxPoint x="820" y="232"/>
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="04_dfd_level0_12" value="Fleet Summary &amp; CSV/TXT" style="edgeStyle=orthogonalEdgeStyle;rounded=1;orthogonalLoop=1;jettySize=auto;html=0;strokeColor=#1B365D;strokeWidth=1.9;startArrow=none;endArrow=classic;fontSize=10.5;fontColor=#0F172A;fontStyle=1;fontFamily=Segoe UI;labelBackgroundColor=#FFFFFF;labelBorderColor=none;" edge="1" parent="1">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="734" y="265" as="sourcePoint"/>
+            <mxPoint x="918" y="150" as="targetPoint"/>
+            <Array as="points">
+              <mxPoint x="845" y="265"/>
+              <mxPoint x="845" y="150"/>
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="04_dfd_level0_13" value="Trip Metadata JSON (REST)" style="edgeStyle=orthogonalEdgeStyle;rounded=1;orthogonalLoop=1;jettySize=auto;html=0;strokeColor=#475569;strokeWidth=1.9;startArrow=none;endArrow=classic;fontSize=10.5;fontColor=#0F172A;fontStyle=1;fontFamily=Segoe UI;labelBackgroundColor=#FFFFFF;labelBorderColor=none;" edge="1" parent="1">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="734" y="296" as="sourcePoint"/>
+            <mxPoint x="918" y="388" as="targetPoint"/>
+            <Array as="points">
+              <mxPoint x="820" y="296"/>
+              <mxPoint x="820" y="388"/>
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="04_dfd_level0_14" value="Remote Fleet Telemetry" style="edgeStyle=orthogonalEdgeStyle;rounded=1;orthogonalLoop=1;jettySize=auto;html=0;strokeColor=#475569;strokeWidth=1.9;startArrow=none;endArrow=classic;dashed=1;fontSize=10.5;fontColor=#0F172A;fontStyle=1;fontFamily=Segoe UI;labelBackgroundColor=#FFFFFF;labelBorderColor=none;" edge="1" parent="1">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="918" y="420" as="sourcePoint"/>
+            <mxPoint x="722" y="322" as="targetPoint"/>
+            <Array as="points">
+              <mxPoint x="795" y="420"/>
+              <mxPoint x="795" y="322"/>
+            </Array>
+          </mxGeometry>
+        </mxCell>
+      </root>
+    </mxGraphModel>
+  </diagram>
+</mxfile>

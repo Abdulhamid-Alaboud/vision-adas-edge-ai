@@ -1,0 +1,92 @@
+<?xml version="1.0" ?>
+<mxfile host="app.diagrams.net" modified="2026-11-14T06:00:00Z" agent="draw.io" version="24.7.0">
+  <diagram id="13_navigation_map" name="Jetpack Compose Navigation Architecture &amp; Role-G">
+    <mxGraphModel dx="1420" dy="820" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="1180" pageHeight="560" background="#FFFFFF">
+      <root>
+        <mxCell id="0"/>
+        <mxCell id="1" parent="0"/>
+        <mxCell id="13_navigation_map_2" value="Jetpack Compose Navigation Architecture &amp; Role-Gated Screen Graph" style="rounded=1;whiteSpace=wrap;html=0;fillColor=#1B365D;strokeColor=#1B365D;fontColor=#FFFFFF;fontSize=15;fontStyle=1;align=left;spacingLeft=18;fontFamily=Segoe UI;" parent="1" vertex="1">
+          <mxGeometry x="16" y="12" width="1148" height="38" as="geometry"/>
+        </mxCell>
+        <mxCell id="13_navigation_map_3" value="AuthScreen&#10;Sign In (SHA-256) | Register Account&#10;Guest Mode Entry Button" style="rounded=1;arcSize=12;whiteSpace=wrap;html=0;fillColor=#1B365D;strokeColor=#1B365D;strokeWidth=2;fontColor=#FFFFFF;fontSize=11.5;fontStyle=1;align=center;verticalAlign=middle;spacing=6;fontFamily=Segoe UI;" parent="1" vertex="1">
+          <mxGeometry x="440" y="82" width="300" height="76" as="geometry"/>
+        </mxCell>
+        <mxCell id="13_navigation_map_4" value="DashboardScreen (Live Cam HUD)&#10;BBox Overlay, Arabic Red Alert,&#10;Start/Stop + Latency Pill" style="rounded=1;arcSize=12;whiteSpace=wrap;html=0;fillColor=#E8EEF5;strokeColor=#2B5B84;strokeWidth=2;fontColor=#0F172A;fontSize=11.5;fontStyle=1;align=center;verticalAlign=middle;spacing=6;fontFamily=Segoe UI;" parent="1" vertex="1">
+          <mxGeometry x="440" y="224" width="300" height="84" as="geometry"/>
+        </mxCell>
+        <mxCell id="13_navigation_map_5" value="HistoryScreen&#10;Driver Trip Logs, Live GPS&#10;&amp; CSV/TXT Export Share&#10;(Hidden in Guest Mode)" style="rounded=1;arcSize=12;whiteSpace=wrap;html=0;fillColor=#EDF3F9;strokeColor=#335C81;strokeWidth=2;fontColor=#0F172A;fontSize=11;fontStyle=1;align=center;verticalAlign=middle;spacing=6;fontFamily=Segoe UI;" parent="1" vertex="1">
+          <mxGeometry x="40" y="398" width="240" height="92" as="geometry"/>
+        </mxCell>
+        <mxCell id="13_navigation_map_6" value="AnalyticsScreen&#10;Hazard Breakdown &amp;&#10;Session Summaries" style="rounded=1;arcSize=12;whiteSpace=wrap;html=0;fillColor=#EDF3F9;strokeColor=#335C81;strokeWidth=2;fontColor=#0F172A;fontSize=11;fontStyle=1;align=center;verticalAlign=middle;spacing=6;fontFamily=Segoe UI;" parent="1" vertex="1">
+          <mxGeometry x="325" y="398" width="240" height="92" as="geometry"/>
+        </mxCell>
+        <mxCell id="13_navigation_map_7" value="SettingsScreen&#10;AR/EN Language, Vol,&#10;20-Class Hazard Toggles" style="rounded=1;arcSize=12;whiteSpace=wrap;html=0;fillColor=#F1F5F9;strokeColor=#475569;strokeWidth=2;fontColor=#0F172A;fontSize=11;fontStyle=1;align=center;verticalAlign=middle;spacing=6;fontFamily=Segoe UI;" parent="1" vertex="1">
+          <mxGeometry x="610" y="398" width="240" height="92" as="geometry"/>
+        </mxCell>
+        <mxCell id="13_navigation_map_8" value="AdminDashboardScreen&#10;Per-Class Calib Matrix,&#10;CSV/TXT &amp; Cloud Fleet&#10;(Administrator Role ONLY)" style="rounded=1;arcSize=12;whiteSpace=wrap;html=0;fillColor=#EEF1F7;strokeColor=#3B4D75;strokeWidth=2;fontColor=#0F172A;fontSize=10.8;fontStyle=1;align=center;verticalAlign=middle;spacing=6;fontFamily=Segoe UI;" parent="1" vertex="1">
+          <mxGeometry x="895" y="398" width="250" height="92" as="geometry"/>
+        </mxCell>
+        <mxCell id="13_navigation_map_9" value="TripExportHelper&#10;MediaStore Downloads CSV&#10;+ FileProvider Share Sheet" style="rounded=1;arcSize=12;whiteSpace=wrap;html=0;fillColor=#FAF2F2;strokeColor=#8B3A3A;strokeWidth=2;fontColor=#0F172A;fontSize=11;fontStyle=1;align=center;verticalAlign=middle;spacing=6;fontFamily=Segoe UI;" parent="1" vertex="1">
+          <mxGeometry x="875" y="224" width="270" height="84" as="geometry"/>
+        </mxCell>
+        <mxCell id="13_navigation_map_10" value="Auth / Guest" style="edgeStyle=orthogonalEdgeStyle;rounded=1;orthogonalLoop=1;jettySize=auto;html=0;strokeColor=#1B365D;strokeWidth=1.9;startArrow=none;endArrow=classic;fontSize=10.5;fontColor=#0F172A;fontStyle=1;fontFamily=Segoe UI;labelBackgroundColor=#FFFFFF;labelBorderColor=none;" edge="1" parent="1">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="590" y="158" as="sourcePoint"/>
+            <mxPoint x="590" y="224" as="targetPoint"/>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="13_navigation_map_11" value="CSV / TXT Export" style="edgeStyle=orthogonalEdgeStyle;rounded=1;orthogonalLoop=1;jettySize=auto;html=0;strokeColor=#8B3A3A;strokeWidth=1.9;startArrow=none;endArrow=classic;fontSize=10.5;fontColor=#0F172A;fontStyle=1;fontFamily=Segoe UI;labelBackgroundColor=#FFFFFF;labelBorderColor=none;" edge="1" parent="1">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="160" y="490" as="sourcePoint"/>
+            <mxPoint x="1145" y="266" as="targetPoint"/>
+            <Array as="points">
+              <mxPoint x="160" y="528"/>
+              <mxPoint x="1165" y="528"/>
+              <mxPoint x="1165" y="266"/>
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="13_navigation_map_12" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=1;orthogonalLoop=1;jettySize=auto;html=0;strokeColor=#335C81;strokeWidth=1.9;startArrow=classic;endArrow=classic;fontSize=10.5;fontColor=#0F172A;fontStyle=1;fontFamily=Segoe UI;labelBackgroundColor=#FFFFFF;labelBorderColor=none;" edge="1" parent="1">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="590" y="308" as="sourcePoint"/>
+            <mxPoint x="160" y="398" as="targetPoint"/>
+            <Array as="points">
+              <mxPoint x="590" y="348"/>
+              <mxPoint x="160" y="348"/>
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="13_navigation_map_13" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=1;orthogonalLoop=1;jettySize=auto;html=0;strokeColor=#335C81;strokeWidth=1.9;startArrow=classic;endArrow=classic;fontSize=10.5;fontColor=#0F172A;fontStyle=1;fontFamily=Segoe UI;labelBackgroundColor=#FFFFFF;labelBorderColor=none;" edge="1" parent="1">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="590" y="308" as="sourcePoint"/>
+            <mxPoint x="445" y="398" as="targetPoint"/>
+            <Array as="points">
+              <mxPoint x="590" y="348"/>
+              <mxPoint x="445" y="348"/>
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="13_navigation_map_14" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=1;orthogonalLoop=1;jettySize=auto;html=0;strokeColor=#475569;strokeWidth=1.9;startArrow=classic;endArrow=classic;fontSize=10.5;fontColor=#0F172A;fontStyle=1;fontFamily=Segoe UI;labelBackgroundColor=#FFFFFF;labelBorderColor=none;" edge="1" parent="1">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="590" y="308" as="sourcePoint"/>
+            <mxPoint x="730" y="398" as="targetPoint"/>
+            <Array as="points">
+              <mxPoint x="590" y="348"/>
+              <mxPoint x="730" y="348"/>
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="13_navigation_map_15" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=1;orthogonalLoop=1;jettySize=auto;html=0;strokeColor=#3B4D75;strokeWidth=1.9;startArrow=classic;endArrow=classic;fontSize=10.5;fontColor=#0F172A;fontStyle=1;fontFamily=Segoe UI;labelBackgroundColor=#FFFFFF;labelBorderColor=none;" edge="1" parent="1">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="590" y="308" as="sourcePoint"/>
+            <mxPoint x="1020" y="398" as="targetPoint"/>
+            <Array as="points">
+              <mxPoint x="590" y="348"/>
+              <mxPoint x="1020" y="348"/>
+            </Array>
+          </mxGeometry>
+        </mxCell>
+      </root>
+    </mxGraphModel>
+  </diagram>
+</mxfile>

@@ -1,0 +1,78 @@
+<?xml version="1.0" ?>
+<mxfile host="app.diagrams.net" modified="2026-11-14T06:00:00Z" agent="draw.io" version="24.7.0">
+  <diagram id="14_package_hierarchy" name="Verified Kotlin Source Package Hierarchy (D:\vis">
+    <mxGraphModel dx="1420" dy="820" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="1220" pageHeight="600" background="#FFFFFF">
+      <root>
+        <mxCell id="0"/>
+        <mxCell id="1" parent="0"/>
+        <mxCell id="14_package_hierarchy_2" value="Verified Kotlin Source Package Hierarchy (D:\vision)" style="rounded=1;whiteSpace=wrap;html=0;fillColor=#1B365D;strokeColor=#1B365D;fontColor=#FFFFFF;fontSize=15;fontStyle=1;align=left;spacingLeft=18;fontFamily=Segoe UI;" parent="1" vertex="1">
+          <mxGeometry x="16" y="12" width="1188" height="38" as="geometry"/>
+        </mxCell>
+        <mxCell id="14_package_hierarchy_3" value="com.example.vision&#10;(MainActivity.kt)" style="rounded=1;arcSize=12;whiteSpace=wrap;html=0;fillColor=#1B365D;strokeColor=#1B365D;strokeWidth=2;fontColor=#FFFFFF;fontSize=12.5;fontStyle=1;align=center;verticalAlign=middle;spacing=6;fontFamily=Segoe UI;" parent="1" vertex="1">
+          <mxGeometry x="440" y="72" width="340" height="56" as="geometry"/>
+        </mxCell>
+        <mxCell id="14_package_hierarchy_4" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=1;orthogonalLoop=1;jettySize=auto;html=0;strokeColor=#1B365D;strokeWidth=1.9;startArrow=none;endArrow=classic;fontSize=10.5;fontColor=#0F172A;fontStyle=1;fontFamily=Segoe UI;labelBackgroundColor=#FFFFFF;labelBorderColor=none;" edge="1" parent="1">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="610" y="128" as="sourcePoint"/>
+            <mxPoint x="156" y="178" as="targetPoint"/>
+            <Array as="points">
+              <mxPoint x="610" y="154"/>
+              <mxPoint x="156" y="154"/>
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="14_package_hierarchy_5" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=1;orthogonalLoop=1;jettySize=auto;html=0;strokeColor=#1B365D;strokeWidth=1.9;startArrow=none;endArrow=classic;fontSize=10.5;fontColor=#0F172A;fontStyle=1;fontFamily=Segoe UI;labelBackgroundColor=#FFFFFF;labelBorderColor=none;" edge="1" parent="1">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="610" y="154" as="sourcePoint"/>
+            <mxPoint x="458" y="178" as="targetPoint"/>
+            <Array as="points">
+              <mxPoint x="458" y="154"/>
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="14_package_hierarchy_6" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=1;orthogonalLoop=1;jettySize=auto;html=0;strokeColor=#1B365D;strokeWidth=1.9;startArrow=none;endArrow=classic;fontSize=10.5;fontColor=#0F172A;fontStyle=1;fontFamily=Segoe UI;labelBackgroundColor=#FFFFFF;labelBorderColor=none;" edge="1" parent="1">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="610" y="154" as="sourcePoint"/>
+            <mxPoint x="760" y="178" as="targetPoint"/>
+            <Array as="points">
+              <mxPoint x="760" y="154"/>
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="14_package_hierarchy_7" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=1;orthogonalLoop=1;jettySize=auto;html=0;strokeColor=#1B365D;strokeWidth=1.9;startArrow=none;endArrow=classic;fontSize=10.5;fontColor=#0F172A;fontStyle=1;fontFamily=Segoe UI;labelBackgroundColor=#FFFFFF;labelBorderColor=none;" edge="1" parent="1">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="610" y="154" as="sourcePoint"/>
+            <mxPoint x="1062" y="178" as="targetPoint"/>
+            <Array as="points">
+              <mxPoint x="1062" y="154"/>
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="14_package_hierarchy_8" value="ui &amp; ui.screens" style="rounded=1;arcSize=12;whiteSpace=wrap;html=0;fillColor=#2B5B84;strokeColor=#2B5B84;strokeWidth=2;fontColor=#FFFFFF;fontSize=12;fontStyle=1;align=center;verticalAlign=middle;spacing=6;fontFamily=Segoe UI;" parent="1" vertex="1">
+          <mxGeometry x="24" y="178" width="265" height="48" as="geometry"/>
+        </mxCell>
+        <mxCell id="14_package_hierarchy_9" value="• Localization.kt (AppStrings AR/EN)&#10;• AuthScreen.kt (SHA-256 + Guest)&#10;• DashboardScreen.kt (Live HUD)&#10;• HistoryScreen.kt (+ CSV/TXT Export)&#10;• AnalyticsScreen.kt (Donut &amp; KPIs)&#10;• SettingsScreen.kt (Audio &amp; Classes)&#10;• AdminDashboardScreen.kt (Calib/Sync)" style="rounded=1;arcSize=12;whiteSpace=wrap;html=0;fillColor=#E8EEF5;strokeColor=#2B5B84;strokeWidth=2;fontColor=#0F172A;fontSize=10.5;fontStyle=0;align=left;verticalAlign=top;spacing=10;fontFamily=Segoe UI;" parent="1" vertex="1">
+          <mxGeometry x="24" y="232" width="265" height="328" as="geometry"/>
+        </mxCell>
+        <mxCell id="14_package_hierarchy_10" value="engine (AI &amp; Audio)" style="rounded=1;arcSize=12;whiteSpace=wrap;html=0;fillColor=#335C81;strokeColor=#335C81;strokeWidth=2;fontColor=#FFFFFF;fontSize=12;fontStyle=1;align=center;verticalAlign=middle;spacing=6;fontFamily=Segoe UI;" parent="1" vertex="1">
+          <mxGeometry x="326" y="178" width="265" height="48" as="geometry"/>
+        </mxCell>
+        <mxCell id="14_package_hierarchy_11" value="• CameraManager.kt (CameraX 1.4.1)&#10;• DetectionEngine.kt (Interface)&#10;• YoloOnnxEngine.kt (ORT 1.18 CPU)&#10;• AdasSignVerifier.kt (Bayesian HSV)&#10;• SpeedSignVerifier.kt (ML Kit OCR)&#10;• HazardEvaluator.kt (2-of-3 + GPS)&#10;• AlertSystem.kt (SoundPool 40 MP3s)" style="rounded=1;arcSize=12;whiteSpace=wrap;html=0;fillColor=#EDF3F9;strokeColor=#335C81;strokeWidth=2;fontColor=#0F172A;fontSize=10.5;fontStyle=0;align=left;verticalAlign=top;spacing=10;fontFamily=Segoe UI;" parent="1" vertex="1">
+          <mxGeometry x="326" y="232" width="265" height="328" as="geometry"/>
+        </mxCell>
+        <mxCell id="14_package_hierarchy_12" value="data (Storage, GPS &amp; Export)" style="rounded=1;arcSize=12;whiteSpace=wrap;html=0;fillColor=#475569;strokeColor=#475569;strokeWidth=2;fontColor=#FFFFFF;fontSize=12;fontStyle=1;align=center;verticalAlign=middle;spacing=6;fontFamily=Segoe UI;" parent="1" vertex="1">
+          <mxGeometry x="628" y="178" width="265" height="48" as="geometry"/>
+        </mxCell>
+        <mxCell id="14_package_hierarchy_13" value="• Models.kt (HazardCatalog 20 Signs)&#10;• DatabaseHelper.kt (SQLite v4)&#10;• PreferencesManager.kt (Lang &amp; Vol)&#10;• LocationTracker.kt (GPS/Fused/Net)&#10;• TripExportHelper.kt (CSV/TXT Share)&#10;• CloudSyncManager.kt (Firebase RTDB)" style="rounded=1;arcSize=12;whiteSpace=wrap;html=0;fillColor=#F1F5F9;strokeColor=#475569;strokeWidth=2;fontColor=#0F172A;fontSize=10.5;fontStyle=0;align=left;verticalAlign=top;spacing=10;fontFamily=Segoe UI;" parent="1" vertex="1">
+          <mxGeometry x="628" y="232" width="265" height="328" as="geometry"/>
+        </mxCell>
+        <mxCell id="14_package_hierarchy_14" value="test (JVM Unit Suite)" style="rounded=1;arcSize=12;whiteSpace=wrap;html=0;fillColor=#2C5E50;strokeColor=#2C5E50;strokeWidth=2;fontColor=#FFFFFF;fontSize=12;fontStyle=1;align=center;verticalAlign=middle;spacing=6;fontFamily=Segoe UI;" parent="1" vertex="1">
+          <mxGeometry x="930" y="178" width="265" height="48" as="geometry"/>
+        </mxCell>
+        <mxCell id="14_package_hierarchy_15" value="• SystemIntegrityTest.kt (11 Tests):&#10;  - Catalog, AR/EN Parity &amp; Projection&#10;  - Bayesian Uplift &amp; Class Bounds&#10;  - Life-First Priority &amp; Generalization&#10;  - LocationTracker &amp; TripExportHelper&#10;• ExampleUnitTest.kt (1 Test)&#10;  Total Verified: 12/12 PASS (Gradle)" style="rounded=1;arcSize=12;whiteSpace=wrap;html=0;fillColor=#EEF5F2;strokeColor=#2C5E50;strokeWidth=2;fontColor=#0F172A;fontSize=10.5;fontStyle=0;align=left;verticalAlign=top;spacing=10;fontFamily=Segoe UI;" parent="1" vertex="1">
+          <mxGeometry x="930" y="232" width="265" height="328" as="geometry"/>
+        </mxCell>
+      </root>
+    </mxGraphModel>
+  </diagram>
+</mxfile>

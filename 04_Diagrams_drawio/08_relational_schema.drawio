@@ -1,0 +1,107 @@
+<?xml version="1.0" ?>
+<mxfile host="app.diagrams.net" modified="2026-11-14T06:00:00Z" agent="draw.io" version="24.7.0">
+  <diagram id="08_relational_schema" name="Relational Schema for Local Storage (vision_loca">
+    <mxGraphModel dx="1420" dy="820" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="1200" pageHeight="580" background="#FFFFFF">
+      <root>
+        <mxCell id="0"/>
+        <mxCell id="1" parent="0"/>
+        <mxCell id="08_relational_schema_2" value="Relational Schema for Local Storage (vision_local.db SQLite v4)" style="rounded=1;whiteSpace=wrap;html=0;fillColor=#1B365D;strokeColor=#1B365D;fontColor=#FFFFFF;fontSize=15;fontStyle=1;align=left;spacingLeft=18;fontFamily=Segoe UI;" parent="1" vertex="1">
+          <mxGeometry x="16" y="12" width="1168" height="38" as="geometry"/>
+        </mxCell>
+        <mxCell id="08_relational_schema_3" value="USERS" style="swimlane;fontStyle=1;childLayout=stackLayout;horizontal=1;startSize=30;horizontalStack=0;resizeParent=1;resizeParentMax=0;resizeLast=0;collapsible=0;marginBottom=0;fillColor=#1B365D;swimlaneFillColor=#FFFFFF;strokeColor=#1B365D;strokeWidth=2;fontColor=#FFFFFF;fontSize=12;rounded=1;arcSize=6;fontFamily=Segoe UI;" parent="1" vertex="1">
+          <mxGeometry x="36" y="86" width="330" height="134" as="geometry"/>
+        </mxCell>
+        <mxCell id="08_relational_schema_4" value="[PK] user_id   :   INTEGER AUTOINCREMENT" style="text;strokeColor=#E2E8F0;fillColor=#FFFFFF;align=left;verticalAlign=middle;spacingLeft=10;spacingRight=8;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;fontSize=10.8;fontStyle=1;fontColor=#0F172A;fontFamily=Segoe UI;" parent="08_relational_schema_3" vertex="1">
+          <mxGeometry x="0" y="30" width="330" height="26" as="geometry"/>
+        </mxCell>
+        <mxCell id="08_relational_schema_5" value="[UQ] username   :   TEXT NOT NULL" style="text;strokeColor=#E2E8F0;fillColor=#F8FAFC;align=left;verticalAlign=middle;spacingLeft=10;spacingRight=8;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;fontSize=10.8;fontStyle=1;fontColor=#0F172A;fontFamily=Segoe UI;" parent="08_relational_schema_3" vertex="1">
+          <mxGeometry x="0" y="56" width="330" height="26" as="geometry"/>
+        </mxCell>
+        <mxCell id="08_relational_schema_6" value="     password_hash   :   TEXT NOT NULL (SHA-256)" style="text;strokeColor=#E2E8F0;fillColor=#FFFFFF;align=left;verticalAlign=middle;spacingLeft=10;spacingRight=8;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;fontSize=10.8;fontStyle=0;fontColor=#0F172A;fontFamily=Segoe UI;" parent="08_relational_schema_3" vertex="1">
+          <mxGeometry x="0" y="82" width="330" height="26" as="geometry"/>
+        </mxCell>
+        <mxCell id="08_relational_schema_7" value="     role   :   TEXT NOT NULL" style="text;strokeColor=#E2E8F0;fillColor=#F8FAFC;align=left;verticalAlign=middle;spacingLeft=10;spacingRight=8;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;fontSize=10.8;fontStyle=0;fontColor=#0F172A;fontFamily=Segoe UI;" parent="08_relational_schema_3" vertex="1">
+          <mxGeometry x="0" y="108" width="330" height="26" as="geometry"/>
+        </mxCell>
+        <mxCell id="08_relational_schema_8" value="USER_PREFERENCES" style="swimlane;fontStyle=1;childLayout=stackLayout;horizontal=1;startSize=30;horizontalStack=0;resizeParent=1;resizeParentMax=0;resizeLast=0;collapsible=0;marginBottom=0;fillColor=#475569;swimlaneFillColor=#FFFFFF;strokeColor=#475569;strokeWidth=2;fontColor=#FFFFFF;fontSize=12;rounded=1;arcSize=6;fontFamily=Segoe UI;" parent="1" vertex="1">
+          <mxGeometry x="36" y="310" width="330" height="134" as="geometry"/>
+        </mxCell>
+        <mxCell id="08_relational_schema_9" value="[PK] pref_id   :   INTEGER" style="text;strokeColor=#E2E8F0;fillColor=#FFFFFF;align=left;verticalAlign=middle;spacingLeft=10;spacingRight=8;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;fontSize=10.8;fontStyle=1;fontColor=#0F172A;fontFamily=Segoe UI;" parent="08_relational_schema_8" vertex="1">
+          <mxGeometry x="0" y="30" width="330" height="26" as="geometry"/>
+        </mxCell>
+        <mxCell id="08_relational_schema_10" value="     alert_volume   :   INTEGER DEFAULT 100" style="text;strokeColor=#E2E8F0;fillColor=#F8FAFC;align=left;verticalAlign=middle;spacingLeft=10;spacingRight=8;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;fontSize=10.8;fontStyle=0;fontColor=#0F172A;fontFamily=Segoe UI;" parent="08_relational_schema_8" vertex="1">
+          <mxGeometry x="0" y="56" width="330" height="26" as="geometry"/>
+        </mxCell>
+        <mxCell id="08_relational_schema_11" value="     detection_threshold   :   REAL DEFAULT 0.40" style="text;strokeColor=#E2E8F0;fillColor=#FFFFFF;align=left;verticalAlign=middle;spacingLeft=10;spacingRight=8;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;fontSize=10.8;fontStyle=0;fontColor=#0F172A;fontFamily=Segoe UI;" parent="08_relational_schema_8" vertex="1">
+          <mxGeometry x="0" y="82" width="330" height="26" as="geometry"/>
+        </mxCell>
+        <mxCell id="08_relational_schema_12" value="     enabled_classes   :   TEXT" style="text;strokeColor=#E2E8F0;fillColor=#F8FAFC;align=left;verticalAlign=middle;spacingLeft=10;spacingRight=8;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;fontSize=10.8;fontStyle=0;fontColor=#0F172A;fontFamily=Segoe UI;" parent="08_relational_schema_8" vertex="1">
+          <mxGeometry x="0" y="108" width="330" height="26" as="geometry"/>
+        </mxCell>
+        <mxCell id="08_relational_schema_13" value="TRIP" style="swimlane;fontStyle=1;childLayout=stackLayout;horizontal=1;startSize=30;horizontalStack=0;resizeParent=1;resizeParentMax=0;resizeLast=0;collapsible=0;marginBottom=0;fillColor=#2B5B84;swimlaneFillColor=#FFFFFF;strokeColor=#2B5B84;strokeWidth=2;fontColor=#FFFFFF;fontSize=12;rounded=1;arcSize=6;fontFamily=Segoe UI;" parent="1" vertex="1">
+          <mxGeometry x="430" y="86" width="320" height="160" as="geometry"/>
+        </mxCell>
+        <mxCell id="08_relational_schema_14" value="[PK] trip_id   :   INTEGER AUTOINCREMENT" style="text;strokeColor=#E2E8F0;fillColor=#FFFFFF;align=left;verticalAlign=middle;spacingLeft=10;spacingRight=8;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;fontSize=10.8;fontStyle=1;fontColor=#0F172A;fontFamily=Segoe UI;" parent="08_relational_schema_13" vertex="1">
+          <mxGeometry x="0" y="30" width="320" height="26" as="geometry"/>
+        </mxCell>
+        <mxCell id="08_relational_schema_15" value="[FK] driver_username   :   TEXT NOT NULL" style="text;strokeColor=#E2E8F0;fillColor=#F8FAFC;align=left;verticalAlign=middle;spacingLeft=10;spacingRight=8;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;fontSize=10.8;fontStyle=1;fontColor=#0F172A;fontFamily=Segoe UI;" parent="08_relational_schema_13" vertex="1">
+          <mxGeometry x="0" y="56" width="320" height="26" as="geometry"/>
+        </mxCell>
+        <mxCell id="08_relational_schema_16" value="     start_time   :   TEXT NOT NULL" style="text;strokeColor=#E2E8F0;fillColor=#FFFFFF;align=left;verticalAlign=middle;spacingLeft=10;spacingRight=8;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;fontSize=10.8;fontStyle=0;fontColor=#0F172A;fontFamily=Segoe UI;" parent="08_relational_schema_13" vertex="1">
+          <mxGeometry x="0" y="82" width="320" height="26" as="geometry"/>
+        </mxCell>
+        <mxCell id="08_relational_schema_17" value="     end_time   :   TEXT" style="text;strokeColor=#E2E8F0;fillColor=#F8FAFC;align=left;verticalAlign=middle;spacingLeft=10;spacingRight=8;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;fontSize=10.8;fontStyle=0;fontColor=#0F172A;fontFamily=Segoe UI;" parent="08_relational_schema_13" vertex="1">
+          <mxGeometry x="0" y="108" width="320" height="26" as="geometry"/>
+        </mxCell>
+        <mxCell id="08_relational_schema_18" value="     total_hazards   :   INTEGER DEFAULT 0" style="text;strokeColor=#E2E8F0;fillColor=#FFFFFF;align=left;verticalAlign=middle;spacingLeft=10;spacingRight=8;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;fontSize=10.8;fontStyle=0;fontColor=#0F172A;fontFamily=Segoe UI;" parent="08_relational_schema_13" vertex="1">
+          <mxGeometry x="0" y="134" width="320" height="26" as="geometry"/>
+        </mxCell>
+        <mxCell id="08_relational_schema_19" value="DETECTION_RECORD" style="swimlane;fontStyle=1;childLayout=stackLayout;horizontal=1;startSize=30;horizontalStack=0;resizeParent=1;resizeParentMax=0;resizeLast=0;collapsible=0;marginBottom=0;fillColor=#2C5E50;swimlaneFillColor=#FFFFFF;strokeColor=#2C5E50;strokeWidth=2;fontColor=#FFFFFF;fontSize=12;rounded=1;arcSize=6;fontFamily=Segoe UI;" parent="1" vertex="1">
+          <mxGeometry x="815" y="86" width="350" height="264" as="geometry"/>
+        </mxCell>
+        <mxCell id="08_relational_schema_20" value="[PK] record_id   :   INTEGER AUTOINCREMENT" style="text;strokeColor=#E2E8F0;fillColor=#FFFFFF;align=left;verticalAlign=middle;spacingLeft=10;spacingRight=8;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;fontSize=10.8;fontStyle=1;fontColor=#0F172A;fontFamily=Segoe UI;" parent="08_relational_schema_19" vertex="1">
+          <mxGeometry x="0" y="30" width="350" height="26" as="geometry"/>
+        </mxCell>
+        <mxCell id="08_relational_schema_21" value="[FK] trip_id   :   INTEGER CASCADE" style="text;strokeColor=#E2E8F0;fillColor=#F8FAFC;align=left;verticalAlign=middle;spacingLeft=10;spacingRight=8;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;fontSize=10.8;fontStyle=1;fontColor=#0F172A;fontFamily=Segoe UI;" parent="08_relational_schema_19" vertex="1">
+          <mxGeometry x="0" y="56" width="350" height="26" as="geometry"/>
+        </mxCell>
+        <mxCell id="08_relational_schema_22" value="     object_type   :   TEXT NOT NULL" style="text;strokeColor=#E2E8F0;fillColor=#FFFFFF;align=left;verticalAlign=middle;spacingLeft=10;spacingRight=8;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;fontSize=10.8;fontStyle=0;fontColor=#0F172A;fontFamily=Segoe UI;" parent="08_relational_schema_19" vertex="1">
+          <mxGeometry x="0" y="82" width="350" height="26" as="geometry"/>
+        </mxCell>
+        <mxCell id="08_relational_schema_23" value="     arabic_type   :   TEXT NOT NULL" style="text;strokeColor=#E2E8F0;fillColor=#F8FAFC;align=left;verticalAlign=middle;spacingLeft=10;spacingRight=8;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;fontSize=10.8;fontStyle=0;fontColor=#0F172A;fontFamily=Segoe UI;" parent="08_relational_schema_19" vertex="1">
+          <mxGeometry x="0" y="108" width="350" height="26" as="geometry"/>
+        </mxCell>
+        <mxCell id="08_relational_schema_24" value="     confidence   :   REAL NOT NULL" style="text;strokeColor=#E2E8F0;fillColor=#FFFFFF;align=left;verticalAlign=middle;spacingLeft=10;spacingRight=8;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;fontSize=10.8;fontStyle=0;fontColor=#0F172A;fontFamily=Segoe UI;" parent="08_relational_schema_19" vertex="1">
+          <mxGeometry x="0" y="134" width="350" height="26" as="geometry"/>
+        </mxCell>
+        <mxCell id="08_relational_schema_25" value="     latitude   :   REAL" style="text;strokeColor=#E2E8F0;fillColor=#F8FAFC;align=left;verticalAlign=middle;spacingLeft=10;spacingRight=8;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;fontSize=10.8;fontStyle=0;fontColor=#0F172A;fontFamily=Segoe UI;" parent="08_relational_schema_19" vertex="1">
+          <mxGeometry x="0" y="160" width="350" height="26" as="geometry"/>
+        </mxCell>
+        <mxCell id="08_relational_schema_26" value="     longitude   :   REAL" style="text;strokeColor=#E2E8F0;fillColor=#FFFFFF;align=left;verticalAlign=middle;spacingLeft=10;spacingRight=8;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;fontSize=10.8;fontStyle=0;fontColor=#0F172A;fontFamily=Segoe UI;" parent="08_relational_schema_19" vertex="1">
+          <mxGeometry x="0" y="186" width="350" height="26" as="geometry"/>
+        </mxCell>
+        <mxCell id="08_relational_schema_27" value="     detected_at   :   TEXT NOT NULL" style="text;strokeColor=#E2E8F0;fillColor=#F8FAFC;align=left;verticalAlign=middle;spacingLeft=10;spacingRight=8;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;fontSize=10.8;fontStyle=0;fontColor=#0F172A;fontFamily=Segoe UI;" parent="08_relational_schema_19" vertex="1">
+          <mxGeometry x="0" y="212" width="350" height="26" as="geometry"/>
+        </mxCell>
+        <mxCell id="08_relational_schema_28" value="     is_synced   :   INTEGER DEFAULT 0" style="text;strokeColor=#E2E8F0;fillColor=#FFFFFF;align=left;verticalAlign=middle;spacingLeft=10;spacingRight=8;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;fontSize=10.8;fontStyle=0;fontColor=#0F172A;fontFamily=Segoe UI;" parent="08_relational_schema_19" vertex="1">
+          <mxGeometry x="0" y="238" width="350" height="26" as="geometry"/>
+        </mxCell>
+        <mxCell id="08_relational_schema_29" value="1 : N" style="edgeStyle=orthogonalEdgeStyle;rounded=1;orthogonalLoop=1;jettySize=auto;html=0;strokeColor=#1B365D;strokeWidth=1.9;startArrow=none;endArrow=classic;fontSize=10.5;fontColor=#0F172A;fontStyle=1;fontFamily=Segoe UI;labelBackgroundColor=#FFFFFF;labelBorderColor=none;" edge="1" parent="1">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="366" y="152" as="sourcePoint"/>
+            <mxPoint x="430" y="152" as="targetPoint"/>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="08_relational_schema_30" value="CASCADE" style="edgeStyle=orthogonalEdgeStyle;rounded=1;orthogonalLoop=1;jettySize=auto;html=0;strokeColor=#2B5B84;strokeWidth=1.9;startArrow=none;endArrow=classic;fontSize=10.5;fontColor=#0F172A;fontStyle=1;fontFamily=Segoe UI;labelBackgroundColor=#FFFFFF;labelBorderColor=none;" edge="1" parent="1">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="750" y="152" as="sourcePoint"/>
+            <mxPoint x="815" y="152" as="targetPoint"/>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="08_relational_schema_31" value="Data Isolation &amp; Calibration Guarantees:&#10;1. Guest sessions operate strictly with tripId = 0; DatabaseHelper skips SQLite inserts and CloudSync.&#10;2. Foreign Key integrity enforced via ON DELETE CASCADE between TRIP and DETECTION_RECORD.&#10;3. PreferencesManager stores language (AR/EN), alert volume, global threshold &amp; enabled hazard classes." style="rounded=1;arcSize=12;whiteSpace=wrap;html=0;fillColor=#EDF3F9;strokeColor=#1B365D;strokeWidth=2;fontColor=#0F172A;fontSize=11;fontStyle=1;align=left;verticalAlign=middle;spacing=6;fontFamily=Segoe UI;" parent="1" vertex="1">
+          <mxGeometry x="430" y="385" width="735" height="128" as="geometry"/>
+        </mxCell>
+      </root>
+    </mxGraphModel>
+  </diagram>
+</mxfile>

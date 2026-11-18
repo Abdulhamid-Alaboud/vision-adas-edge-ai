@@ -1,0 +1,80 @@
+<?xml version="1.0" ?>
+<mxfile host="app.diagrams.net" modified="2026-11-14T06:00:00Z" agent="draw.io" version="24.7.0">
+  <diagram id="19_seq_rbac_verify" name="Sequence Diagram - Fail-Secure Role-Based Access">
+    <mxGraphModel dx="1420" dy="820" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="1140" pageHeight="560" background="#FFFFFF">
+      <root>
+        <mxCell id="0"/>
+        <mxCell id="1" parent="0"/>
+        <mxCell id="19_seq_rbac_verify_2" value="Sequence Diagram - Fail-Secure Role-Based Access Verification" style="rounded=1;whiteSpace=wrap;html=0;fillColor=#1B365D;strokeColor=#1B365D;fontColor=#FFFFFF;fontSize=15;fontStyle=1;align=left;spacingLeft=18;fontFamily=Segoe UI;" parent="1" vertex="1">
+          <mxGeometry x="16" y="12" width="1108" height="38" as="geometry"/>
+        </mxCell>
+        <mxCell id="19_seq_rbac_verify_3" value="Driver / Admin&#10;(UI User)" style="shape=umlLifeline;perimeter=lifelinePerimeter;whiteSpace=wrap;html=0;container=1;dropTarget=0;collapsible=0;recursiveResize=0;outlineConnect=0;portConstraint=eastwest;size=46;fillColor=#E8EEF5;strokeColor=#2B5B84;strokeWidth=2;fontColor=#0F172A;fontSize=11;fontStyle=1;fontFamily=Segoe UI;" parent="1" vertex="1">
+          <mxGeometry x="22.5" y="70" width="185" height="460" as="geometry"/>
+        </mxCell>
+        <mxCell id="19_seq_rbac_verify_4" value="Compose UI&#10;(Nav &amp; RBAC Guard)" style="shape=umlLifeline;perimeter=lifelinePerimeter;whiteSpace=wrap;html=0;container=1;dropTarget=0;collapsible=0;recursiveResize=0;outlineConnect=0;portConstraint=eastwest;size=46;fillColor=#EDF3F9;strokeColor=#1B365D;strokeWidth=2;fontColor=#0F172A;fontSize=11;fontStyle=1;fontFamily=Segoe UI;" parent="1" vertex="1">
+          <mxGeometry x="302.5" y="70" width="185" height="460" as="geometry"/>
+        </mxCell>
+        <mxCell id="19_seq_rbac_verify_5" value="RBAC Middleware&#10;(Session Role Check)" style="shape=umlLifeline;perimeter=lifelinePerimeter;whiteSpace=wrap;html=0;container=1;dropTarget=0;collapsible=0;recursiveResize=0;outlineConnect=0;portConstraint=eastwest;size=46;fillColor=#EEF1F7;strokeColor=#3B4D75;strokeWidth=2;fontColor=#0F172A;fontSize=11;fontStyle=1;fontFamily=Segoe UI;" parent="1" vertex="1">
+          <mxGeometry x="612.5" y="70" width="185" height="460" as="geometry"/>
+        </mxCell>
+        <mxCell id="19_seq_rbac_verify_6" value="DatabaseHelper&#10;(SQLite v4)" style="shape=umlLifeline;perimeter=lifelinePerimeter;whiteSpace=wrap;html=0;container=1;dropTarget=0;collapsible=0;recursiveResize=0;outlineConnect=0;portConstraint=eastwest;size=46;fillColor=#F1F5F9;strokeColor=#475569;strokeWidth=2;fontColor=#0F172A;fontSize=11;fontStyle=1;fontFamily=Segoe UI;" parent="1" vertex="1">
+          <mxGeometry x="902.5" y="70" width="185" height="460" as="geometry"/>
+        </mxCell>
+        <mxCell id="19_seq_rbac_verify_7" value="" style="html=0;points=[[0,0,0,0,5],[0,1,0,0,-5],[1,0,0,0,5],[1,1,0,0,-5]];perimeter=orthogonalPerimeter;outlineConnect=0;targetShapes=umlLifeline;portConstraint=eastwest;newEdgeStyle={&quot;curved&quot;:0,&quot;rounded&quot;:0};fillColor=#E8EEF5;strokeColor=#2B5B84;strokeWidth=1.5;" parent="19_seq_rbac_verify_3" vertex="1">
+          <mxGeometry x="86.5" y="72" width="12" height="360" as="geometry"/>
+        </mxCell>
+        <mxCell id="19_seq_rbac_verify_8" value="" style="html=0;points=[[0,0,0,0,5],[0,1,0,0,-5],[1,0,0,0,5],[1,1,0,0,-5]];perimeter=orthogonalPerimeter;outlineConnect=0;targetShapes=umlLifeline;portConstraint=eastwest;newEdgeStyle={&quot;curved&quot;:0,&quot;rounded&quot;:0};fillColor=#EFF4FA;strokeColor=#1B365D;strokeWidth=1.5;" parent="19_seq_rbac_verify_4" vertex="1">
+          <mxGeometry x="86.5" y="95" width="12" height="320" as="geometry"/>
+        </mxCell>
+        <mxCell id="19_seq_rbac_verify_9" value="" style="html=0;points=[[0,0,0,0,5],[0,1,0,0,-5],[1,0,0,0,5],[1,1,0,0,-5]];perimeter=orthogonalPerimeter;outlineConnect=0;targetShapes=umlLifeline;portConstraint=eastwest;newEdgeStyle={&quot;curved&quot;:0,&quot;rounded&quot;:0};fillColor=#EEF1F7;strokeColor=#3B4D75;strokeWidth=1.5;" parent="19_seq_rbac_verify_5" vertex="1">
+          <mxGeometry x="86.5" y="145" width="12" height="240" as="geometry"/>
+        </mxCell>
+        <mxCell id="19_seq_rbac_verify_10" value="" style="html=0;points=[[0,0,0,0,5],[0,1,0,0,-5],[1,0,0,0,5],[1,1,0,0,-5]];perimeter=orthogonalPerimeter;outlineConnect=0;targetShapes=umlLifeline;portConstraint=eastwest;newEdgeStyle={&quot;curved&quot;:0,&quot;rounded&quot;:0};fillColor=#F4F6F9;strokeColor=#475569;strokeWidth=1.5;" parent="19_seq_rbac_verify_6" vertex="1">
+          <mxGeometry x="86.5" y="185" width="12" height="85" as="geometry"/>
+        </mxCell>
+        <mxCell id="19_seq_rbac_verify_11" value="1. Open AdminDashboard / Threshold Calibrator" style="edgeStyle=orthogonalEdgeStyle;rounded=1;orthogonalLoop=1;jettySize=auto;html=0;strokeColor=#1B365D;strokeWidth=1.9;startArrow=none;endArrow=classic;fontSize=10.5;fontColor=#0F172A;fontStyle=1;fontFamily=Segoe UI;labelBackgroundColor=#FFFFFF;labelBorderColor=none;" edge="1" parent="1">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="115" y="162" as="sourcePoint"/>
+            <mxPoint x="395" y="162" as="targetPoint"/>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="19_seq_rbac_verify_12" value="2. verifyRolePermission(currentUser, targetRoute)" style="edgeStyle=orthogonalEdgeStyle;rounded=1;orthogonalLoop=1;jettySize=auto;html=0;strokeColor=#3B4D75;strokeWidth=1.9;startArrow=none;endArrow=classic;fontSize=10.5;fontColor=#0F172A;fontStyle=1;fontFamily=Segoe UI;labelBackgroundColor=#FFFFFF;labelBorderColor=none;" edge="1" parent="1">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="395" y="210" as="sourcePoint"/>
+            <mxPoint x="705" y="210" as="targetPoint"/>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="19_seq_rbac_verify_13" value="3. queryUserRole(username) [SHA-256 Auth DB]" style="edgeStyle=orthogonalEdgeStyle;rounded=1;orthogonalLoop=1;jettySize=auto;html=0;strokeColor=#475569;strokeWidth=1.9;startArrow=none;endArrow=classic;fontSize=10.5;fontColor=#0F172A;fontStyle=1;fontFamily=Segoe UI;labelBackgroundColor=#FFFFFF;labelBorderColor=none;" edge="1" parent="1">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="705" y="256" as="sourcePoint"/>
+            <mxPoint x="995" y="256" as="targetPoint"/>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="19_seq_rbac_verify_14" value="4. Return Role (Administrator | Driver | Guest)" style="edgeStyle=orthogonalEdgeStyle;rounded=1;orthogonalLoop=1;jettySize=auto;html=0;strokeColor=#475569;strokeWidth=1.9;startArrow=none;endArrow=classic;dashed=1;fontSize=10.5;fontColor=#0F172A;fontStyle=1;fontFamily=Segoe UI;labelBackgroundColor=#FFFFFF;labelBorderColor=none;" edge="1" parent="1">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="995" y="310" as="sourcePoint"/>
+            <mxPoint x="705" y="310" as="targetPoint"/>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="19_seq_rbac_verify_15" value="5A. [If Administrator] Grant AdminDashboard + Fleet" style="edgeStyle=orthogonalEdgeStyle;rounded=1;orthogonalLoop=1;jettySize=auto;html=0;strokeColor=#2C5E50;strokeWidth=1.9;startArrow=none;endArrow=classic;dashed=1;fontSize=10.5;fontColor=#0F172A;fontStyle=1;fontFamily=Segoe UI;labelBackgroundColor=#FFFFFF;labelBorderColor=none;" edge="1" parent="1">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="705" y="368" as="sourcePoint"/>
+            <mxPoint x="395" y="368" as="targetPoint"/>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="19_seq_rbac_verify_16" value="5B. [If Driver / Guest] Fail-Secure Deny &amp; Redirect HUD" style="edgeStyle=orthogonalEdgeStyle;rounded=1;orthogonalLoop=1;jettySize=auto;html=0;strokeColor=#8B3A3A;strokeWidth=1.9;startArrow=none;endArrow=classic;dashed=1;fontSize=10.5;fontColor=#0F172A;fontStyle=1;fontFamily=Segoe UI;labelBackgroundColor=#FFFFFF;labelBorderColor=none;" edge="1" parent="1">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="705" y="420" as="sourcePoint"/>
+            <mxPoint x="395" y="420" as="targetPoint"/>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="19_seq_rbac_verify_17" value="6. Render Authorized View or Localized Access Notice" style="edgeStyle=orthogonalEdgeStyle;rounded=1;orthogonalLoop=1;jettySize=auto;html=0;strokeColor=#1B365D;strokeWidth=1.9;startArrow=none;endArrow=classic;dashed=1;fontSize=10.5;fontColor=#0F172A;fontStyle=1;fontFamily=Segoe UI;labelBackgroundColor=#FFFFFF;labelBorderColor=none;" edge="1" parent="1">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="395" y="468" as="sourcePoint"/>
+            <mxPoint x="115" y="468" as="targetPoint"/>
+          </mxGeometry>
+        </mxCell>
+      </root>
+    </mxGraphModel>
+  </diagram>
+</mxfile>

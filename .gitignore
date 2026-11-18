@@ -1,0 +1,41 @@
+# Android / Gradle / IDE
+*.iml
+.gradle/
+**/build/
+**/.gradle/
+**/.idea/
+**/.kotlin/
+**/local.properties
+*.apk
+*.aab
+*.ap_
+*.dex
+.cxx/
+.externalNativeBuild/
+captures/
+
+# Large Dataset, Video & Model Archives (distributed via GitHub Releases)
+05_Dataset/*.zip
+*.zip
+*.tar.gz
+*.mov
+*.mp4
+
+# Personal Course Notes / Defense Script
+00_Course_Summary_Grades_Announcements.md
+00_DEFENSE_STUDY_GUIDE_AND_SCRIPT.md
+
+# Python / Jupyter
+__pycache__/
+*.py[cod]
+*$py.class
+.ipynb_checkpoints/
+.venv/
+venv/
+.env
+.env.*
+
+# OS
+.DS_Store
+Thumbs.db
+desktop.ini

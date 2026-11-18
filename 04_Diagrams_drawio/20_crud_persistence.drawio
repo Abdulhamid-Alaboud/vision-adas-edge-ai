@@ -1,0 +1,80 @@
+<?xml version="1.0" ?>
+<mxfile host="app.diagrams.net" modified="2026-11-14T06:00:00Z" agent="draw.io" version="24.7.0">
+  <diagram id="20_crud_persistence" name="Hazard Data Persistence Flowchart (RecordDetecti">
+    <mxGraphModel dx="1420" dy="820" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="1140" pageHeight="560" background="#FFFFFF">
+      <root>
+        <mxCell id="0"/>
+        <mxCell id="1" parent="0"/>
+        <mxCell id="20_crud_persistence_2" value="Hazard Data Persistence Flowchart (RecordDetectionEvent)" style="rounded=1;whiteSpace=wrap;html=0;fillColor=#1B365D;strokeColor=#1B365D;fontColor=#FFFFFF;fontSize=15;fontStyle=1;align=left;spacingLeft=18;fontFamily=Segoe UI;" parent="1" vertex="1">
+          <mxGeometry x="16" y="12" width="1108" height="38" as="geometry"/>
+        </mxCell>
+        <mxCell id="20_crud_persistence_3" value="Detection&#10;Frame" style="ellipse;whiteSpace=wrap;html=0;fillColor=#1B365D;strokeColor=#1B365D;strokeWidth=2;fontColor=#FFFFFF;fontSize=11;fontStyle=1;spacing=6;fontFamily=Segoe UI;" parent="1" vertex="1">
+          <mxGeometry x="45" y="226" width="110" height="56" as="geometry"/>
+        </mxCell>
+        <mxCell id="20_crud_persistence_4" value="Receive Verified Item&#10;object_type, arabic_type,&#10;confidence, lat/lon" style="rounded=1;arcSize=12;whiteSpace=wrap;html=0;fillColor=#EDF3F9;strokeColor=#335C81;strokeWidth=2;fontColor=#0F172A;fontSize=10.8;fontStyle=1;align=center;verticalAlign=middle;spacing=6;fontFamily=Segoe UI;" parent="1" vertex="1">
+          <mxGeometry x="205" y="212" width="210" height="84" as="geometry"/>
+        </mxCell>
+        <mxCell id="20_crud_persistence_5" value="2-of-3 Consensus&#10;&amp; &gt;= Class Thresh?" style="rhombus;whiteSpace=wrap;html=0;fillColor=#F1F5F9;strokeColor=#475569;strokeWidth=2;fontColor=#0F172A;fontSize=10.5;fontStyle=1;spacing=4;fontFamily=Segoe UI;" parent="1" vertex="1">
+          <mxGeometry x="468" y="198" width="175" height="112" as="geometry"/>
+        </mxCell>
+        <mxCell id="20_crud_persistence_6" value="Skip Recording&#10;(Monitor Next Frame)" style="rounded=1;arcSize=12;whiteSpace=wrap;html=0;fillColor=#F8FAFC;strokeColor=#475569;strokeWidth=2;fontColor=#0F172A;fontSize=10.8;fontStyle=1;align=center;verticalAlign=middle;spacing=6;fontFamily=Segoe UI;" parent="1" vertex="1">
+          <mxGeometry x="455" y="76" width="200" height="62" as="geometry"/>
+        </mxCell>
+        <mxCell id="20_crud_persistence_7" value="tripId &gt; 0?&#10;(Authenticated)" style="rhombus;whiteSpace=wrap;html=0;fillColor=#F1F5F9;strokeColor=#475569;strokeWidth=2;fontColor=#0F172A;fontSize=10.5;fontStyle=1;spacing=4;fontFamily=Segoe UI;" parent="1" vertex="1">
+          <mxGeometry x="700" y="198" width="170" height="112" as="geometry"/>
+        </mxCell>
+        <mxCell id="20_crud_persistence_8" value="Guest Mode (tripId = 0)&#10;Bypass Disk &amp; Cloud Save" style="rounded=1;arcSize=12;whiteSpace=wrap;html=0;fillColor=#F8FAFC;strokeColor=#475569;strokeWidth=2;fontColor=#0F172A;fontSize=10.8;fontStyle=1;align=center;verticalAlign=middle;spacing=6;fontFamily=Segoe UI;" parent="1" vertex="1">
+          <mxGeometry x="685" y="412" width="200" height="66" as="geometry"/>
+        </mxCell>
+        <mxCell id="20_crud_persistence_9" value="DatabaseHelper&#10;INSERT INTO&#10;DETECTION_RECORD&#10;(SQLite v4, is_synced=0)" style="rounded=1;arcSize=12;whiteSpace=wrap;html=0;fillColor=#E8EEF5;strokeColor=#2B5B84;strokeWidth=2;fontColor=#0F172A;fontSize=10.5;fontStyle=1;align=center;verticalAlign=middle;spacing=6;fontFamily=Segoe UI;" parent="1" vertex="1">
+          <mxGeometry x="922" y="202" width="185" height="102" as="geometry"/>
+        </mxCell>
+        <mxCell id="20_crud_persistence_10" value="Queue CloudSync&#10;(Optional REST Push)" style="rounded=1;arcSize=12;whiteSpace=wrap;html=0;fillColor=#EEF5F2;strokeColor=#2C5E50;strokeWidth=2;fontColor=#0F172A;fontSize=10.5;fontStyle=1;align=center;verticalAlign=middle;spacing=6;fontFamily=Segoe UI;" parent="1" vertex="1">
+          <mxGeometry x="922" y="412" width="185" height="66" as="geometry"/>
+        </mxCell>
+        <mxCell id="20_crud_persistence_11" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=1;orthogonalLoop=1;jettySize=auto;html=0;strokeColor=#1B365D;strokeWidth=1.9;startArrow=none;endArrow=classic;fontSize=10.5;fontColor=#0F172A;fontStyle=1;fontFamily=Segoe UI;labelBackgroundColor=#FFFFFF;labelBorderColor=none;" edge="1" parent="1">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="155" y="254" as="sourcePoint"/>
+            <mxPoint x="205" y="254" as="targetPoint"/>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="20_crud_persistence_12" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=1;orthogonalLoop=1;jettySize=auto;html=0;strokeColor=#335C81;strokeWidth=1.9;startArrow=none;endArrow=classic;fontSize=10.5;fontColor=#0F172A;fontStyle=1;fontFamily=Segoe UI;labelBackgroundColor=#FFFFFF;labelBorderColor=none;" edge="1" parent="1">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="415" y="254" as="sourcePoint"/>
+            <mxPoint x="468" y="254" as="targetPoint"/>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="20_crud_persistence_13" value="No" style="edgeStyle=orthogonalEdgeStyle;rounded=1;orthogonalLoop=1;jettySize=auto;html=0;strokeColor=#475569;strokeWidth=1.9;startArrow=none;endArrow=classic;fontSize=10.5;fontColor=#0F172A;fontStyle=1;fontFamily=Segoe UI;labelBackgroundColor=#FFFFFF;labelBorderColor=none;" edge="1" parent="1">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="555" y="198" as="sourcePoint"/>
+            <mxPoint x="555" y="138" as="targetPoint"/>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="20_crud_persistence_14" value="Yes" style="edgeStyle=orthogonalEdgeStyle;rounded=1;orthogonalLoop=1;jettySize=auto;html=0;strokeColor=#2B5B84;strokeWidth=1.9;startArrow=none;endArrow=classic;fontSize=10.5;fontColor=#0F172A;fontStyle=1;fontFamily=Segoe UI;labelBackgroundColor=#FFFFFF;labelBorderColor=none;" edge="1" parent="1">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="643" y="254" as="sourcePoint"/>
+            <mxPoint x="700" y="254" as="targetPoint"/>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="20_crud_persistence_15" value="No (Guest)" style="edgeStyle=orthogonalEdgeStyle;rounded=1;orthogonalLoop=1;jettySize=auto;html=0;strokeColor=#475569;strokeWidth=1.9;startArrow=none;endArrow=classic;fontSize=10.5;fontColor=#0F172A;fontStyle=1;fontFamily=Segoe UI;labelBackgroundColor=#FFFFFF;labelBorderColor=none;" edge="1" parent="1">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="785" y="310" as="sourcePoint"/>
+            <mxPoint x="785" y="412" as="targetPoint"/>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="20_crud_persistence_16" value="Yes" style="edgeStyle=orthogonalEdgeStyle;rounded=1;orthogonalLoop=1;jettySize=auto;html=0;strokeColor=#2B5B84;strokeWidth=1.9;startArrow=none;endArrow=classic;fontSize=10.5;fontColor=#0F172A;fontStyle=1;fontFamily=Segoe UI;labelBackgroundColor=#FFFFFF;labelBorderColor=none;" edge="1" parent="1">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="870" y="254" as="sourcePoint"/>
+            <mxPoint x="922" y="254" as="targetPoint"/>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="20_crud_persistence_17" value="If Sync On" style="edgeStyle=orthogonalEdgeStyle;rounded=1;orthogonalLoop=1;jettySize=auto;html=0;strokeColor=#2C5E50;strokeWidth=1.9;startArrow=none;endArrow=classic;dashed=1;fontSize=10.5;fontColor=#0F172A;fontStyle=1;fontFamily=Segoe UI;labelBackgroundColor=#FFFFFF;labelBorderColor=none;" edge="1" parent="1">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="1014" y="304" as="sourcePoint"/>
+            <mxPoint x="1014" y="412" as="targetPoint"/>
+          </mxGeometry>
+        </mxCell>
+      </root>
+    </mxGraphModel>
+  </diagram>
+</mxfile>

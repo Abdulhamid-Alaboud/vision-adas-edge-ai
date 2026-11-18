@@ -1,0 +1,234 @@
+<?xml version="1.0" ?>
+<mxfile host="app.diagrams.net" modified="2026-11-14T06:00:00Z" agent="draw.io" version="24.7.0">
+  <diagram id="01_wbs_tree" name="VISION Work Breakdown Structure (COMP 582 / COMP">
+    <mxGraphModel dx="1420" dy="820" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="1220" pageHeight="640" background="#FFFFFF">
+      <root>
+        <mxCell id="0"/>
+        <mxCell id="1" parent="0"/>
+        <mxCell id="01_wbs_tree_2" value="VISION Work Breakdown Structure (COMP 582 / COMP 583)" style="rounded=1;whiteSpace=wrap;html=0;fillColor=#1B365D;strokeColor=#1B365D;fontColor=#FFFFFF;fontSize=15;fontStyle=1;align=left;spacingLeft=18;fontFamily=Segoe UI;" parent="1" vertex="1">
+          <mxGeometry x="16" y="12" width="1188" height="38" as="geometry"/>
+        </mxCell>
+        <mxCell id="01_wbs_tree_3" value="1.0 VISION: Intelligent Driving Agent&#10;(COMP 582 Analytics &amp; SRS  +  COMP 583 Build &amp; Field Trial)" style="rounded=1;arcSize=12;whiteSpace=wrap;html=0;fillColor=#1B365D;strokeColor=#1B365D;strokeWidth=2;fontColor=#FFFFFF;fontSize=12.5;fontStyle=1;align=center;verticalAlign=middle;spacing=6;fontFamily=Segoe UI;" parent="1" vertex="1">
+          <mxGeometry x="410" y="68" width="400" height="56" as="geometry"/>
+        </mxCell>
+        <mxCell id="01_wbs_tree_4" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=1;orthogonalLoop=1;jettySize=auto;html=0;strokeColor=#1B365D;strokeWidth=1.9;startArrow=none;endArrow=classic;fontSize=10.5;fontColor=#0F172A;fontStyle=1;fontFamily=Segoe UI;labelBackgroundColor=#FFFFFF;labelBorderColor=none;" edge="1" parent="1">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="610" y="124" as="sourcePoint"/>
+            <mxPoint x="163" y="170" as="targetPoint"/>
+            <Array as="points">
+              <mxPoint x="610" y="148"/>
+              <mxPoint x="163" y="148"/>
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="01_wbs_tree_5" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=1;orthogonalLoop=1;jettySize=auto;html=0;strokeColor=#1B365D;strokeWidth=1.9;startArrow=none;endArrow=classic;fontSize=10.5;fontColor=#0F172A;fontStyle=1;fontFamily=Segoe UI;labelBackgroundColor=#FFFFFF;labelBorderColor=none;" edge="1" parent="1">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="610" y="148" as="sourcePoint"/>
+            <mxPoint x="459" y="170" as="targetPoint"/>
+            <Array as="points">
+              <mxPoint x="459" y="148"/>
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="01_wbs_tree_6" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=1;orthogonalLoop=1;jettySize=auto;html=0;strokeColor=#1B365D;strokeWidth=1.9;startArrow=none;endArrow=classic;fontSize=10.5;fontColor=#0F172A;fontStyle=1;fontFamily=Segoe UI;labelBackgroundColor=#FFFFFF;labelBorderColor=none;" edge="1" parent="1">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="610" y="148" as="sourcePoint"/>
+            <mxPoint x="755" y="170" as="targetPoint"/>
+            <Array as="points">
+              <mxPoint x="755" y="148"/>
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="01_wbs_tree_7" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=1;orthogonalLoop=1;jettySize=auto;html=0;strokeColor=#1B365D;strokeWidth=1.9;startArrow=none;endArrow=classic;fontSize=10.5;fontColor=#0F172A;fontStyle=1;fontFamily=Segoe UI;labelBackgroundColor=#FFFFFF;labelBorderColor=none;" edge="1" parent="1">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="610" y="148" as="sourcePoint"/>
+            <mxPoint x="1051" y="170" as="targetPoint"/>
+            <Array as="points">
+              <mxPoint x="1051" y="148"/>
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="01_wbs_tree_8" value="1.1 Domain, SRS &amp; Data&#10;(Phase I + Curation)" style="rounded=1;arcSize=12;whiteSpace=wrap;html=0;fillColor=#2B5B84;strokeColor=#2B5B84;strokeWidth=2;fontColor=#FFFFFF;fontSize=11.5;fontStyle=1;align=center;verticalAlign=middle;spacing=6;fontFamily=Segoe UI;" parent="1" vertex="1">
+          <mxGeometry x="28" y="170" width="270" height="52" as="geometry"/>
+        </mxCell>
+        <mxCell id="01_wbs_tree_9" value="" style="endFill=1;html=0;strokeColor=#2B5B84;strokeWidth=1.9;startArrow=none;endArrow=none;fontSize=10.5;fontColor=#0F172A;fontStyle=1;fontFamily=Segoe UI;labelBackgroundColor=#FFFFFF;labelBorderColor=none;" edge="1" parent="1">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="44" y="222" as="sourcePoint"/>
+            <mxPoint x="44" y="586" as="targetPoint"/>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="01_wbs_tree_10" value="" style="endFill=1;html=0;strokeColor=#2B5B84;strokeWidth=1.9;startArrow=none;endArrow=classic;fontSize=10.5;fontColor=#0F172A;fontStyle=1;fontFamily=Segoe UI;labelBackgroundColor=#FFFFFF;labelBorderColor=none;" edge="1" parent="1">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="44" y="275" as="sourcePoint"/>
+            <mxPoint x="64" y="275" as="targetPoint"/>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="01_wbs_tree_11" value="1.1.1 Literature Review&#10;&amp; Gap Analysis (33 Refs)" style="rounded=1;arcSize=12;whiteSpace=wrap;html=0;fillColor=#E8EEF5;strokeColor=#2B5B84;strokeWidth=2;fontColor=#0F172A;fontSize=10.5;fontStyle=1;align=center;verticalAlign=middle;spacing=6;fontFamily=Segoe UI;" parent="1" vertex="1">
+          <mxGeometry x="64" y="244" width="234" height="62" as="geometry"/>
+        </mxCell>
+        <mxCell id="01_wbs_tree_12" value="" style="endFill=1;html=0;strokeColor=#2B5B84;strokeWidth=1.9;startArrow=none;endArrow=classic;fontSize=10.5;fontColor=#0F172A;fontStyle=1;fontFamily=Segoe UI;labelBackgroundColor=#FFFFFF;labelBorderColor=none;" edge="1" parent="1">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="44" y="367" as="sourcePoint"/>
+            <mxPoint x="64" y="367" as="targetPoint"/>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="01_wbs_tree_13" value="1.1.2 Driver Needs Survey&#10;(n = 71, 8 Quantitative Charts)" style="rounded=1;arcSize=12;whiteSpace=wrap;html=0;fillColor=#E8EEF5;strokeColor=#2B5B84;strokeWidth=2;fontColor=#0F172A;fontSize=10.5;fontStyle=1;align=center;verticalAlign=middle;spacing=6;fontFamily=Segoe UI;" parent="1" vertex="1">
+          <mxGeometry x="64" y="336" width="234" height="62" as="geometry"/>
+        </mxCell>
+        <mxCell id="01_wbs_tree_14" value="" style="endFill=1;html=0;strokeColor=#2B5B84;strokeWidth=1.9;startArrow=none;endArrow=classic;fontSize=10.5;fontColor=#0F172A;fontStyle=1;fontFamily=Segoe UI;labelBackgroundColor=#FFFFFF;labelBorderColor=none;" edge="1" parent="1">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="44" y="459" as="sourcePoint"/>
+            <mxPoint x="64" y="459" as="targetPoint"/>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="01_wbs_tree_15" value="1.1.3 Multi-Source Dataset&#10;8,842 Images / 14 CNN Classes" style="rounded=1;arcSize=12;whiteSpace=wrap;html=0;fillColor=#E8EEF5;strokeColor=#2B5B84;strokeWidth=2;fontColor=#0F172A;fontSize=10.5;fontStyle=1;align=center;verticalAlign=middle;spacing=6;fontFamily=Segoe UI;" parent="1" vertex="1">
+          <mxGeometry x="64" y="428" width="234" height="62" as="geometry"/>
+        </mxCell>
+        <mxCell id="01_wbs_tree_16" value="" style="endFill=1;html=0;strokeColor=#2B5B84;strokeWidth=1.9;startArrow=none;endArrow=classic;fontSize=10.5;fontColor=#0F172A;fontStyle=1;fontFamily=Segoe UI;labelBackgroundColor=#FFFFFF;labelBorderColor=none;" edge="1" parent="1">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="44" y="551" as="sourcePoint"/>
+            <mxPoint x="64" y="551" as="targetPoint"/>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="01_wbs_tree_17" value="1.1.4 Manual BBox Labeling&#10;&amp; Leakage-Free Roboflow Split" style="rounded=1;arcSize=12;whiteSpace=wrap;html=0;fillColor=#E8EEF5;strokeColor=#2B5B84;strokeWidth=2;fontColor=#0F172A;fontSize=10.5;fontStyle=1;align=center;verticalAlign=middle;spacing=6;fontFamily=Segoe UI;" parent="1" vertex="1">
+          <mxGeometry x="64" y="520" width="234" height="62" as="geometry"/>
+        </mxCell>
+        <mxCell id="01_wbs_tree_18" value="1.2 Model &amp; Benchmarks&#10;(COMP 583 AI Core)" style="rounded=1;arcSize=12;whiteSpace=wrap;html=0;fillColor=#335C81;strokeColor=#335C81;strokeWidth=2;fontColor=#FFFFFF;fontSize=11.5;fontStyle=1;align=center;verticalAlign=middle;spacing=6;fontFamily=Segoe UI;" parent="1" vertex="1">
+          <mxGeometry x="324" y="170" width="270" height="52" as="geometry"/>
+        </mxCell>
+        <mxCell id="01_wbs_tree_19" value="" style="endFill=1;html=0;strokeColor=#335C81;strokeWidth=1.9;startArrow=none;endArrow=none;fontSize=10.5;fontColor=#0F172A;fontStyle=1;fontFamily=Segoe UI;labelBackgroundColor=#FFFFFF;labelBorderColor=none;" edge="1" parent="1">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="340" y="222" as="sourcePoint"/>
+            <mxPoint x="340" y="586" as="targetPoint"/>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="01_wbs_tree_20" value="" style="endFill=1;html=0;strokeColor=#335C81;strokeWidth=1.9;startArrow=none;endArrow=classic;fontSize=10.5;fontColor=#0F172A;fontStyle=1;fontFamily=Segoe UI;labelBackgroundColor=#FFFFFF;labelBorderColor=none;" edge="1" parent="1">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="340" y="275" as="sourcePoint"/>
+            <mxPoint x="360" y="275" as="targetPoint"/>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="01_wbs_tree_21" value="1.2.1 4-Model Benchmark&#10;D-FINE-N / RT-DETRv2 / YOLO26n" style="rounded=1;arcSize=12;whiteSpace=wrap;html=0;fillColor=#EDF3F9;strokeColor=#335C81;strokeWidth=2;fontColor=#0F172A;fontSize=10.5;fontStyle=1;align=center;verticalAlign=middle;spacing=6;fontFamily=Segoe UI;" parent="1" vertex="1">
+          <mxGeometry x="360" y="244" width="234" height="62" as="geometry"/>
+        </mxCell>
+        <mxCell id="01_wbs_tree_22" value="" style="endFill=1;html=0;strokeColor=#335C81;strokeWidth=1.9;startArrow=none;endArrow=classic;fontSize=10.5;fontColor=#0F172A;fontStyle=1;fontFamily=Segoe UI;labelBackgroundColor=#FFFFFF;labelBorderColor=none;" edge="1" parent="1">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="340" y="367" as="sourcePoint"/>
+            <mxPoint x="360" y="367" as="targetPoint"/>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="01_wbs_tree_23" value="1.2.2 YOLOv11n-ADAS-v2&#10;150-Epoch Transfer Training" style="rounded=1;arcSize=12;whiteSpace=wrap;html=0;fillColor=#EDF3F9;strokeColor=#335C81;strokeWidth=2;fontColor=#0F172A;fontSize=10.5;fontStyle=1;align=center;verticalAlign=middle;spacing=6;fontFamily=Segoe UI;" parent="1" vertex="1">
+          <mxGeometry x="360" y="336" width="234" height="62" as="geometry"/>
+        </mxCell>
+        <mxCell id="01_wbs_tree_24" value="" style="endFill=1;html=0;strokeColor=#335C81;strokeWidth=1.9;startArrow=none;endArrow=classic;fontSize=10.5;fontColor=#0F172A;fontStyle=1;fontFamily=Segoe UI;labelBackgroundColor=#FFFFFF;labelBorderColor=none;" edge="1" parent="1">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="340" y="459" as="sourcePoint"/>
+            <mxPoint x="360" y="459" as="targetPoint"/>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="01_wbs_tree_25" value="1.2.3 Held-Out Test Split&#10;884 Unseen Imgs (95.8% mAP@50)" style="rounded=1;arcSize=12;whiteSpace=wrap;html=0;fillColor=#EDF3F9;strokeColor=#335C81;strokeWidth=2;fontColor=#0F172A;fontSize=10.5;fontStyle=1;align=center;verticalAlign=middle;spacing=6;fontFamily=Segoe UI;" parent="1" vertex="1">
+          <mxGeometry x="360" y="428" width="234" height="62" as="geometry"/>
+        </mxCell>
+        <mxCell id="01_wbs_tree_26" value="" style="endFill=1;html=0;strokeColor=#335C81;strokeWidth=1.9;startArrow=none;endArrow=classic;fontSize=10.5;fontColor=#0F172A;fontStyle=1;fontFamily=Segoe UI;labelBackgroundColor=#FFFFFF;labelBorderColor=none;" edge="1" parent="1">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="340" y="551" as="sourcePoint"/>
+            <mxPoint x="360" y="551" as="targetPoint"/>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="01_wbs_tree_27" value="1.2.4 FP32 ONNX Export &amp;&#10;Pareto Checkpoint Selection" style="rounded=1;arcSize=12;whiteSpace=wrap;html=0;fillColor=#EDF3F9;strokeColor=#335C81;strokeWidth=2;fontColor=#0F172A;fontSize=10.5;fontStyle=1;align=center;verticalAlign=middle;spacing=6;fontFamily=Segoe UI;" parent="1" vertex="1">
+          <mxGeometry x="360" y="520" width="234" height="62" as="geometry"/>
+        </mxCell>
+        <mxCell id="01_wbs_tree_28" value="1.3 Android Engineering&#10;(D:\vision Kotlin)" style="rounded=1;arcSize=12;whiteSpace=wrap;html=0;fillColor=#3B4D75;strokeColor=#3B4D75;strokeWidth=2;fontColor=#FFFFFF;fontSize=11.5;fontStyle=1;align=center;verticalAlign=middle;spacing=6;fontFamily=Segoe UI;" parent="1" vertex="1">
+          <mxGeometry x="620" y="170" width="270" height="52" as="geometry"/>
+        </mxCell>
+        <mxCell id="01_wbs_tree_29" value="" style="endFill=1;html=0;strokeColor=#3B4D75;strokeWidth=1.9;startArrow=none;endArrow=none;fontSize=10.5;fontColor=#0F172A;fontStyle=1;fontFamily=Segoe UI;labelBackgroundColor=#FFFFFF;labelBorderColor=none;" edge="1" parent="1">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="636" y="222" as="sourcePoint"/>
+            <mxPoint x="636" y="586" as="targetPoint"/>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="01_wbs_tree_30" value="" style="endFill=1;html=0;strokeColor=#3B4D75;strokeWidth=1.9;startArrow=none;endArrow=classic;fontSize=10.5;fontColor=#0F172A;fontStyle=1;fontFamily=Segoe UI;labelBackgroundColor=#FFFFFF;labelBorderColor=none;" edge="1" parent="1">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="636" y="275" as="sourcePoint"/>
+            <mxPoint x="656" y="275" as="targetPoint"/>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="01_wbs_tree_31" value="1.3.1 Jetpack Compose UI &amp;&#10;Bilingual AR/EN String Map" style="rounded=1;arcSize=12;whiteSpace=wrap;html=0;fillColor=#EEF1F7;strokeColor=#3B4D75;strokeWidth=2;fontColor=#0F172A;fontSize=10.5;fontStyle=1;align=center;verticalAlign=middle;spacing=6;fontFamily=Segoe UI;" parent="1" vertex="1">
+          <mxGeometry x="656" y="244" width="234" height="62" as="geometry"/>
+        </mxCell>
+        <mxCell id="01_wbs_tree_32" value="" style="endFill=1;html=0;strokeColor=#3B4D75;strokeWidth=1.9;startArrow=none;endArrow=classic;fontSize=10.5;fontColor=#0F172A;fontStyle=1;fontFamily=Segoe UI;labelBackgroundColor=#FFFFFF;labelBorderColor=none;" edge="1" parent="1">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="636" y="367" as="sourcePoint"/>
+            <mxPoint x="656" y="367" as="targetPoint"/>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="01_wbs_tree_33" value="1.3.2 CameraX + YoloOnnxEngine&#10;(On-Device ORT + LocationTracker)" style="rounded=1;arcSize=12;whiteSpace=wrap;html=0;fillColor=#EEF1F7;strokeColor=#3B4D75;strokeWidth=2;fontColor=#0F172A;fontSize=10.5;fontStyle=1;align=center;verticalAlign=middle;spacing=6;fontFamily=Segoe UI;" parent="1" vertex="1">
+          <mxGeometry x="656" y="336" width="234" height="62" as="geometry"/>
+        </mxCell>
+        <mxCell id="01_wbs_tree_34" value="" style="endFill=1;html=0;strokeColor=#3B4D75;strokeWidth=1.9;startArrow=none;endArrow=classic;fontSize=10.5;fontColor=#0F172A;fontStyle=1;fontFamily=Segoe UI;labelBackgroundColor=#FFFFFF;labelBorderColor=none;" edge="1" parent="1">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="636" y="459" as="sourcePoint"/>
+            <mxPoint x="656" y="459" as="targetPoint"/>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="01_wbs_tree_35" value="1.3.3 AdasSignVerifier Bayesian&#10;+ ML Kit OCR (+6 Speeds)" style="rounded=1;arcSize=12;whiteSpace=wrap;html=0;fillColor=#EEF1F7;strokeColor=#3B4D75;strokeWidth=2;fontColor=#0F172A;fontSize=10.5;fontStyle=1;align=center;verticalAlign=middle;spacing=6;fontFamily=Segoe UI;" parent="1" vertex="1">
+          <mxGeometry x="656" y="428" width="234" height="62" as="geometry"/>
+        </mxCell>
+        <mxCell id="01_wbs_tree_36" value="" style="endFill=1;html=0;strokeColor=#3B4D75;strokeWidth=1.9;startArrow=none;endArrow=classic;fontSize=10.5;fontColor=#0F172A;fontStyle=1;fontFamily=Segoe UI;labelBackgroundColor=#FFFFFF;labelBorderColor=none;" edge="1" parent="1">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="636" y="551" as="sourcePoint"/>
+            <mxPoint x="656" y="551" as="targetPoint"/>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="01_wbs_tree_37" value="1.3.4 SoundPool 40 MP3s +&#10;SQLite v4, Export &amp; CloudSync" style="rounded=1;arcSize=12;whiteSpace=wrap;html=0;fillColor=#EEF1F7;strokeColor=#3B4D75;strokeWidth=2;fontColor=#0F172A;fontSize=10.5;fontStyle=1;align=center;verticalAlign=middle;spacing=6;fontFamily=Segoe UI;" parent="1" vertex="1">
+          <mxGeometry x="656" y="520" width="234" height="62" as="geometry"/>
+        </mxCell>
+        <mxCell id="01_wbs_tree_38" value="1.4 Testing &amp; Delivery&#10;(COMP 583 Completion)" style="rounded=1;arcSize=12;whiteSpace=wrap;html=0;fillColor=#475569;strokeColor=#475569;strokeWidth=2;fontColor=#FFFFFF;fontSize=11.5;fontStyle=1;align=center;verticalAlign=middle;spacing=6;fontFamily=Segoe UI;" parent="1" vertex="1">
+          <mxGeometry x="916" y="170" width="270" height="52" as="geometry"/>
+        </mxCell>
+        <mxCell id="01_wbs_tree_39" value="" style="endFill=1;html=0;strokeColor=#475569;strokeWidth=1.9;startArrow=none;endArrow=none;fontSize=10.5;fontColor=#0F172A;fontStyle=1;fontFamily=Segoe UI;labelBackgroundColor=#FFFFFF;labelBorderColor=none;" edge="1" parent="1">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="932" y="222" as="sourcePoint"/>
+            <mxPoint x="932" y="586" as="targetPoint"/>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="01_wbs_tree_40" value="" style="endFill=1;html=0;strokeColor=#475569;strokeWidth=1.9;startArrow=none;endArrow=classic;fontSize=10.5;fontColor=#0F172A;fontStyle=1;fontFamily=Segoe UI;labelBackgroundColor=#FFFFFF;labelBorderColor=none;" edge="1" parent="1">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="932" y="275" as="sourcePoint"/>
+            <mxPoint x="952" y="275" as="targetPoint"/>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="01_wbs_tree_41" value="1.4.1 JVM Unit Integrity Suite&#10;(12/12 Gradle Tests Passed)" style="rounded=1;arcSize=12;whiteSpace=wrap;html=0;fillColor=#F1F5F9;strokeColor=#475569;strokeWidth=2;fontColor=#0F172A;fontSize=10.5;fontStyle=1;align=center;verticalAlign=middle;spacing=6;fontFamily=Segoe UI;" parent="1" vertex="1">
+          <mxGeometry x="952" y="244" width="234" height="62" as="geometry"/>
+        </mxCell>
+        <mxCell id="01_wbs_tree_42" value="" style="endFill=1;html=0;strokeColor=#475569;strokeWidth=1.9;startArrow=none;endArrow=classic;fontSize=10.5;fontColor=#0F172A;fontStyle=1;fontFamily=Segoe UI;labelBackgroundColor=#FFFFFF;labelBorderColor=none;" edge="1" parent="1">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="932" y="367" as="sourcePoint"/>
+            <mxPoint x="952" y="367" as="targetPoint"/>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="01_wbs_tree_43" value="1.4.2 Real In-Vehicle Road&#10;Trials (AR/EN Signs &amp; Pedestrians)" style="rounded=1;arcSize=12;whiteSpace=wrap;html=0;fillColor=#F1F5F9;strokeColor=#475569;strokeWidth=2;fontColor=#0F172A;fontSize=10.5;fontStyle=1;align=center;verticalAlign=middle;spacing=6;fontFamily=Segoe UI;" parent="1" vertex="1">
+          <mxGeometry x="952" y="336" width="234" height="62" as="geometry"/>
+        </mxCell>
+        <mxCell id="01_wbs_tree_44" value="" style="endFill=1;html=0;strokeColor=#475569;strokeWidth=1.9;startArrow=none;endArrow=classic;fontSize=10.5;fontColor=#0F172A;fontStyle=1;fontFamily=Segoe UI;labelBackgroundColor=#FFFFFF;labelBorderColor=none;" edge="1" parent="1">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="932" y="459" as="sourcePoint"/>
+            <mxPoint x="952" y="459" as="targetPoint"/>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="01_wbs_tree_45" value="1.4.3 Final Technical Report&#10;(Chapters 1 - 7 &amp; PDF)" style="rounded=1;arcSize=12;whiteSpace=wrap;html=0;fillColor=#F1F5F9;strokeColor=#475569;strokeWidth=2;fontColor=#0F172A;fontSize=10.5;fontStyle=1;align=center;verticalAlign=middle;spacing=6;fontFamily=Segoe UI;" parent="1" vertex="1">
+          <mxGeometry x="952" y="428" width="234" height="62" as="geometry"/>
+        </mxCell>
+        <mxCell id="01_wbs_tree_46" value="" style="endFill=1;html=0;strokeColor=#475569;strokeWidth=1.9;startArrow=none;endArrow=classic;fontSize=10.5;fontColor=#0F172A;fontStyle=1;fontFamily=Segoe UI;labelBackgroundColor=#FFFFFF;labelBorderColor=none;" edge="1" parent="1">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="932" y="551" as="sourcePoint"/>
+            <mxPoint x="952" y="551" as="targetPoint"/>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="01_wbs_tree_47" value="1.4.4 Final Presentation &amp;&#10;Oral Defense (Dec 2026)" style="rounded=1;arcSize=12;whiteSpace=wrap;html=0;fillColor=#F1F5F9;strokeColor=#475569;strokeWidth=2;fontColor=#0F172A;fontSize=10.5;fontStyle=1;align=center;verticalAlign=middle;spacing=6;fontFamily=Segoe UI;" parent="1" vertex="1">
+          <mxGeometry x="952" y="520" width="234" height="62" as="geometry"/>
+        </mxCell>
+      </root>
+    </mxGraphModel>
+  </diagram>
+</mxfile>

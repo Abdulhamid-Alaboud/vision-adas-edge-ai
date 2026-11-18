@@ -1,0 +1,78 @@
+<?xml version="1.0" ?>
+<mxfile host="app.diagrams.net" modified="2026-11-14T06:00:00Z" agent="draw.io" version="24.7.0">
+  <diagram id="17_security_architecture" name="Security Architecture &amp; On-Device Privacy Bounda">
+    <mxGraphModel dx="1420" dy="820" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="1180" pageHeight="520" background="#FFFFFF">
+      <root>
+        <mxCell id="0"/>
+        <mxCell id="1" parent="0"/>
+        <mxCell id="17_security_architecture_2" value="Security Architecture &amp; On-Device Privacy Boundary" style="rounded=1;whiteSpace=wrap;html=0;fillColor=#1B365D;strokeColor=#1B365D;fontColor=#FFFFFF;fontSize=15;fontStyle=1;align=left;spacingLeft=18;fontFamily=Segoe UI;" parent="1" vertex="1">
+          <mxGeometry x="16" y="12" width="1148" height="38" as="geometry"/>
+        </mxCell>
+        <mxCell id="17_security_architecture_3" value="On-Device Privacy &amp; Execution Zone (Volatile RAM + SQLite v4)" style="swimlane;whiteSpace=wrap;html=0;startSize=30;rounded=1;arcSize=8;fillColor=#1B365D;swimlaneFillColor=#F8FAFC;strokeColor=#335C81;strokeWidth=2;fontColor=#FFFFFF;fontSize=12;fontStyle=1;collapsible=0;fontFamily=Segoe UI;" parent="1" vertex="1">
+          <mxGeometry x="26" y="72" width="745" height="412" as="geometry"/>
+        </mxCell>
+        <mxCell id="17_security_architecture_4" value="CameraX API Input&#10;Live Sensor Stream&#10;(No Disk Video Save)" style="rounded=1;arcSize=12;whiteSpace=wrap;html=0;fillColor=#EDF3F9;strokeColor=#335C81;strokeWidth=2;fontColor=#0F172A;fontSize=11;fontStyle=1;align=center;verticalAlign=middle;spacing=6;fontFamily=Segoe UI;" parent="1" vertex="1">
+          <mxGeometry x="52" y="128" width="195" height="76" as="geometry"/>
+        </mxCell>
+        <mxCell id="17_security_architecture_5" value="Volatile RAM Buffer&#10;640x640 RGB Tensor&#10;(Discarded Immediately)" style="rounded=1;arcSize=12;whiteSpace=wrap;html=0;fillColor=#FFFFFF;strokeColor=#335C81;strokeWidth=2;fontColor=#0F172A;fontSize=11;fontStyle=1;align=center;verticalAlign=middle;spacing=6;fontFamily=Segoe UI;" parent="1" vertex="1">
+          <mxGeometry x="288" y="128" width="210" height="76" as="geometry"/>
+        </mxCell>
+        <mxCell id="17_security_architecture_6" value="YOLOv11n ONNX +&#10;Dual Sign Verifiers&#10;(100% Offline Edge AI)" style="rounded=1;arcSize=12;whiteSpace=wrap;html=0;fillColor=#E8EEF5;strokeColor=#2B5B84;strokeWidth=2;fontColor=#0F172A;fontSize=11;fontStyle=1;align=center;verticalAlign=middle;spacing=6;fontFamily=Segoe UI;" parent="1" vertex="1">
+          <mxGeometry x="542" y="128" width="200" height="76" as="geometry"/>
+        </mxCell>
+        <mxCell id="17_security_architecture_7" value="RBAC Middleware &amp; Auth&#10;SHA-256 Password Hash&#10;Roles: Guest (tripId=0) /&#10;Driver / Administrator" style="rounded=1;arcSize=12;whiteSpace=wrap;html=0;fillColor=#EEF1F7;strokeColor=#3B4D75;strokeWidth=2;fontColor=#0F172A;fontSize=10.8;fontStyle=1;align=center;verticalAlign=middle;spacing=6;fontFamily=Segoe UI;" parent="1" vertex="1">
+          <mxGeometry x="120" y="290" width="250" height="90" as="geometry"/>
+        </mxCell>
+        <mxCell id="17_security_architecture_8" value="Local SQLite v4&#10;vision_local.db&#10;Isolated Trip &amp; Alert&#10;Metadata Only" style="shape=cylinder3;whiteSpace=wrap;boundedLbl=1;backgroundOutline=1;size=14;fillColor=#F1F5F9;strokeColor=#475569;strokeWidth=2;fontColor=#0F172A;fontSize=10.8;fontStyle=1;spacing=6;fontFamily=Segoe UI;" parent="1" vertex="1">
+          <mxGeometry x="455" y="282" width="250" height="108" as="geometry"/>
+        </mxCell>
+        <mxCell id="17_security_architecture_9" value="PRIVACY BARRIER&#10;Raw Video / Frames&#10;Strictly Blocked" style="rhombus;whiteSpace=wrap;html=0;fillColor=#FAF2F2;strokeColor=#8B3A3A;strokeWidth=2;fontColor=#0F172A;fontSize=11;fontStyle=1;spacing=4;fontFamily=Segoe UI;" parent="1" vertex="1">
+          <mxGeometry x="875" y="110" width="240" height="110" as="geometry"/>
+        </mxCell>
+        <mxCell id="17_security_architecture_10" value="Optional Firebase RTDB&#10;(Async HTTPS Sync)&#10;Anonymized Textual Trip &amp;&#10;Aggregate Metrics JSON ONLY" style="ellipse;whiteSpace=wrap;html=0;fillColor=#EEF5F2;strokeColor=#2C5E50;strokeWidth=2;fontColor=#0F172A;fontSize=10.8;fontStyle=1;spacing=6;fontFamily=Segoe UI;" parent="1" vertex="1">
+          <mxGeometry x="865" y="290" width="260" height="112" as="geometry"/>
+        </mxCell>
+        <mxCell id="17_security_architecture_11" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=1;orthogonalLoop=1;jettySize=auto;html=0;strokeColor=#335C81;strokeWidth=1.9;startArrow=none;endArrow=classic;fontSize=10.5;fontColor=#0F172A;fontStyle=1;fontFamily=Segoe UI;labelBackgroundColor=#FFFFFF;labelBorderColor=none;" edge="1" parent="1">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="247" y="166" as="sourcePoint"/>
+            <mxPoint x="288" y="166" as="targetPoint"/>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="17_security_architecture_12" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=1;orthogonalLoop=1;jettySize=auto;html=0;strokeColor=#335C81;strokeWidth=1.9;startArrow=none;endArrow=classic;fontSize=10.5;fontColor=#0F172A;fontStyle=1;fontFamily=Segoe UI;labelBackgroundColor=#FFFFFF;labelBorderColor=none;" edge="1" parent="1">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="498" y="166" as="sourcePoint"/>
+            <mxPoint x="542" y="166" as="targetPoint"/>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="17_security_architecture_13" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=1;orthogonalLoop=1;jettySize=auto;html=0;strokeColor=#3B4D75;strokeWidth=1.9;startArrow=classic;endArrow=classic;fontSize=10.5;fontColor=#0F172A;fontStyle=1;fontFamily=Segoe UI;labelBackgroundColor=#FFFFFF;labelBorderColor=none;" edge="1" parent="1">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="370" y="336" as="sourcePoint"/>
+            <mxPoint x="455" y="336" as="targetPoint"/>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="17_security_architecture_14" value="Prefs &amp; Thresh" style="edgeStyle=orthogonalEdgeStyle;rounded=1;orthogonalLoop=1;jettySize=auto;html=0;strokeColor=#3B4D75;strokeWidth=1.9;startArrow=none;endArrow=classic;fontSize=10.5;fontColor=#0F172A;fontStyle=1;fontFamily=Segoe UI;labelBackgroundColor=#FFFFFF;labelBorderColor=none;" edge="1" parent="1">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="245" y="290" as="sourcePoint"/>
+            <mxPoint x="642" y="204" as="targetPoint"/>
+            <Array as="points">
+              <mxPoint x="245" y="246"/>
+              <mxPoint x="642" y="246"/>
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="17_security_architecture_15" value="Blocked!" style="edgeStyle=orthogonalEdgeStyle;rounded=1;orthogonalLoop=1;jettySize=auto;html=0;strokeColor=#8B3A3A;strokeWidth=1.9;startArrow=none;endArrow=classic;fontSize=10.5;fontColor=#0F172A;fontStyle=1;fontFamily=Segoe UI;labelBackgroundColor=#FFFFFF;labelBorderColor=none;" edge="1" parent="1">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="742" y="165" as="sourcePoint"/>
+            <mxPoint x="875" y="165" as="targetPoint"/>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="17_security_architecture_16" value="Optional Opt-In Metadata" style="edgeStyle=orthogonalEdgeStyle;rounded=1;orthogonalLoop=1;jettySize=auto;html=0;strokeColor=#2C5E50;strokeWidth=1.9;startArrow=none;endArrow=classic;dashed=1;fontSize=10.5;fontColor=#0F172A;fontStyle=1;fontFamily=Segoe UI;labelBackgroundColor=#FFFFFF;labelBorderColor=none;" edge="1" parent="1">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="705" y="346" as="sourcePoint"/>
+            <mxPoint x="865" y="346" as="targetPoint"/>
+          </mxGeometry>
+        </mxCell>
+      </root>
+    </mxGraphModel>
+  </diagram>
+</mxfile>

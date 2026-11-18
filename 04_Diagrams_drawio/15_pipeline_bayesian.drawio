@@ -1,0 +1,87 @@
+<?xml version="1.0" ?>
+<mxfile host="app.diagrams.net" modified="2026-11-14T06:00:00Z" agent="draw.io" version="24.7.0">
+  <diagram id="15_pipeline_bayesian" name="Hybrid YOLOv11n ONNX + Bayesian HSV/Edge + ML Ki">
+    <mxGraphModel dx="1420" dy="820" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="1260" pageHeight="540" background="#FFFFFF">
+      <root>
+        <mxCell id="0"/>
+        <mxCell id="1" parent="0"/>
+        <mxCell id="15_pipeline_bayesian_2" value="Hybrid YOLOv11n ONNX + Bayesian HSV/Edge + ML Kit OCR Decision Pipeline" style="rounded=1;whiteSpace=wrap;html=0;fillColor=#1B365D;strokeColor=#1B365D;fontColor=#FFFFFF;fontSize=15;fontStyle=1;align=left;spacingLeft=18;fontFamily=Segoe UI;" parent="1" vertex="1">
+          <mxGeometry x="16" y="12" width="1228" height="38" as="geometry"/>
+        </mxCell>
+        <mxCell id="15_pipeline_bayesian_3" value="1. CameraX Frame&#10;RGB 640x640&#10;Normalized Tensor" style="rounded=1;arcSize=12;whiteSpace=wrap;html=0;fillColor=#EDF3F9;strokeColor=#335C81;strokeWidth=2;fontColor=#0F172A;fontSize=11;fontStyle=1;align=center;verticalAlign=middle;spacing=6;fontFamily=Segoe UI;" parent="1" vertex="1">
+          <mxGeometry x="28" y="194" width="150" height="96" as="geometry"/>
+        </mxCell>
+        <mxCell id="15_pipeline_bayesian_4" value="2. YoloOnnxEngine&#10;YOLOv11n-ADAS-v2&#10;(14 CNN Classes)&#10;ONNX Runtime 1.18.0" style="rounded=1;arcSize=12;whiteSpace=wrap;html=0;fillColor=#1B365D;strokeColor=#1B365D;strokeWidth=2;fontColor=#FFFFFF;fontSize=11;fontStyle=1;align=center;verticalAlign=middle;spacing=6;fontFamily=Segoe UI;" parent="1" vertex="1">
+          <mxGeometry x="218" y="188" width="200" height="108" as="geometry"/>
+        </mxCell>
+        <mxCell id="15_pipeline_bayesian_5" value="3A. SpeedSignVerifier&#10;(Google ML Kit OCR v16.0.1)&#10;Reads digits on sign ROI&#10;Promotes +6 Zero-Shot classes:&#10;20, 70, 90, 110, 120, 140 km/h" style="rounded=1;arcSize=12;whiteSpace=wrap;html=0;fillColor=#E8EEF5;strokeColor=#2B5B84;strokeWidth=2;fontColor=#0F172A;fontSize=10.6;fontStyle=1;align=center;verticalAlign=middle;spacing=6;fontFamily=Segoe UI;" parent="1" vertex="1">
+          <mxGeometry x="488" y="86" width="265" height="114" as="geometry"/>
+        </mxCell>
+        <mxCell id="15_pipeline_bayesian_6" value="3B. AdasSignVerifier&#10;(HSV Color + Edge + Geometry)&#10;Verifies no_entry(1), no_parking(2),&#10;stop_sign(12), traffic_signal, bump&#10;Log-Odds Bayesian Score Adjustment" style="rounded=1;arcSize=12;whiteSpace=wrap;html=0;fillColor=#EEF1F7;strokeColor=#3B4D75;strokeWidth=2;fontColor=#0F172A;fontSize=10.4;fontStyle=1;align=center;verticalAlign=middle;spacing=6;fontFamily=Segoe UI;" parent="1" vertex="1">
+          <mxGeometry x="488" y="294" width="265" height="120" as="geometry"/>
+        </mxCell>
+        <mxCell id="15_pipeline_bayesian_7" value="4. HazardEvaluator&#10;2-of-3 Frame Consensus&#10;Per-Class Calib Threshold&#10;Life-First Priority Queue" style="rounded=1;arcSize=12;whiteSpace=wrap;html=0;fillColor=#F1F5F9;strokeColor=#475569;strokeWidth=2;fontColor=#0F172A;fontSize=10.8;fontStyle=1;align=center;verticalAlign=middle;spacing=6;fontFamily=Segoe UI;" parent="1" vertex="1">
+          <mxGeometry x="820" y="188" width="215" height="108" as="geometry"/>
+        </mxCell>
+        <mxCell id="15_pipeline_bayesian_8" value="5. Alert &amp; Log&#10;SoundPool Cooldown&#10;(40 AR/EN MP3)&#10;Red HUD + SQLite" style="rounded=1;arcSize=12;whiteSpace=wrap;html=0;fillColor=#FAF2F2;strokeColor=#8B3A3A;strokeWidth=2;fontColor=#0F172A;fontSize=10.6;fontStyle=1;align=center;verticalAlign=middle;spacing=6;fontFamily=Segoe UI;" parent="1" vertex="1">
+          <mxGeometry x="1070" y="188" width="165" height="108" as="geometry"/>
+        </mxCell>
+        <mxCell id="15_pipeline_bayesian_9" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=1;orthogonalLoop=1;jettySize=auto;html=0;strokeColor=#335C81;strokeWidth=1.9;startArrow=none;endArrow=classic;fontSize=10.5;fontColor=#0F172A;fontStyle=1;fontFamily=Segoe UI;labelBackgroundColor=#FFFFFF;labelBorderColor=none;" edge="1" parent="1">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="178" y="242" as="sourcePoint"/>
+            <mxPoint x="218" y="242" as="targetPoint"/>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="15_pipeline_bayesian_10" value="Speed ROI" style="edgeStyle=orthogonalEdgeStyle;rounded=1;orthogonalLoop=1;jettySize=auto;html=0;strokeColor=#2B5B84;strokeWidth=1.9;startArrow=none;endArrow=classic;fontSize=10.5;fontColor=#0F172A;fontStyle=1;fontFamily=Segoe UI;labelBackgroundColor=#FFFFFF;labelBorderColor=none;" edge="1" parent="1">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="418" y="220" as="sourcePoint"/>
+            <mxPoint x="488" y="143" as="targetPoint"/>
+            <Array as="points">
+              <mxPoint x="450" y="220"/>
+              <mxPoint x="450" y="143"/>
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="15_pipeline_bayesian_11" value="Hazard ROI" style="edgeStyle=orthogonalEdgeStyle;rounded=1;orthogonalLoop=1;jettySize=auto;html=0;strokeColor=#3B4D75;strokeWidth=1.9;startArrow=none;endArrow=classic;fontSize=10.5;fontColor=#0F172A;fontStyle=1;fontFamily=Segoe UI;labelBackgroundColor=#FFFFFF;labelBorderColor=none;" edge="1" parent="1">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="418" y="264" as="sourcePoint"/>
+            <mxPoint x="488" y="354" as="targetPoint"/>
+            <Array as="points">
+              <mxPoint x="450" y="264"/>
+              <mxPoint x="450" y="354"/>
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="15_pipeline_bayesian_12" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=1;orthogonalLoop=1;jettySize=auto;html=0;strokeColor=#2B5B84;strokeWidth=1.9;startArrow=none;endArrow=classic;fontSize=10.5;fontColor=#0F172A;fontStyle=1;fontFamily=Segoe UI;labelBackgroundColor=#FFFFFF;labelBorderColor=none;" edge="1" parent="1">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="753" y="143" as="sourcePoint"/>
+            <mxPoint x="820" y="220" as="targetPoint"/>
+            <Array as="points">
+              <mxPoint x="785" y="143"/>
+              <mxPoint x="785" y="220"/>
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="15_pipeline_bayesian_13" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=1;orthogonalLoop=1;jettySize=auto;html=0;strokeColor=#3B4D75;strokeWidth=1.9;startArrow=none;endArrow=classic;fontSize=10.5;fontColor=#0F172A;fontStyle=1;fontFamily=Segoe UI;labelBackgroundColor=#FFFFFF;labelBorderColor=none;" edge="1" parent="1">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="753" y="354" as="sourcePoint"/>
+            <mxPoint x="820" y="264" as="targetPoint"/>
+            <Array as="points">
+              <mxPoint x="785" y="354"/>
+              <mxPoint x="785" y="264"/>
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="15_pipeline_bayesian_14" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=1;orthogonalLoop=1;jettySize=auto;html=0;strokeColor=#8B3A3A;strokeWidth=1.9;startArrow=none;endArrow=classic;fontSize=10.5;fontColor=#0F172A;fontStyle=1;fontFamily=Segoe UI;labelBackgroundColor=#FFFFFF;labelBorderColor=none;" edge="1" parent="1">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="1035" y="242" as="sourcePoint"/>
+            <mxPoint x="1070" y="242" as="targetPoint"/>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="15_pipeline_bayesian_15" value="Safety Guarantee: Low-light &amp; dusk glare NEVER hard-suppress detections below the calibrated confidence floor;&#10;AdasSignVerifier applies soft Bayesian uplift (+evidence) or bounded suppression (verified in SystemIntegrityTest)." style="rounded=1;arcSize=12;whiteSpace=wrap;html=0;fillColor=#F8FAFC;strokeColor=#475569;strokeWidth=2;fontColor=#0F172A;fontSize=10.8;fontStyle=1;align=center;verticalAlign=middle;spacing=6;fontFamily=Segoe UI;" parent="1" vertex="1">
+          <mxGeometry x="28" y="444" width="1207" height="68" as="geometry"/>
+        </mxCell>
+      </root>
+    </mxGraphModel>
+  </diagram>
+</mxfile>

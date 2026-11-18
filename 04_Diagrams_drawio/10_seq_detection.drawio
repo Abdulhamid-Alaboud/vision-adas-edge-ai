@@ -1,0 +1,92 @@
+<?xml version="1.0" ?>
+<mxfile host="app.diagrams.net" modified="2026-11-14T06:00:00Z" agent="draw.io" version="24.7.0">
+  <diagram id="10_seq_detection" name="Sequence Diagram 1 - Real-Time Hazard Detection ">
+    <mxGraphModel dx="1420" dy="820" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="1220" pageHeight="620" background="#FFFFFF">
+      <root>
+        <mxCell id="0"/>
+        <mxCell id="1" parent="0"/>
+        <mxCell id="10_seq_detection_2" value="Sequence Diagram 1 - Real-Time Hazard Detection &amp; AI Inference" style="rounded=1;whiteSpace=wrap;html=0;fillColor=#1B365D;strokeColor=#1B365D;fontColor=#FFFFFF;fontSize=15;fontStyle=1;align=left;spacingLeft=18;fontFamily=Segoe UI;" parent="1" vertex="1">
+          <mxGeometry x="16" y="12" width="1188" height="38" as="geometry"/>
+        </mxCell>
+        <mxCell id="10_seq_detection_3" value="CameraManager&#10;(CameraX 1.4.1)" style="shape=umlLifeline;perimeter=lifelinePerimeter;whiteSpace=wrap;html=0;container=1;dropTarget=0;collapsible=0;recursiveResize=0;outlineConnect=0;portConstraint=eastwest;size=46;fillColor=#EDF3F9;strokeColor=#1B365D;strokeWidth=2;fontColor=#0F172A;fontSize=11;fontStyle=1;fontFamily=Segoe UI;" parent="1" vertex="1">
+          <mxGeometry x="26.0" y="70" width="158" height="520" as="geometry"/>
+        </mxCell>
+        <mxCell id="10_seq_detection_4" value="YoloOnnxEngine&#10;(ONNX Runtime)" style="shape=umlLifeline;perimeter=lifelinePerimeter;whiteSpace=wrap;html=0;container=1;dropTarget=0;collapsible=0;recursiveResize=0;outlineConnect=0;portConstraint=eastwest;size=46;fillColor=#EDF3F9;strokeColor=#335C81;strokeWidth=2;fontColor=#0F172A;fontSize=11;fontStyle=1;fontFamily=Segoe UI;" parent="1" vertex="1">
+          <mxGeometry x="231.0" y="70" width="158" height="520" as="geometry"/>
+        </mxCell>
+        <mxCell id="10_seq_detection_5" value="Sign Verifiers&#10;(Bayesian + OCR)" style="shape=umlLifeline;perimeter=lifelinePerimeter;whiteSpace=wrap;html=0;container=1;dropTarget=0;collapsible=0;recursiveResize=0;outlineConnect=0;portConstraint=eastwest;size=46;fillColor=#EEF1F7;strokeColor=#3B4D75;strokeWidth=2;fontColor=#0F172A;fontSize=11;fontStyle=1;fontFamily=Segoe UI;" parent="1" vertex="1">
+          <mxGeometry x="441.0" y="70" width="158" height="520" as="geometry"/>
+        </mxCell>
+        <mxCell id="10_seq_detection_6" value="HazardEvaluator&#10;(2-of-3 Consensus)" style="shape=umlLifeline;perimeter=lifelinePerimeter;whiteSpace=wrap;html=0;container=1;dropTarget=0;collapsible=0;recursiveResize=0;outlineConnect=0;portConstraint=eastwest;size=46;fillColor=#E8EEF5;strokeColor=#2B5B84;strokeWidth=2;fontColor=#0F172A;fontSize=11;fontStyle=1;fontFamily=Segoe UI;" parent="1" vertex="1">
+          <mxGeometry x="651.0" y="70" width="158" height="520" as="geometry"/>
+        </mxCell>
+        <mxCell id="10_seq_detection_7" value="AlertSystem&#10;(SoundPool 40 MP3)" style="shape=umlLifeline;perimeter=lifelinePerimeter;whiteSpace=wrap;html=0;container=1;dropTarget=0;collapsible=0;recursiveResize=0;outlineConnect=0;portConstraint=eastwest;size=46;fillColor=#FAF2F2;strokeColor=#8B3A3A;strokeWidth=2;fontColor=#0F172A;fontSize=11;fontStyle=1;fontFamily=Segoe UI;" parent="1" vertex="1">
+          <mxGeometry x="856.0" y="70" width="158" height="520" as="geometry"/>
+        </mxCell>
+        <mxCell id="10_seq_detection_8" value="DB &amp; Dashboard&#10;(SQLite v4 + HUD)" style="shape=umlLifeline;perimeter=lifelinePerimeter;whiteSpace=wrap;html=0;container=1;dropTarget=0;collapsible=0;recursiveResize=0;outlineConnect=0;portConstraint=eastwest;size=46;fillColor=#F1F5F9;strokeColor=#475569;strokeWidth=2;fontColor=#0F172A;fontSize=11;fontStyle=1;fontFamily=Segoe UI;" parent="1" vertex="1">
+          <mxGeometry x="1046.0" y="70" width="158" height="520" as="geometry"/>
+        </mxCell>
+        <mxCell id="10_seq_detection_9" value="" style="html=0;points=[[0,0,0,0,5],[0,1,0,0,-5],[1,0,0,0,5],[1,1,0,0,-5]];perimeter=orthogonalPerimeter;outlineConnect=0;targetShapes=umlLifeline;portConstraint=eastwest;newEdgeStyle={&quot;curved&quot;:0,&quot;rounded&quot;:0};fillColor=#EFF4FA;strokeColor=#1B365D;strokeWidth=1.5;" parent="10_seq_detection_3" vertex="1">
+          <mxGeometry x="73.0" y="72" width="12" height="415" as="geometry"/>
+        </mxCell>
+        <mxCell id="10_seq_detection_10" value="" style="html=0;points=[[0,0,0,0,5],[0,1,0,0,-5],[1,0,0,0,5],[1,1,0,0,-5]];perimeter=orthogonalPerimeter;outlineConnect=0;targetShapes=umlLifeline;portConstraint=eastwest;newEdgeStyle={&quot;curved&quot;:0,&quot;rounded&quot;:0};fillColor=#EFF4FA;strokeColor=#335C81;strokeWidth=1.5;" parent="10_seq_detection_4" vertex="1">
+          <mxGeometry x="73.0" y="95" width="12" height="195" as="geometry"/>
+        </mxCell>
+        <mxCell id="10_seq_detection_11" value="" style="html=0;points=[[0,0,0,0,5],[0,1,0,0,-5],[1,0,0,0,5],[1,1,0,0,-5]];perimeter=orthogonalPerimeter;outlineConnect=0;targetShapes=umlLifeline;portConstraint=eastwest;newEdgeStyle={&quot;curved&quot;:0,&quot;rounded&quot;:0};fillColor=#EEF1F7;strokeColor=#3B4D75;strokeWidth=1.5;" parent="10_seq_detection_5" vertex="1">
+          <mxGeometry x="73.0" y="130" width="12" height="115" as="geometry"/>
+        </mxCell>
+        <mxCell id="10_seq_detection_12" value="" style="html=0;points=[[0,0,0,0,5],[0,1,0,0,-5],[1,0,0,0,5],[1,1,0,0,-5]];perimeter=orthogonalPerimeter;outlineConnect=0;targetShapes=umlLifeline;portConstraint=eastwest;newEdgeStyle={&quot;curved&quot;:0,&quot;rounded&quot;:0};fillColor=#E8EEF5;strokeColor=#2B5B84;strokeWidth=1.5;" parent="10_seq_detection_6" vertex="1">
+          <mxGeometry x="73.0" y="270" width="12" height="120" as="geometry"/>
+        </mxCell>
+        <mxCell id="10_seq_detection_13" value="" style="html=0;points=[[0,0,0,0,5],[0,1,0,0,-5],[1,0,0,0,5],[1,1,0,0,-5]];perimeter=orthogonalPerimeter;outlineConnect=0;targetShapes=umlLifeline;portConstraint=eastwest;newEdgeStyle={&quot;curved&quot;:0,&quot;rounded&quot;:0};fillColor=#FAF2F2;strokeColor=#8B3A3A;strokeWidth=1.5;" parent="10_seq_detection_7" vertex="1">
+          <mxGeometry x="73.0" y="360" width="12" height="70" as="geometry"/>
+        </mxCell>
+        <mxCell id="10_seq_detection_14" value="" style="html=0;points=[[0,0,0,0,5],[0,1,0,0,-5],[1,0,0,0,5],[1,1,0,0,-5]];perimeter=orthogonalPerimeter;outlineConnect=0;targetShapes=umlLifeline;portConstraint=eastwest;newEdgeStyle={&quot;curved&quot;:0,&quot;rounded&quot;:0};fillColor=#F4F6F9;strokeColor=#475569;strokeWidth=1.5;" parent="10_seq_detection_8" vertex="1">
+          <mxGeometry x="73.0" y="415" width="12" height="65" as="geometry"/>
+        </mxCell>
+        <mxCell id="10_seq_detection_15" value="1. detect(rgb640Bitmap)" style="edgeStyle=orthogonalEdgeStyle;rounded=1;orthogonalLoop=1;jettySize=auto;html=0;strokeColor=#335C81;strokeWidth=1.9;startArrow=none;endArrow=classic;fontSize=10.5;fontColor=#0F172A;fontStyle=1;fontFamily=Segoe UI;labelBackgroundColor=#FFFFFF;labelBorderColor=none;" edge="1" parent="1">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="105" y="172" as="sourcePoint"/>
+            <mxPoint x="310" y="172" as="targetPoint"/>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="10_seq_detection_16" value="2. verifyHazard() / verifySpeedSign()" style="edgeStyle=orthogonalEdgeStyle;rounded=1;orthogonalLoop=1;jettySize=auto;html=0;strokeColor=#3B4D75;strokeWidth=1.9;startArrow=none;endArrow=classic;fontSize=10.5;fontColor=#0F172A;fontStyle=1;fontFamily=Segoe UI;labelBackgroundColor=#FFFFFF;labelBorderColor=none;" edge="1" parent="1">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="310" y="218" as="sourcePoint"/>
+            <mxPoint x="520" y="218" as="targetPoint"/>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="10_seq_detection_17" value="3. adjustedScore + zeroShotClassId" style="edgeStyle=orthogonalEdgeStyle;rounded=1;orthogonalLoop=1;jettySize=auto;html=0;strokeColor=#3B4D75;strokeWidth=1.9;startArrow=none;endArrow=classic;dashed=1;fontSize=10.5;fontColor=#0F172A;fontStyle=1;fontFamily=Segoe UI;labelBackgroundColor=#FFFFFF;labelBorderColor=none;" edge="1" parent="1">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="520" y="284" as="sourcePoint"/>
+            <mxPoint x="310" y="284" as="targetPoint"/>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="10_seq_detection_18" value="4. evaluate(items, prefs, ms)" style="edgeStyle=orthogonalEdgeStyle;rounded=1;orthogonalLoop=1;jettySize=auto;html=0;strokeColor=#2B5B84;strokeWidth=1.9;startArrow=none;endArrow=classic;fontSize=10.5;fontColor=#0F172A;fontStyle=1;fontFamily=Segoe UI;labelBackgroundColor=#FFFFFF;labelBorderColor=none;" edge="1" parent="1">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="310" y="348" as="sourcePoint"/>
+            <mxPoint x="730" y="348" as="targetPoint"/>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="10_seq_detection_19" value="5. triggerAlert(id, urgent, prio)" style="edgeStyle=orthogonalEdgeStyle;rounded=1;orthogonalLoop=1;jettySize=auto;html=0;strokeColor=#8B3A3A;strokeWidth=1.9;startArrow=none;endArrow=classic;fontSize=10.5;fontColor=#0F172A;fontStyle=1;fontFamily=Segoe UI;labelBackgroundColor=#FFFFFF;labelBorderColor=none;" edge="1" parent="1">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="730" y="438" as="sourcePoint"/>
+            <mxPoint x="935" y="438" as="targetPoint"/>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="10_seq_detection_20" value="6. updateHUD() + insertDetection()" style="edgeStyle=orthogonalEdgeStyle;rounded=1;orthogonalLoop=1;jettySize=auto;html=0;strokeColor=#475569;strokeWidth=1.9;startArrow=none;endArrow=classic;fontSize=10.5;fontColor=#0F172A;fontStyle=1;fontFamily=Segoe UI;labelBackgroundColor=#FFFFFF;labelBorderColor=none;" edge="1" parent="1">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="730" y="492" as="sourcePoint"/>
+            <mxPoint x="1125" y="492" as="targetPoint"/>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="10_seq_detection_21" value="7. readyForNextFrame (&lt;150ms cycle latency)" style="edgeStyle=orthogonalEdgeStyle;rounded=1;orthogonalLoop=1;jettySize=auto;html=0;strokeColor=#1B365D;strokeWidth=1.9;startArrow=none;endArrow=classic;dashed=1;fontSize=10.5;fontColor=#0F172A;fontStyle=1;fontFamily=Segoe UI;labelBackgroundColor=#FFFFFF;labelBorderColor=none;" edge="1" parent="1">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="935" y="545" as="sourcePoint"/>
+            <mxPoint x="105" y="545" as="targetPoint"/>
+          </mxGeometry>
+        </mxCell>
+      </root>
+    </mxGraphModel>
+  </diagram>
+</mxfile>

@@ -1,0 +1,140 @@
+<?xml version="1.0" ?>
+<mxfile host="app.diagrams.net" modified="2026-11-14T06:00:00Z" agent="draw.io" version="24.7.0">
+  <diagram id="05_dfd_level1" name="DFD Level 1 - Sequential End-to-End Inference, V">
+    <mxGraphModel dx="1420" dy="820" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="1280" pageHeight="700" background="#FFFFFF">
+      <root>
+        <mxCell id="0"/>
+        <mxCell id="1" parent="0"/>
+        <mxCell id="05_dfd_level1_2" value="DFD Level 1 - Sequential End-to-End Inference, Verification &amp; Persistence" style="rounded=1;whiteSpace=wrap;html=0;fillColor=#1B365D;strokeColor=#1B365D;fontColor=#FFFFFF;fontSize=15;fontStyle=1;align=left;spacingLeft=18;fontFamily=Segoe UI;" parent="1" vertex="1">
+          <mxGeometry x="16" y="12" width="1248" height="38" as="geometry"/>
+        </mxCell>
+        <mxCell id="05_dfd_level1_3" value="Driver / Admin&#10;(UI &amp; Controls)" style="rounded=1;arcSize=12;whiteSpace=wrap;html=0;fillColor=#E8EEF5;strokeColor=#2B5B84;strokeWidth=2;fontColor=#0F172A;fontSize=11.5;fontStyle=1;align=center;verticalAlign=middle;spacing=6;fontFamily=Segoe UI;" parent="1" vertex="1">
+          <mxGeometry x="24" y="108" width="170" height="62" as="geometry"/>
+        </mxCell>
+        <mxCell id="05_dfd_level1_4" value="CameraX + GPS&#10;Sensor Stream" style="rounded=1;arcSize=12;whiteSpace=wrap;html=0;fillColor=#EDF3F9;strokeColor=#335C81;strokeWidth=2;fontColor=#0F172A;fontSize=11.5;fontStyle=1;align=center;verticalAlign=middle;spacing=6;fontFamily=Segoe UI;" parent="1" vertex="1">
+          <mxGeometry x="24" y="322" width="170" height="62" as="geometry"/>
+        </mxCell>
+        <mxCell id="05_dfd_level1_5" value="Firebase RTDB&#10;(Optional Sync)" style="rounded=1;arcSize=12;whiteSpace=wrap;html=0;fillColor=#F1F5F9;strokeColor=#475569;strokeWidth=2;fontColor=#0F172A;fontSize=11.5;fontStyle=1;align=center;verticalAlign=middle;spacing=6;fontFamily=Segoe UI;" parent="1" vertex="1">
+          <mxGeometry x="1080" y="520" width="174" height="62" as="geometry"/>
+        </mxCell>
+        <mxCell id="05_dfd_level1_6" value="P1: Auth, RBAC &amp;&#10;Preferences Manager&#10;(Driver / Guest / Admin)" style="rounded=1;arcSize=12;whiteSpace=wrap;html=0;fillColor=#FFFFFF;strokeColor=#1B365D;strokeWidth=2;fontColor=#0F172A;fontSize=11;fontStyle=1;align=center;verticalAlign=middle;spacing=6;fontFamily=Segoe UI;" parent="1" vertex="1">
+          <mxGeometry x="290" y="98" width="210" height="80" as="geometry"/>
+        </mxCell>
+        <mxCell id="05_dfd_level1_7" value="P2: Camera Frame&#10;Preprocessor&#10;(Rotation + 640x640)" style="rounded=1;arcSize=12;whiteSpace=wrap;html=0;fillColor=#FFFFFF;strokeColor=#335C81;strokeWidth=2;fontColor=#0F172A;fontSize=11;fontStyle=1;align=center;verticalAlign=middle;spacing=6;fontFamily=Segoe UI;" parent="1" vertex="1">
+          <mxGeometry x="290" y="312" width="210" height="80" as="geometry"/>
+        </mxCell>
+        <mxCell id="05_dfd_level1_8" value="P3: Hybrid AI Inference&#10;YoloOnnxEngine + ML Kit OCR&#10;&amp; AdasSignVerifier&#10;(Bayesian Log-Odds)" style="rounded=1;arcSize=12;whiteSpace=wrap;html=0;fillColor=#EDF3F9;strokeColor=#335C81;strokeWidth=2;fontColor=#0F172A;fontSize=10.8;fontStyle=1;align=center;verticalAlign=middle;spacing=6;fontFamily=Segoe UI;" parent="1" vertex="1">
+          <mxGeometry x="590" y="302" width="230" height="98" as="geometry"/>
+        </mxCell>
+        <mxCell id="05_dfd_level1_9" value="P4: Temporal Tracker &amp;&#10;Priority Evaluator&#10;(2-of-3 Frames + Cooldown)" style="rounded=1;arcSize=12;whiteSpace=wrap;html=0;fillColor=#E8EEF5;strokeColor=#2B5B84;strokeWidth=2;fontColor=#0F172A;fontSize=10.8;fontStyle=1;align=center;verticalAlign=middle;spacing=6;fontFamily=Segoe UI;" parent="1" vertex="1">
+          <mxGeometry x="910" y="312" width="215" height="80" as="geometry"/>
+        </mxCell>
+        <mxCell id="05_dfd_level1_10" value="P5: SoundPool Audio &amp;&#10;HUD Render Dispatch&#10;(40 MP3s + Chime)" style="rounded=1;arcSize=12;whiteSpace=wrap;html=0;fillColor=#FAF2F2;strokeColor=#8B3A3A;strokeWidth=2;fontColor=#0F172A;fontSize=10.8;fontStyle=1;align=center;verticalAlign=middle;spacing=6;fontFamily=Segoe UI;" parent="1" vertex="1">
+          <mxGeometry x="910" y="100" width="215" height="78" as="geometry"/>
+        </mxCell>
+        <mxCell id="05_dfd_level1_11" value="P6: Trip Logger, CSV/TXT&#10;Exporter &amp; Cloud Sync&#10;(Local + Optional REST)" style="rounded=1;arcSize=12;whiteSpace=wrap;html=0;fillColor=#F1F5F9;strokeColor=#475569;strokeWidth=2;fontColor=#0F172A;fontSize=10.8;fontStyle=1;align=center;verticalAlign=middle;spacing=6;fontFamily=Segoe UI;" parent="1" vertex="1">
+          <mxGeometry x="590" y="512" width="230" height="80" as="geometry"/>
+        </mxCell>
+        <mxCell id="05_dfd_level1_12" value="D1  |  USERS &amp; PREFERENCES" style="shape=partialRectangle;whiteSpace=wrap;html=0;left=0;right=0;fillColor=#F1F5F9;strokeColor=#475569;strokeWidth=2;fontColor=#0F172A;fontSize=11;fontStyle=1;align=center;spacingLeft=4;spacingRight=4;fontFamily=Segoe UI;" parent="1" vertex="1">
+          <mxGeometry x="605" y="114" width="215" height="48" as="geometry"/>
+        </mxCell>
+        <mxCell id="05_dfd_level1_13" value="D2  |  vision_local.db (SQLite v4)&#10;TRIP &amp; DETECTION_RECORD" style="shape=partialRectangle;whiteSpace=wrap;html=0;left=0;right=0;fillColor=#F1F5F9;strokeColor=#475569;strokeWidth=2;fontColor=#0F172A;fontSize=11;fontStyle=1;align=center;spacingLeft=4;spacingRight=4;fontFamily=Segoe UI;" parent="1" vertex="1">
+          <mxGeometry x="270" y="526" width="225" height="50" as="geometry"/>
+        </mxCell>
+        <mxCell id="05_dfd_level1_14" value="D3  |  res/raw (40 MP3s) &amp;&#10;yolo11n_adas_v2_640.onnx" style="shape=partialRectangle;whiteSpace=wrap;html=0;left=0;right=0;fillColor=#F1F5F9;strokeColor=#475569;strokeWidth=2;fontColor=#0F172A;fontSize=11;fontStyle=1;align=center;spacingLeft=4;spacingRight=4;fontFamily=Segoe UI;" parent="1" vertex="1">
+          <mxGeometry x="595" y="626" width="220" height="48" as="geometry"/>
+        </mxCell>
+        <mxCell id="05_dfd_level1_15" value="Login / Config" style="edgeStyle=orthogonalEdgeStyle;rounded=1;orthogonalLoop=1;jettySize=auto;html=0;strokeColor=#1B365D;strokeWidth=1.9;startArrow=none;endArrow=classic;fontSize=10.5;fontColor=#0F172A;fontStyle=1;fontFamily=Segoe UI;labelBackgroundColor=#FFFFFF;labelBorderColor=none;" edge="1" parent="1">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="194" y="139" as="sourcePoint"/>
+            <mxPoint x="290" y="139" as="targetPoint"/>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="05_dfd_level1_16" value="Read/Save" style="edgeStyle=orthogonalEdgeStyle;rounded=1;orthogonalLoop=1;jettySize=auto;html=0;strokeColor=#1B365D;strokeWidth=1.9;startArrow=classic;endArrow=classic;fontSize=10.5;fontColor=#0F172A;fontStyle=1;fontFamily=Segoe UI;labelBackgroundColor=#FFFFFF;labelBorderColor=none;" edge="1" parent="1">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="500" y="134" as="sourcePoint"/>
+            <mxPoint x="605" y="134" as="targetPoint"/>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="05_dfd_level1_17" value="Active Thresh &amp; Config" style="edgeStyle=orthogonalEdgeStyle;rounded=1;orthogonalLoop=1;jettySize=auto;html=0;strokeColor=#475569;strokeWidth=1.9;startArrow=none;endArrow=classic;dashed=1;fontSize=10.5;fontColor=#0F172A;fontStyle=1;fontFamily=Segoe UI;labelBackgroundColor=#FFFFFF;labelBorderColor=none;" edge="1" parent="1">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="500" y="162" as="sourcePoint"/>
+            <mxPoint x="705" y="302" as="targetPoint"/>
+            <Array as="points">
+              <mxPoint x="555" y="162"/>
+              <mxPoint x="555" y="226"/>
+              <mxPoint x="705" y="226"/>
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="05_dfd_level1_18" value="YUV Frame" style="edgeStyle=orthogonalEdgeStyle;rounded=1;orthogonalLoop=1;jettySize=auto;html=0;strokeColor=#335C81;strokeWidth=1.9;startArrow=none;endArrow=classic;fontSize=10.5;fontColor=#0F172A;fontStyle=1;fontFamily=Segoe UI;labelBackgroundColor=#FFFFFF;labelBorderColor=none;" edge="1" parent="1">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="194" y="353" as="sourcePoint"/>
+            <mxPoint x="290" y="353" as="targetPoint"/>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="05_dfd_level1_19" value="RGB Tensor" style="edgeStyle=orthogonalEdgeStyle;rounded=1;orthogonalLoop=1;jettySize=auto;html=0;strokeColor=#335C81;strokeWidth=1.9;startArrow=none;endArrow=classic;fontSize=10.5;fontColor=#0F172A;fontStyle=1;fontFamily=Segoe UI;labelBackgroundColor=#FFFFFF;labelBorderColor=none;" edge="1" parent="1">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="500" y="353" as="sourcePoint"/>
+            <mxPoint x="590" y="353" as="targetPoint"/>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="05_dfd_level1_20" value="Load ONNX / MP3s" style="edgeStyle=orthogonalEdgeStyle;rounded=1;orthogonalLoop=1;jettySize=auto;html=0;strokeColor=#475569;strokeWidth=1.9;startArrow=none;endArrow=classic;dashed=1;fontSize=10.5;fontColor=#0F172A;fontStyle=1;fontFamily=Segoe UI;labelBackgroundColor=#FFFFFF;labelBorderColor=none;" edge="1" parent="1">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="595" y="650" as="sourcePoint"/>
+            <mxPoint x="590" y="376" as="targetPoint"/>
+            <Array as="points">
+              <mxPoint x="542" y="650"/>
+              <mxPoint x="542" y="376"/>
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="05_dfd_level1_21" value="Verified Signs" style="edgeStyle=orthogonalEdgeStyle;rounded=1;orthogonalLoop=1;jettySize=auto;html=0;strokeColor=#2B5B84;strokeWidth=1.9;startArrow=none;endArrow=classic;fontSize=10.5;fontColor=#0F172A;fontStyle=1;fontFamily=Segoe UI;labelBackgroundColor=#FFFFFF;labelBorderColor=none;" edge="1" parent="1">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="820" y="353" as="sourcePoint"/>
+            <mxPoint x="910" y="353" as="targetPoint"/>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="05_dfd_level1_22" value="Life-First Hazard" style="edgeStyle=orthogonalEdgeStyle;rounded=1;orthogonalLoop=1;jettySize=auto;html=0;strokeColor=#8B3A3A;strokeWidth=1.9;startArrow=none;endArrow=classic;fontSize=10.5;fontColor=#0F172A;fontStyle=1;fontFamily=Segoe UI;labelBackgroundColor=#FFFFFF;labelBorderColor=none;" edge="1" parent="1">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="1018" y="312" as="sourcePoint"/>
+            <mxPoint x="1018" y="178" as="targetPoint"/>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="05_dfd_level1_23" value="AR/EN Voice &amp; Red Alert Banner" style="edgeStyle=orthogonalEdgeStyle;rounded=1;orthogonalLoop=1;jettySize=auto;html=0;strokeColor=#8B3A3A;strokeWidth=1.9;startArrow=none;endArrow=classic;fontSize=10.5;fontColor=#0F172A;fontStyle=1;fontFamily=Segoe UI;labelBackgroundColor=#FFFFFF;labelBorderColor=none;" edge="1" parent="1">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="910" y="132" as="sourcePoint"/>
+            <mxPoint x="108" y="108" as="targetPoint"/>
+            <Array as="points">
+              <mxPoint x="860" y="132"/>
+              <mxPoint x="860" y="74"/>
+              <mxPoint x="108" y="74"/>
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="05_dfd_level1_24" value="Confirmed Detection + GPS" style="edgeStyle=orthogonalEdgeStyle;rounded=1;orthogonalLoop=1;jettySize=auto;html=0;strokeColor=#475569;strokeWidth=1.9;startArrow=none;endArrow=classic;fontSize=10.5;fontColor=#0F172A;fontStyle=1;fontFamily=Segoe UI;labelBackgroundColor=#FFFFFF;labelBorderColor=none;" edge="1" parent="1">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="1018" y="392" as="sourcePoint"/>
+            <mxPoint x="705" y="512" as="targetPoint"/>
+            <Array as="points">
+              <mxPoint x="1018" y="466"/>
+              <mxPoint x="705" y="466"/>
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="05_dfd_level1_25" value="INSERT" style="edgeStyle=orthogonalEdgeStyle;rounded=1;orthogonalLoop=1;jettySize=auto;html=0;strokeColor=#1B365D;strokeWidth=1.9;startArrow=classic;endArrow=classic;fontSize=10.5;fontColor=#0F172A;fontStyle=1;fontFamily=Segoe UI;labelBackgroundColor=#FFFFFF;labelBorderColor=none;" edge="1" parent="1">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="590" y="551" as="sourcePoint"/>
+            <mxPoint x="495" y="551" as="targetPoint"/>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="05_dfd_level1_26" value="Async Sync (if enabled)" style="edgeStyle=orthogonalEdgeStyle;rounded=1;orthogonalLoop=1;jettySize=auto;html=0;strokeColor=#475569;strokeWidth=1.9;startArrow=classic;endArrow=classic;fontSize=10.5;fontColor=#0F172A;fontStyle=1;fontFamily=Segoe UI;labelBackgroundColor=#FFFFFF;labelBorderColor=none;" edge="1" parent="1">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="820" y="551" as="sourcePoint"/>
+            <mxPoint x="1080" y="551" as="targetPoint"/>
+          </mxGeometry>
+        </mxCell>
+      </root>
+    </mxGraphModel>
+  </diagram>
+</mxfile>

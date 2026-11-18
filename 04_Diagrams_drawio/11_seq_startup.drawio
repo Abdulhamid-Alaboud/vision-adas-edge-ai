@@ -1,0 +1,80 @@
+<?xml version="1.0" ?>
+<mxfile host="app.diagrams.net" modified="2026-11-14T06:00:00Z" agent="draw.io" version="24.7.0">
+  <diagram id="11_seq_startup" name="Sequence Diagram 2 - Offline Cold-Start &amp; Asset ">
+    <mxGraphModel dx="1420" dy="820" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="1180" pageHeight="560" background="#FFFFFF">
+      <root>
+        <mxCell id="0"/>
+        <mxCell id="1" parent="0"/>
+        <mxCell id="11_seq_startup_2" value="Sequence Diagram 2 - Offline Cold-Start &amp; Asset Initialization" style="rounded=1;whiteSpace=wrap;html=0;fillColor=#1B365D;strokeColor=#1B365D;fontColor=#FFFFFF;fontSize=15;fontStyle=1;align=left;spacingLeft=18;fontFamily=Segoe UI;" parent="1" vertex="1">
+          <mxGeometry x="16" y="12" width="1148" height="38" as="geometry"/>
+        </mxCell>
+        <mxCell id="11_seq_startup_3" value="MainActivity&#10;(App Entry)" style="shape=umlLifeline;perimeter=lifelinePerimeter;whiteSpace=wrap;html=0;container=1;dropTarget=0;collapsible=0;recursiveResize=0;outlineConnect=0;portConstraint=eastwest;size=46;fillColor=#EDF3F9;strokeColor=#1B365D;strokeWidth=2;fontColor=#0F172A;fontSize=11;fontStyle=1;fontFamily=Segoe UI;" parent="1" vertex="1">
+          <mxGeometry x="30.0" y="70" width="160" height="460" as="geometry"/>
+        </mxCell>
+        <mxCell id="11_seq_startup_4" value="Prefs &amp; DB&#10;(SQLite v4)" style="shape=umlLifeline;perimeter=lifelinePerimeter;whiteSpace=wrap;html=0;container=1;dropTarget=0;collapsible=0;recursiveResize=0;outlineConnect=0;portConstraint=eastwest;size=46;fillColor=#F1F5F9;strokeColor=#475569;strokeWidth=2;fontColor=#0F172A;fontSize=11;fontStyle=1;fontFamily=Segoe UI;" parent="1" vertex="1">
+          <mxGeometry x="260.0" y="70" width="160" height="460" as="geometry"/>
+        </mxCell>
+        <mxCell id="11_seq_startup_5" value="YoloOnnxEngine&#10;(FP32 ONNX)" style="shape=umlLifeline;perimeter=lifelinePerimeter;whiteSpace=wrap;html=0;container=1;dropTarget=0;collapsible=0;recursiveResize=0;outlineConnect=0;portConstraint=eastwest;size=46;fillColor=#EDF3F9;strokeColor=#335C81;strokeWidth=2;fontColor=#0F172A;fontSize=11;fontStyle=1;fontFamily=Segoe UI;" parent="1" vertex="1">
+          <mxGeometry x="500.0" y="70" width="160" height="460" as="geometry"/>
+        </mxCell>
+        <mxCell id="11_seq_startup_6" value="AlertSystem&#10;(res/raw Audio)" style="shape=umlLifeline;perimeter=lifelinePerimeter;whiteSpace=wrap;html=0;container=1;dropTarget=0;collapsible=0;recursiveResize=0;outlineConnect=0;portConstraint=eastwest;size=46;fillColor=#FAF2F2;strokeColor=#8B3A3A;strokeWidth=2;fontColor=#0F172A;fontSize=11;fontStyle=1;fontFamily=Segoe UI;" parent="1" vertex="1">
+          <mxGeometry x="745.0" y="70" width="160" height="460" as="geometry"/>
+        </mxCell>
+        <mxCell id="11_seq_startup_7" value="AuthScreen&#10;(Compose UI)" style="shape=umlLifeline;perimeter=lifelinePerimeter;whiteSpace=wrap;html=0;container=1;dropTarget=0;collapsible=0;recursiveResize=0;outlineConnect=0;portConstraint=eastwest;size=46;fillColor=#EEF5F2;strokeColor=#2C5E50;strokeWidth=2;fontColor=#0F172A;fontSize=11;fontStyle=1;fontFamily=Segoe UI;" parent="1" vertex="1">
+          <mxGeometry x="980.0" y="70" width="160" height="460" as="geometry"/>
+        </mxCell>
+        <mxCell id="11_seq_startup_8" value="" style="html=0;points=[[0,0,0,0,5],[0,1,0,0,-5],[1,0,0,0,5],[1,1,0,0,-5]];perimeter=orthogonalPerimeter;outlineConnect=0;targetShapes=umlLifeline;portConstraint=eastwest;newEdgeStyle={&quot;curved&quot;:0,&quot;rounded&quot;:0};fillColor=#EFF4FA;strokeColor=#1B365D;strokeWidth=1.5;" parent="11_seq_startup_3" vertex="1">
+          <mxGeometry x="74.0" y="70" width="12" height="360" as="geometry"/>
+        </mxCell>
+        <mxCell id="11_seq_startup_9" value="" style="html=0;points=[[0,0,0,0,5],[0,1,0,0,-5],[1,0,0,0,5],[1,1,0,0,-5]];perimeter=orthogonalPerimeter;outlineConnect=0;targetShapes=umlLifeline;portConstraint=eastwest;newEdgeStyle={&quot;curved&quot;:0,&quot;rounded&quot;:0};fillColor=#F4F6F9;strokeColor=#475569;strokeWidth=1.5;" parent="11_seq_startup_4" vertex="1">
+          <mxGeometry x="74.0" y="88" width="12" height="90" as="geometry"/>
+        </mxCell>
+        <mxCell id="11_seq_startup_10" value="" style="html=0;points=[[0,0,0,0,5],[0,1,0,0,-5],[1,0,0,0,5],[1,1,0,0,-5]];perimeter=orthogonalPerimeter;outlineConnect=0;targetShapes=umlLifeline;portConstraint=eastwest;newEdgeStyle={&quot;curved&quot;:0,&quot;rounded&quot;:0};fillColor=#EFF4FA;strokeColor=#335C81;strokeWidth=1.5;" parent="11_seq_startup_5" vertex="1">
+          <mxGeometry x="74.0" y="185" width="12" height="95" as="geometry"/>
+        </mxCell>
+        <mxCell id="11_seq_startup_11" value="" style="html=0;points=[[0,0,0,0,5],[0,1,0,0,-5],[1,0,0,0,5],[1,1,0,0,-5]];perimeter=orthogonalPerimeter;outlineConnect=0;targetShapes=umlLifeline;portConstraint=eastwest;newEdgeStyle={&quot;curved&quot;:0,&quot;rounded&quot;:0};fillColor=#FAF2F2;strokeColor=#8B3A3A;strokeWidth=1.5;" parent="11_seq_startup_6" vertex="1">
+          <mxGeometry x="74.0" y="290" width="12" height="75" as="geometry"/>
+        </mxCell>
+        <mxCell id="11_seq_startup_12" value="" style="html=0;points=[[0,0,0,0,5],[0,1,0,0,-5],[1,0,0,0,5],[1,1,0,0,-5]];perimeter=orthogonalPerimeter;outlineConnect=0;targetShapes=umlLifeline;portConstraint=eastwest;newEdgeStyle={&quot;curved&quot;:0,&quot;rounded&quot;:0};fillColor=#F4F7FA;strokeColor=#2C5E50;strokeWidth=1.5;" parent="11_seq_startup_7" vertex="1">
+          <mxGeometry x="74.0" y="375" width="12" height="55" as="geometry"/>
+        </mxCell>
+        <mxCell id="11_seq_startup_13" value="1. readPrefs() &amp; init vision_local.db v4" style="edgeStyle=orthogonalEdgeStyle;rounded=1;orthogonalLoop=1;jettySize=auto;html=0;strokeColor=#1B365D;strokeWidth=1.9;startArrow=none;endArrow=classic;fontSize=10.5;fontColor=#0F172A;fontStyle=1;fontFamily=Segoe UI;labelBackgroundColor=#FFFFFF;labelBorderColor=none;" edge="1" parent="1">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="110" y="168" as="sourcePoint"/>
+            <mxPoint x="340" y="168" as="targetPoint"/>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="11_seq_startup_14" value="2. Lang (AR/EN), Vol, Thresh 0.40 + Location" style="edgeStyle=orthogonalEdgeStyle;rounded=1;orthogonalLoop=1;jettySize=auto;html=0;strokeColor=#475569;strokeWidth=1.9;startArrow=none;endArrow=classic;dashed=1;fontSize=10.5;fontColor=#0F172A;fontStyle=1;fontFamily=Segoe UI;labelBackgroundColor=#FFFFFF;labelBorderColor=none;" edge="1" parent="1">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="340" y="218" as="sourcePoint"/>
+            <mxPoint x="110" y="218" as="targetPoint"/>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="11_seq_startup_15" value="3. loadAsset(yolo11n_adas_v2_640.onnx)" style="edgeStyle=orthogonalEdgeStyle;rounded=1;orthogonalLoop=1;jettySize=auto;html=0;strokeColor=#335C81;strokeWidth=1.9;startArrow=none;endArrow=classic;fontSize=10.5;fontColor=#0F172A;fontStyle=1;fontFamily=Segoe UI;labelBackgroundColor=#FFFFFF;labelBorderColor=none;" edge="1" parent="1">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="110" y="266" as="sourcePoint"/>
+            <mxPoint x="580" y="266" as="targetPoint"/>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="11_seq_startup_16" value="4. OrtSession Ready (Multi-Thread CPU, 10.12 MiB)" style="edgeStyle=orthogonalEdgeStyle;rounded=1;orthogonalLoop=1;jettySize=auto;html=0;strokeColor=#2B5B84;strokeWidth=1.9;startArrow=none;endArrow=classic;dashed=1;fontSize=10.5;fontColor=#0F172A;fontStyle=1;fontFamily=Segoe UI;labelBackgroundColor=#FFFFFF;labelBorderColor=none;" edge="1" parent="1">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="580" y="320" as="sourcePoint"/>
+            <mxPoint x="110" y="320" as="targetPoint"/>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="11_seq_startup_17" value="5. preloadSoundPool(40 AR/EN MP3 + Chime)" style="edgeStyle=orthogonalEdgeStyle;rounded=1;orthogonalLoop=1;jettySize=auto;html=0;strokeColor=#8B3A3A;strokeWidth=1.9;startArrow=none;endArrow=classic;fontSize=10.5;fontColor=#0F172A;fontStyle=1;fontFamily=Segoe UI;labelBackgroundColor=#FFFFFF;labelBorderColor=none;" edge="1" parent="1">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="110" y="370" as="sourcePoint"/>
+            <mxPoint x="825" y="370" as="targetPoint"/>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="11_seq_startup_18" value="6. renderAuthGate() [100% Zero Network Needed]" style="edgeStyle=orthogonalEdgeStyle;rounded=1;orthogonalLoop=1;jettySize=auto;html=0;strokeColor=#2C5E50;strokeWidth=1.9;startArrow=none;endArrow=classic;fontSize=10.5;fontColor=#0F172A;fontStyle=1;fontFamily=Segoe UI;labelBackgroundColor=#FFFFFF;labelBorderColor=none;" edge="1" parent="1">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="110" y="450" as="sourcePoint"/>
+            <mxPoint x="1060" y="450" as="targetPoint"/>
+          </mxGeometry>
+        </mxCell>
+      </root>
+    </mxGraphModel>
+  </diagram>
+</mxfile>

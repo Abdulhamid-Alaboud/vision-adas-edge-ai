@@ -1,0 +1,244 @@
+<?xml version="1.0" ?>
+<mxfile host="app.diagrams.net" modified="2026-11-14T06:00:00Z" agent="draw.io" version="24.7.0">
+  <diagram id="16_activity_workflows" name="System Activity Diagrams: Detection, Sensor/Expo">
+    <mxGraphModel dx="1420" dy="820" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="1280" pageHeight="680" background="#FFFFFF">
+      <root>
+        <mxCell id="0"/>
+        <mxCell id="1" parent="0"/>
+        <mxCell id="16_activity_workflows_2" value="System Activity Diagrams: Detection, Sensor/Export &amp; Preferences" style="rounded=1;whiteSpace=wrap;html=0;fillColor=#1B365D;strokeColor=#1B365D;fontColor=#FFFFFF;fontSize=15;fontStyle=1;align=left;spacingLeft=18;fontFamily=Segoe UI;" parent="1" vertex="1">
+          <mxGeometry x="16" y="12" width="1248" height="38" as="geometry"/>
+        </mxCell>
+        <mxCell id="16_activity_workflows_3" value="A. Real-Time Detection &amp; Alert Workflow" style="swimlane;whiteSpace=wrap;html=0;startSize=30;rounded=1;arcSize=8;fillColor=#335C81;swimlaneFillColor=#F8FAFC;strokeColor=#335C81;strokeWidth=2;fontColor=#FFFFFF;fontSize=12;fontStyle=1;collapsible=0;fontFamily=Segoe UI;" parent="1" vertex="1">
+          <mxGeometry x="20" y="68" width="396" height="588" as="geometry"/>
+        </mxCell>
+        <mxCell id="16_activity_workflows_4" value="B. Location Tracking, Cooldown &amp; Export" style="swimlane;whiteSpace=wrap;html=0;startSize=30;rounded=1;arcSize=8;fillColor=#2B5B84;swimlaneFillColor=#F8FAFC;strokeColor=#2B5B84;strokeWidth=2;fontColor=#FFFFFF;fontSize=12;fontStyle=1;collapsible=0;fontFamily=Segoe UI;" parent="1" vertex="1">
+          <mxGeometry x="442" y="68" width="396" height="588" as="geometry"/>
+        </mxCell>
+        <mxCell id="16_activity_workflows_5" value="C. User Settings &amp; Calibration Flow" style="swimlane;whiteSpace=wrap;html=0;startSize=30;rounded=1;arcSize=8;fillColor=#3B4D75;swimlaneFillColor=#F8FAFC;strokeColor=#3B4D75;strokeWidth=2;fontColor=#FFFFFF;fontSize=12;fontStyle=1;collapsible=0;fontFamily=Segoe UI;" parent="1" vertex="1">
+          <mxGeometry x="864" y="68" width="396" height="588" as="geometry"/>
+        </mxCell>
+        <mxCell id="16_activity_workflows_6" value="Start" style="ellipse;whiteSpace=wrap;html=0;fillColor=#1B365D;strokeColor=#1B365D;strokeWidth=2;fontColor=#FFFFFF;fontSize=10;fontStyle=1;spacing=6;fontFamily=Segoe UI;" parent="1" vertex="1">
+          <mxGeometry x="188" y="114" width="60" height="28" as="geometry"/>
+        </mxCell>
+        <mxCell id="16_activity_workflows_7" value="1. Capture CameraX Frame&#10;(YuvToRgb + Orientation Fix)" style="rounded=1;arcSize=12;whiteSpace=wrap;html=0;fillColor=#FFFFFF;strokeColor=#335C81;strokeWidth=2;fontColor=#0F172A;fontSize=10.5;fontStyle=1;align=center;verticalAlign=middle;spacing=6;fontFamily=Segoe UI;" parent="1" vertex="1">
+          <mxGeometry x="93" y="162" width="250" height="44" as="geometry"/>
+        </mxCell>
+        <mxCell id="16_activity_workflows_8" value="2. YoloOnnxEngine FP32 + Dual&#10;Verify (Bayesian + ML Kit OCR)" style="rounded=1;arcSize=12;whiteSpace=wrap;html=0;fillColor=#EDF3F9;strokeColor=#335C81;strokeWidth=2;fontColor=#0F172A;fontSize=10.5;fontStyle=1;align=center;verticalAlign=middle;spacing=6;fontFamily=Segoe UI;" parent="1" vertex="1">
+          <mxGeometry x="93" y="226" width="250" height="48" as="geometry"/>
+        </mxCell>
+        <mxCell id="16_activity_workflows_9" value="Verified &amp; &gt;= Class&#10;Calib Floor?" style="rhombus;whiteSpace=wrap;html=0;fillColor=#F1F5F9;strokeColor=#475569;strokeWidth=2;fontColor=#0F172A;fontSize=10.2;fontStyle=1;spacing=4;fontFamily=Segoe UI;" parent="1" vertex="1">
+          <mxGeometry x="123" y="296" width="190" height="74" as="geometry"/>
+        </mxCell>
+        <mxCell id="16_activity_workflows_10" value="3. HazardEvaluator Temporal&#10;2-of-3 Consensus + Life-First Sort" style="rounded=1;arcSize=12;whiteSpace=wrap;html=0;fillColor=#E8EEF5;strokeColor=#2B5B84;strokeWidth=2;fontColor=#0F172A;fontSize=10.5;fontStyle=1;align=center;verticalAlign=middle;spacing=6;fontFamily=Segoe UI;" parent="1" vertex="1">
+          <mxGeometry x="93" y="394" width="250" height="48" as="geometry"/>
+        </mxCell>
+        <mxCell id="16_activity_workflows_11" value="4. Cooldown Check -&gt; SoundPool&#10;(40 MP3s) + Red Banner + SQLite v4" style="rounded=1;arcSize=12;whiteSpace=wrap;html=0;fillColor=#FAF2F2;strokeColor=#8B3A3A;strokeWidth=2;fontColor=#0F172A;fontSize=10.5;fontStyle=1;align=center;verticalAlign=middle;spacing=6;fontFamily=Segoe UI;" parent="1" vertex="1">
+          <mxGeometry x="93" y="464" width="250" height="48" as="geometry"/>
+        </mxCell>
+        <mxCell id="16_activity_workflows_12" value="5. Loop to Next CameraX Frame" style="rounded=1;arcSize=12;whiteSpace=wrap;html=0;fillColor=#F8FAFC;strokeColor=#475569;strokeWidth=2;fontColor=#0F172A;fontSize=10.5;fontStyle=1;align=center;verticalAlign=middle;spacing=6;fontFamily=Segoe UI;" parent="1" vertex="1">
+          <mxGeometry x="93" y="536" width="250" height="40" as="geometry"/>
+        </mxCell>
+        <mxCell id="16_activity_workflows_13" value="Loop" style="ellipse;whiteSpace=wrap;html=0;fillColor=#2C5E50;strokeColor=#2C5E50;strokeWidth=2;fontColor=#FFFFFF;fontSize=10;fontStyle=1;spacing=6;fontFamily=Segoe UI;" parent="1" vertex="1">
+          <mxGeometry x="188" y="598" width="60" height="28" as="geometry"/>
+        </mxCell>
+        <mxCell id="16_activity_workflows_14" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=1;orthogonalLoop=1;jettySize=auto;html=0;strokeColor=#335C81;strokeWidth=1.9;startArrow=none;endArrow=classic;fontSize=10.5;fontColor=#0F172A;fontStyle=1;fontFamily=Segoe UI;labelBackgroundColor=#FFFFFF;labelBorderColor=none;" edge="1" parent="1">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="218" y="142" as="sourcePoint"/>
+            <mxPoint x="218" y="162" as="targetPoint"/>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="16_activity_workflows_15" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=1;orthogonalLoop=1;jettySize=auto;html=0;strokeColor=#335C81;strokeWidth=1.9;startArrow=none;endArrow=classic;fontSize=10.5;fontColor=#0F172A;fontStyle=1;fontFamily=Segoe UI;labelBackgroundColor=#FFFFFF;labelBorderColor=none;" edge="1" parent="1">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="218" y="206" as="sourcePoint"/>
+            <mxPoint x="218" y="226" as="targetPoint"/>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="16_activity_workflows_16" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=1;orthogonalLoop=1;jettySize=auto;html=0;strokeColor=#335C81;strokeWidth=1.9;startArrow=none;endArrow=classic;fontSize=10.5;fontColor=#0F172A;fontStyle=1;fontFamily=Segoe UI;labelBackgroundColor=#FFFFFF;labelBorderColor=none;" edge="1" parent="1">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="218" y="274" as="sourcePoint"/>
+            <mxPoint x="218" y="296" as="targetPoint"/>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="16_activity_workflows_17" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=1;orthogonalLoop=1;jettySize=auto;html=0;strokeColor=#335C81;strokeWidth=1.9;startArrow=none;endArrow=classic;fontSize=10.5;fontColor=#0F172A;fontStyle=1;fontFamily=Segoe UI;labelBackgroundColor=#FFFFFF;labelBorderColor=none;" edge="1" parent="1">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="218" y="370" as="sourcePoint"/>
+            <mxPoint x="218" y="394" as="targetPoint"/>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="16_activity_workflows_18" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=1;orthogonalLoop=1;jettySize=auto;html=0;strokeColor=#335C81;strokeWidth=1.9;startArrow=none;endArrow=classic;fontSize=10.5;fontColor=#0F172A;fontStyle=1;fontFamily=Segoe UI;labelBackgroundColor=#FFFFFF;labelBorderColor=none;" edge="1" parent="1">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="218" y="442" as="sourcePoint"/>
+            <mxPoint x="218" y="464" as="targetPoint"/>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="16_activity_workflows_19" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=1;orthogonalLoop=1;jettySize=auto;html=0;strokeColor=#335C81;strokeWidth=1.9;startArrow=none;endArrow=classic;fontSize=10.5;fontColor=#0F172A;fontStyle=1;fontFamily=Segoe UI;labelBackgroundColor=#FFFFFF;labelBorderColor=none;" edge="1" parent="1">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="218" y="512" as="sourcePoint"/>
+            <mxPoint x="218" y="536" as="targetPoint"/>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="16_activity_workflows_20" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=1;orthogonalLoop=1;jettySize=auto;html=0;strokeColor=#335C81;strokeWidth=1.9;startArrow=none;endArrow=classic;fontSize=10.5;fontColor=#0F172A;fontStyle=1;fontFamily=Segoe UI;labelBackgroundColor=#FFFFFF;labelBorderColor=none;" edge="1" parent="1">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="218" y="576" as="sourcePoint"/>
+            <mxPoint x="218" y="598" as="targetPoint"/>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="16_activity_workflows_21" value="No" style="edgeStyle=orthogonalEdgeStyle;rounded=1;orthogonalLoop=1;jettySize=auto;html=0;strokeColor=#475569;strokeWidth=1.9;startArrow=none;endArrow=classic;fontSize=10.5;fontColor=#0F172A;fontStyle=1;fontFamily=Segoe UI;labelBackgroundColor=#FFFFFF;labelBorderColor=none;" edge="1" parent="1">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="313" y="333" as="sourcePoint"/>
+            <mxPoint x="343" y="184" as="targetPoint"/>
+            <Array as="points">
+              <mxPoint x="382" y="333"/>
+              <mxPoint x="382" y="184"/>
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="16_activity_workflows_22" value="Start" style="ellipse;whiteSpace=wrap;html=0;fillColor=#1B365D;strokeColor=#1B365D;strokeWidth=2;fontColor=#FFFFFF;fontSize=10;fontStyle=1;spacing=6;fontFamily=Segoe UI;" parent="1" vertex="1">
+          <mxGeometry x="610" y="114" width="60" height="28" as="geometry"/>
+        </mxCell>
+        <mxCell id="16_activity_workflows_23" value="1. Poll Offline LocationTracker&#10;(GPS / Fused / Network + Cache)" style="rounded=1;arcSize=12;whiteSpace=wrap;html=0;fillColor=#FFFFFF;strokeColor=#2B5B84;strokeWidth=2;fontColor=#0F172A;fontSize=10.5;fontStyle=1;align=center;verticalAlign=middle;spacing=6;fontFamily=Segoe UI;" parent="1" vertex="1">
+          <mxGeometry x="515" y="162" width="250" height="46" as="geometry"/>
+        </mxCell>
+        <mxCell id="16_activity_workflows_24" value="Valid Fix &amp; Outside&#10;Class Cooldown?" style="rhombus;whiteSpace=wrap;html=0;fillColor=#F1F5F9;strokeColor=#475569;strokeWidth=2;fontColor=#0F172A;fontSize=10.2;fontStyle=1;spacing=4;fontFamily=Segoe UI;" parent="1" vertex="1">
+          <mxGeometry x="545" y="232" width="190" height="74" as="geometry"/>
+        </mxCell>
+        <mxCell id="16_activity_workflows_25" value="Reuse Last Valid Fix&#10;&amp; Suppress Duplicate&#10;Voice Alerts" style="rounded=1;arcSize=12;whiteSpace=wrap;html=0;fillColor=#F1F5F9;strokeColor=#475569;strokeWidth=2;fontColor=#0F172A;fontSize=10;fontStyle=1;align=center;verticalAlign=middle;spacing=6;fontFamily=Segoe UI;" parent="1" vertex="1">
+          <mxGeometry x="470" y="342" width="155" height="58" as="geometry"/>
+        </mxCell>
+        <mxCell id="16_activity_workflows_26" value="Attach Live (lat, lon)&#10;&amp; Apply Class&#10;Cooldown Matrix" style="rounded=1;arcSize=12;whiteSpace=wrap;html=0;fillColor=#E8EEF5;strokeColor=#2B5B84;strokeWidth=2;fontColor=#0F172A;fontSize=10;fontStyle=1;align=center;verticalAlign=middle;spacing=6;fontFamily=Segoe UI;" parent="1" vertex="1">
+          <mxGeometry x="655" y="342" width="155" height="58" as="geometry"/>
+        </mxCell>
+        <mxCell id="16_activity_workflows_27" value="Async CSV/TXT Export &amp; Optional&#10;Firebase Sync (Non-Blocking)" style="rounded=1;arcSize=12;whiteSpace=wrap;html=0;fillColor=#EDF3F9;strokeColor=#335C81;strokeWidth=2;fontColor=#0F172A;fontSize=10.5;fontStyle=1;align=center;verticalAlign=middle;spacing=6;fontFamily=Segoe UI;" parent="1" vertex="1">
+          <mxGeometry x="515" y="434" width="250" height="52" as="geometry"/>
+        </mxCell>
+        <mxCell id="16_activity_workflows_28" value="Keep Detection Thread Clear&#10;(&lt;150ms Target Cycle Time)" style="rounded=1;arcSize=12;whiteSpace=wrap;html=0;fillColor=#EEF5F2;strokeColor=#2C5E50;strokeWidth=2;fontColor=#0F172A;fontSize=10.5;fontStyle=1;align=center;verticalAlign=middle;spacing=6;fontFamily=Segoe UI;" parent="1" vertex="1">
+          <mxGeometry x="515" y="514" width="250" height="48" as="geometry"/>
+        </mxCell>
+        <mxCell id="16_activity_workflows_29" value="End" style="ellipse;whiteSpace=wrap;html=0;fillColor=#1B365D;strokeColor=#1B365D;strokeWidth=2;fontColor=#FFFFFF;fontSize=10;fontStyle=1;spacing=6;fontFamily=Segoe UI;" parent="1" vertex="1">
+          <mxGeometry x="610" y="592" width="60" height="28" as="geometry"/>
+        </mxCell>
+        <mxCell id="16_activity_workflows_30" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=1;orthogonalLoop=1;jettySize=auto;html=0;strokeColor=#2B5B84;strokeWidth=1.9;startArrow=none;endArrow=classic;fontSize=10.5;fontColor=#0F172A;fontStyle=1;fontFamily=Segoe UI;labelBackgroundColor=#FFFFFF;labelBorderColor=none;" edge="1" parent="1">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="640" y="142" as="sourcePoint"/>
+            <mxPoint x="640" y="162" as="targetPoint"/>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="16_activity_workflows_31" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=1;orthogonalLoop=1;jettySize=auto;html=0;strokeColor=#2B5B84;strokeWidth=1.9;startArrow=none;endArrow=classic;fontSize=10.5;fontColor=#0F172A;fontStyle=1;fontFamily=Segoe UI;labelBackgroundColor=#FFFFFF;labelBorderColor=none;" edge="1" parent="1">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="640" y="208" as="sourcePoint"/>
+            <mxPoint x="640" y="232" as="targetPoint"/>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="16_activity_workflows_32" value="Yes" style="edgeStyle=orthogonalEdgeStyle;rounded=1;orthogonalLoop=1;jettySize=auto;html=0;strokeColor=#8B3A3A;strokeWidth=1.9;startArrow=none;endArrow=classic;fontSize=10.5;fontColor=#0F172A;fontStyle=1;fontFamily=Segoe UI;labelBackgroundColor=#FFFFFF;labelBorderColor=none;" edge="1" parent="1">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="545" y="269" as="sourcePoint"/>
+            <mxPoint x="518" y="342" as="targetPoint"/>
+            <Array as="points">
+              <mxPoint x="518" y="269"/>
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="16_activity_workflows_33" value="No" style="edgeStyle=orthogonalEdgeStyle;rounded=1;orthogonalLoop=1;jettySize=auto;html=0;strokeColor=#2B5B84;strokeWidth=1.9;startArrow=none;endArrow=classic;fontSize=10.5;fontColor=#0F172A;fontStyle=1;fontFamily=Segoe UI;labelBackgroundColor=#FFFFFF;labelBorderColor=none;" edge="1" parent="1">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="735" y="269" as="sourcePoint"/>
+            <mxPoint x="758" y="342" as="targetPoint"/>
+            <Array as="points">
+              <mxPoint x="758" y="269"/>
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="16_activity_workflows_34" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=1;orthogonalLoop=1;jettySize=auto;html=0;strokeColor=#2B5B84;strokeWidth=1.9;startArrow=none;endArrow=classic;fontSize=10.5;fontColor=#0F172A;fontStyle=1;fontFamily=Segoe UI;labelBackgroundColor=#FFFFFF;labelBorderColor=none;" edge="1" parent="1">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="547" y="400" as="sourcePoint"/>
+            <mxPoint x="547" y="434" as="targetPoint"/>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="16_activity_workflows_35" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=1;orthogonalLoop=1;jettySize=auto;html=0;strokeColor=#2B5B84;strokeWidth=1.9;startArrow=none;endArrow=classic;fontSize=10.5;fontColor=#0F172A;fontStyle=1;fontFamily=Segoe UI;labelBackgroundColor=#FFFFFF;labelBorderColor=none;" edge="1" parent="1">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="732" y="400" as="sourcePoint"/>
+            <mxPoint x="732" y="434" as="targetPoint"/>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="16_activity_workflows_36" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=1;orthogonalLoop=1;jettySize=auto;html=0;strokeColor=#2C5E50;strokeWidth=1.9;startArrow=none;endArrow=classic;fontSize=10.5;fontColor=#0F172A;fontStyle=1;fontFamily=Segoe UI;labelBackgroundColor=#FFFFFF;labelBorderColor=none;" edge="1" parent="1">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="640" y="486" as="sourcePoint"/>
+            <mxPoint x="640" y="514" as="targetPoint"/>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="16_activity_workflows_37" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=1;orthogonalLoop=1;jettySize=auto;html=0;strokeColor=#1B365D;strokeWidth=1.9;startArrow=none;endArrow=classic;fontSize=10.5;fontColor=#0F172A;fontStyle=1;fontFamily=Segoe UI;labelBackgroundColor=#FFFFFF;labelBorderColor=none;" edge="1" parent="1">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="640" y="562" as="sourcePoint"/>
+            <mxPoint x="640" y="592" as="targetPoint"/>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="16_activity_workflows_38" value="Start" style="ellipse;whiteSpace=wrap;html=0;fillColor=#1B365D;strokeColor=#1B365D;strokeWidth=2;fontColor=#FFFFFF;fontSize=10;fontStyle=1;spacing=6;fontFamily=Segoe UI;" parent="1" vertex="1">
+          <mxGeometry x="1032" y="114" width="60" height="28" as="geometry"/>
+        </mxCell>
+        <mxCell id="16_activity_workflows_39" value="1. Open Settings or Admin&#10;Calibration Matrix (RBAC Gate)" style="rounded=1;arcSize=12;whiteSpace=wrap;html=0;fillColor=#FFFFFF;strokeColor=#3B4D75;strokeWidth=2;fontColor=#0F172A;fontSize=10.5;fontStyle=1;align=center;verticalAlign=middle;spacing=6;fontFamily=Segoe UI;" parent="1" vertex="1">
+          <mxGeometry x="937" y="162" width="250" height="46" as="geometry"/>
+        </mxCell>
+        <mxCell id="16_activity_workflows_40" value="2. Modify AR/EN Language,&#10;Alert Volume, Global Conf&#10;[0.25..0.85] or Class Offsets" style="rounded=1;arcSize=12;whiteSpace=wrap;html=0;fillColor=#EEF1F7;strokeColor=#3B4D75;strokeWidth=2;fontColor=#0F172A;fontSize=10.2;fontStyle=1;align=center;verticalAlign=middle;spacing=6;fontFamily=Segoe UI;" parent="1" vertex="1">
+          <mxGeometry x="937" y="228" width="250" height="58" as="geometry"/>
+        </mxCell>
+        <mxCell id="16_activity_workflows_41" value="Values Within&#10;Safe Window?" style="rhombus;whiteSpace=wrap;html=0;fillColor=#F1F5F9;strokeColor=#475569;strokeWidth=2;fontColor=#0F172A;fontSize=10.2;fontStyle=1;spacing=4;fontFamily=Segoe UI;" parent="1" vertex="1">
+          <mxGeometry x="967" y="308" width="190" height="74" as="geometry"/>
+        </mxCell>
+        <mxCell id="16_activity_workflows_42" value="3. Save to PreferencesManager&#10;&amp; SQLite USER_PREFERENCES" style="rounded=1;arcSize=12;whiteSpace=wrap;html=0;fillColor=#E8EEF5;strokeColor=#2B5B84;strokeWidth=2;fontColor=#0F172A;fontSize=10.5;fontStyle=1;align=center;verticalAlign=middle;spacing=6;fontFamily=Segoe UI;" parent="1" vertex="1">
+          <mxGeometry x="937" y="408" width="250" height="48" as="geometry"/>
+        </mxCell>
+        <mxCell id="16_activity_workflows_43" value="4. Hot-Reload Engine, Evaluator&#10;&amp; AlertSystem (No Restart)" style="rounded=1;arcSize=12;whiteSpace=wrap;html=0;fillColor=#EEF5F2;strokeColor=#2C5E50;strokeWidth=2;fontColor=#0F172A;fontSize=10.5;fontStyle=1;align=center;verticalAlign=middle;spacing=6;fontFamily=Segoe UI;" parent="1" vertex="1">
+          <mxGeometry x="937" y="480" width="250" height="48" as="geometry"/>
+        </mxCell>
+        <mxCell id="16_activity_workflows_44" value="Saved" style="ellipse;whiteSpace=wrap;html=0;fillColor=#2C5E50;strokeColor=#2C5E50;strokeWidth=2;fontColor=#FFFFFF;fontSize=10;fontStyle=1;spacing=6;fontFamily=Segoe UI;" parent="1" vertex="1">
+          <mxGeometry x="1032" y="564" width="60" height="28" as="geometry"/>
+        </mxCell>
+        <mxCell id="16_activity_workflows_45" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=1;orthogonalLoop=1;jettySize=auto;html=0;strokeColor=#3B4D75;strokeWidth=1.9;startArrow=none;endArrow=classic;fontSize=10.5;fontColor=#0F172A;fontStyle=1;fontFamily=Segoe UI;labelBackgroundColor=#FFFFFF;labelBorderColor=none;" edge="1" parent="1">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="1062" y="142" as="sourcePoint"/>
+            <mxPoint x="1062" y="162" as="targetPoint"/>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="16_activity_workflows_46" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=1;orthogonalLoop=1;jettySize=auto;html=0;strokeColor=#3B4D75;strokeWidth=1.9;startArrow=none;endArrow=classic;fontSize=10.5;fontColor=#0F172A;fontStyle=1;fontFamily=Segoe UI;labelBackgroundColor=#FFFFFF;labelBorderColor=none;" edge="1" parent="1">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="1062" y="208" as="sourcePoint"/>
+            <mxPoint x="1062" y="228" as="targetPoint"/>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="16_activity_workflows_47" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=1;orthogonalLoop=1;jettySize=auto;html=0;strokeColor=#3B4D75;strokeWidth=1.9;startArrow=none;endArrow=classic;fontSize=10.5;fontColor=#0F172A;fontStyle=1;fontFamily=Segoe UI;labelBackgroundColor=#FFFFFF;labelBorderColor=none;" edge="1" parent="1">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="1062" y="286" as="sourcePoint"/>
+            <mxPoint x="1062" y="308" as="targetPoint"/>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="16_activity_workflows_48" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=1;orthogonalLoop=1;jettySize=auto;html=0;strokeColor=#3B4D75;strokeWidth=1.9;startArrow=none;endArrow=classic;fontSize=10.5;fontColor=#0F172A;fontStyle=1;fontFamily=Segoe UI;labelBackgroundColor=#FFFFFF;labelBorderColor=none;" edge="1" parent="1">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="1062" y="382" as="sourcePoint"/>
+            <mxPoint x="1062" y="408" as="targetPoint"/>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="16_activity_workflows_49" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=1;orthogonalLoop=1;jettySize=auto;html=0;strokeColor=#3B4D75;strokeWidth=1.9;startArrow=none;endArrow=classic;fontSize=10.5;fontColor=#0F172A;fontStyle=1;fontFamily=Segoe UI;labelBackgroundColor=#FFFFFF;labelBorderColor=none;" edge="1" parent="1">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="1062" y="456" as="sourcePoint"/>
+            <mxPoint x="1062" y="480" as="targetPoint"/>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="16_activity_workflows_50" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=1;orthogonalLoop=1;jettySize=auto;html=0;strokeColor=#3B4D75;strokeWidth=1.9;startArrow=none;endArrow=classic;fontSize=10.5;fontColor=#0F172A;fontStyle=1;fontFamily=Segoe UI;labelBackgroundColor=#FFFFFF;labelBorderColor=none;" edge="1" parent="1">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="1062" y="528" as="sourcePoint"/>
+            <mxPoint x="1062" y="564" as="targetPoint"/>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="16_activity_workflows_51" value="Clamp/No" style="edgeStyle=orthogonalEdgeStyle;rounded=1;orthogonalLoop=1;jettySize=auto;html=0;strokeColor=#8B3A3A;strokeWidth=1.9;startArrow=none;endArrow=classic;fontSize=10.5;fontColor=#0F172A;fontStyle=1;fontFamily=Segoe UI;labelBackgroundColor=#FFFFFF;labelBorderColor=none;" edge="1" parent="1">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="1157" y="345" as="sourcePoint"/>
+            <mxPoint x="1187" y="257" as="targetPoint"/>
+            <Array as="points">
+              <mxPoint x="1228" y="345"/>
+              <mxPoint x="1228" y="257"/>
+            </Array>
+          </mxGeometry>
+        </mxCell>
+      </root>
+    </mxGraphModel>
+  </diagram>
+</mxfile>

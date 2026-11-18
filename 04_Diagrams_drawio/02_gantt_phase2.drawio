@@ -1,0 +1,176 @@
+<?xml version="1.0" ?>
+<mxfile host="app.diagrams.net" modified="2026-11-14T06:00:00Z" agent="draw.io" version="24.7.0">
+  <diagram id="02_gantt_phase2" name="COMP 583 Graduation Project Phase-II Gantt Chart">
+    <mxGraphModel dx="1420" dy="820" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="1220" pageHeight="620" background="#FFFFFF">
+      <root>
+        <mxCell id="0"/>
+        <mxCell id="1" parent="0"/>
+        <mxCell id="02_gantt_phase2_2" value="COMP 583 Graduation Project Phase-II Gantt Chart (Aug - Dec 2026)" style="rounded=1;whiteSpace=wrap;html=0;fillColor=#1B365D;strokeColor=#1B365D;fontColor=#FFFFFF;fontSize=15;fontStyle=1;align=left;spacingLeft=18;fontFamily=Segoe UI;" parent="1" vertex="1">
+          <mxGeometry x="16" y="12" width="1188" height="38" as="geometry"/>
+        </mxCell>
+        <mxCell id="02_gantt_phase2_3" value="Phase-II Activity / Milestone (COMP 583)" style="rounded=0;whiteSpace=wrap;html=0;fillColor=#1B365D;strokeColor=#1B365D;strokeWidth=2;fontColor=#FFFFFF;fontSize=12;fontStyle=1;align=left;verticalAlign=middle;spacing=6;fontFamily=Segoe UI;" parent="1" vertex="1">
+          <mxGeometry x="24" y="68" width="391" height="42" as="geometry"/>
+        </mxCell>
+        <mxCell id="02_gantt_phase2_4" value="W1&#10;Aug23" style="rounded=0;whiteSpace=wrap;html=0;fillColor=#1B365D;strokeColor=#1E6072;strokeWidth=1;fontColor=#FFFFFF;fontSize=9.5;fontStyle=1;align=center;verticalAlign=middle;spacing=1;fontFamily=Segoe UI;" parent="1" vertex="1">
+          <mxGeometry x="415.0" y="68" width="55.5" height="42" as="geometry"/>
+        </mxCell>
+        <mxCell id="02_gantt_phase2_5" value="W2&#10;Aug30" style="rounded=0;whiteSpace=wrap;html=0;fillColor=#1B365D;strokeColor=#1E6072;strokeWidth=1;fontColor=#FFFFFF;fontSize=9.5;fontStyle=1;align=center;verticalAlign=middle;spacing=1;fontFamily=Segoe UI;" parent="1" vertex="1">
+          <mxGeometry x="470.5" y="68" width="55.5" height="42" as="geometry"/>
+        </mxCell>
+        <mxCell id="02_gantt_phase2_6" value="W3&#10;Sep06" style="rounded=0;whiteSpace=wrap;html=0;fillColor=#1B365D;strokeColor=#1E6072;strokeWidth=1;fontColor=#FFFFFF;fontSize=9.5;fontStyle=1;align=center;verticalAlign=middle;spacing=1;fontFamily=Segoe UI;" parent="1" vertex="1">
+          <mxGeometry x="526.0" y="68" width="55.5" height="42" as="geometry"/>
+        </mxCell>
+        <mxCell id="02_gantt_phase2_7" value="W4&#10;Sep13" style="rounded=0;whiteSpace=wrap;html=0;fillColor=#1B365D;strokeColor=#1E6072;strokeWidth=1;fontColor=#FFFFFF;fontSize=9.5;fontStyle=1;align=center;verticalAlign=middle;spacing=1;fontFamily=Segoe UI;" parent="1" vertex="1">
+          <mxGeometry x="581.5" y="68" width="55.5" height="42" as="geometry"/>
+        </mxCell>
+        <mxCell id="02_gantt_phase2_8" value="W5&#10;Sep20" style="rounded=0;whiteSpace=wrap;html=0;fillColor=#1B365D;strokeColor=#1E6072;strokeWidth=1;fontColor=#FFFFFF;fontSize=9.5;fontStyle=1;align=center;verticalAlign=middle;spacing=1;fontFamily=Segoe UI;" parent="1" vertex="1">
+          <mxGeometry x="637.0" y="68" width="55.5" height="42" as="geometry"/>
+        </mxCell>
+        <mxCell id="02_gantt_phase2_9" value="W6&#10;Sep27" style="rounded=0;whiteSpace=wrap;html=0;fillColor=#1B365D;strokeColor=#1E6072;strokeWidth=1;fontColor=#FFFFFF;fontSize=9.5;fontStyle=1;align=center;verticalAlign=middle;spacing=1;fontFamily=Segoe UI;" parent="1" vertex="1">
+          <mxGeometry x="692.5" y="68" width="55.5" height="42" as="geometry"/>
+        </mxCell>
+        <mxCell id="02_gantt_phase2_10" value="W7&#10;Oct04" style="rounded=0;whiteSpace=wrap;html=0;fillColor=#1B365D;strokeColor=#1E6072;strokeWidth=1;fontColor=#FFFFFF;fontSize=9.5;fontStyle=1;align=center;verticalAlign=middle;spacing=1;fontFamily=Segoe UI;" parent="1" vertex="1">
+          <mxGeometry x="748.0" y="68" width="55.5" height="42" as="geometry"/>
+        </mxCell>
+        <mxCell id="02_gantt_phase2_11" value="W8&#10;Oct11" style="rounded=0;whiteSpace=wrap;html=0;fillColor=#1B365D;strokeColor=#1E6072;strokeWidth=1;fontColor=#FFFFFF;fontSize=9.5;fontStyle=1;align=center;verticalAlign=middle;spacing=1;fontFamily=Segoe UI;" parent="1" vertex="1">
+          <mxGeometry x="803.5" y="68" width="55.5" height="42" as="geometry"/>
+        </mxCell>
+        <mxCell id="02_gantt_phase2_12" value="W9&#10;Oct18" style="rounded=0;whiteSpace=wrap;html=0;fillColor=#1B365D;strokeColor=#1E6072;strokeWidth=1;fontColor=#FFFFFF;fontSize=9.5;fontStyle=1;align=center;verticalAlign=middle;spacing=1;fontFamily=Segoe UI;" parent="1" vertex="1">
+          <mxGeometry x="859.0" y="68" width="55.5" height="42" as="geometry"/>
+        </mxCell>
+        <mxCell id="02_gantt_phase2_13" value="W10&#10;Oct25" style="rounded=0;whiteSpace=wrap;html=0;fillColor=#1B365D;strokeColor=#1E6072;strokeWidth=1;fontColor=#FFFFFF;fontSize=9.5;fontStyle=1;align=center;verticalAlign=middle;spacing=1;fontFamily=Segoe UI;" parent="1" vertex="1">
+          <mxGeometry x="914.5" y="68" width="55.5" height="42" as="geometry"/>
+        </mxCell>
+        <mxCell id="02_gantt_phase2_14" value="W11&#10;Nov01" style="rounded=0;whiteSpace=wrap;html=0;fillColor=#1B365D;strokeColor=#1E6072;strokeWidth=1;fontColor=#FFFFFF;fontSize=9.5;fontStyle=1;align=center;verticalAlign=middle;spacing=1;fontFamily=Segoe UI;" parent="1" vertex="1">
+          <mxGeometry x="970.0" y="68" width="55.5" height="42" as="geometry"/>
+        </mxCell>
+        <mxCell id="02_gantt_phase2_15" value="W12&#10;Nov08" style="rounded=0;whiteSpace=wrap;html=0;fillColor=#1B365D;strokeColor=#1E6072;strokeWidth=1;fontColor=#FFFFFF;fontSize=9.5;fontStyle=1;align=center;verticalAlign=middle;spacing=1;fontFamily=Segoe UI;" parent="1" vertex="1">
+          <mxGeometry x="1025.5" y="68" width="55.5" height="42" as="geometry"/>
+        </mxCell>
+        <mxCell id="02_gantt_phase2_16" value="W13&#10;Nov15" style="rounded=0;whiteSpace=wrap;html=0;fillColor=#1B365D;strokeColor=#1E6072;strokeWidth=1;fontColor=#FFFFFF;fontSize=9.5;fontStyle=1;align=center;verticalAlign=middle;spacing=1;fontFamily=Segoe UI;" parent="1" vertex="1">
+          <mxGeometry x="1081.0" y="68" width="55.5" height="42" as="geometry"/>
+        </mxCell>
+        <mxCell id="02_gantt_phase2_17" value="W14&#10;Dec03" style="rounded=0;whiteSpace=wrap;html=0;fillColor=#1B365D;strokeColor=#1E6072;strokeWidth=1;fontColor=#FFFFFF;fontSize=9.5;fontStyle=1;align=center;verticalAlign=middle;spacing=1;fontFamily=Segoe UI;" parent="1" vertex="1">
+          <mxGeometry x="1136.5" y="68" width="55.5" height="42" as="geometry"/>
+        </mxCell>
+        <mxCell id="02_gantt_phase2_18" value="T1.1 Project Scope &amp; COMP 583 Charter" style="rounded=0;whiteSpace=wrap;html=0;fillColor=#F8FAFC;strokeColor=#E2E8F0;strokeWidth=1;fontColor=#0F172A;fontSize=10.8;fontStyle=0;align=left;verticalAlign=middle;spacing=6;fontFamily=Segoe UI;" parent="1" vertex="1">
+          <mxGeometry x="24" y="110" width="391" height="36" as="geometry"/>
+        </mxCell>
+        <mxCell id="02_gantt_phase2_19" value="" style="rounded=0;whiteSpace=wrap;html=0;fillColor=#F8FAFC;strokeColor=#E2E8F0;strokeWidth=1;fontColor=#0F172A;fontSize=11.5;fontStyle=1;align=center;verticalAlign=middle;spacing=6;fontFamily=Segoe UI;" parent="1" vertex="1">
+          <mxGeometry x="415" y="110" width="777" height="36" as="geometry"/>
+        </mxCell>
+        <mxCell id="02_gantt_phase2_20" value="W1-W2" style="rounded=1;arcSize=12;whiteSpace=wrap;html=0;fillColor=#1B365D;strokeColor=#1B365D;strokeWidth=1;fontColor=#FFFFFF;fontSize=9.5;fontStyle=1;align=center;verticalAlign=middle;spacing=6;fontFamily=Segoe UI;" parent="1" vertex="1">
+          <mxGeometry x="419.0" y="117" width="103.0" height="22" as="geometry"/>
+        </mxCell>
+        <mxCell id="02_gantt_phase2_21" value="T1.2 Multi-Source Dataset &amp; Roboflow Split" style="rounded=0;whiteSpace=wrap;html=0;fillColor=#FFFFFF;strokeColor=#E2E8F0;strokeWidth=1;fontColor=#0F172A;fontSize=10.8;fontStyle=0;align=left;verticalAlign=middle;spacing=6;fontFamily=Segoe UI;" parent="1" vertex="1">
+          <mxGeometry x="24" y="146" width="391" height="36" as="geometry"/>
+        </mxCell>
+        <mxCell id="02_gantt_phase2_22" value="" style="rounded=0;whiteSpace=wrap;html=0;fillColor=#FFFFFF;strokeColor=#E2E8F0;strokeWidth=1;fontColor=#0F172A;fontSize=11.5;fontStyle=1;align=center;verticalAlign=middle;spacing=6;fontFamily=Segoe UI;" parent="1" vertex="1">
+          <mxGeometry x="415" y="146" width="777" height="36" as="geometry"/>
+        </mxCell>
+        <mxCell id="02_gantt_phase2_23" value="W2-W4" style="rounded=1;arcSize=12;whiteSpace=wrap;html=0;fillColor=#2B5B84;strokeColor=#2B5B84;strokeWidth=1;fontColor=#FFFFFF;fontSize=9.5;fontStyle=1;align=center;verticalAlign=middle;spacing=6;fontFamily=Segoe UI;" parent="1" vertex="1">
+          <mxGeometry x="474.5" y="153" width="158.5" height="22" as="geometry"/>
+        </mxCell>
+        <mxCell id="02_gantt_phase2_24" value="T2.1 Cross-Arch Model Benchmarks (4 Models)" style="rounded=0;whiteSpace=wrap;html=0;fillColor=#F8FAFC;strokeColor=#E2E8F0;strokeWidth=1;fontColor=#0F172A;fontSize=10.8;fontStyle=0;align=left;verticalAlign=middle;spacing=6;fontFamily=Segoe UI;" parent="1" vertex="1">
+          <mxGeometry x="24" y="182" width="391" height="36" as="geometry"/>
+        </mxCell>
+        <mxCell id="02_gantt_phase2_25" value="" style="rounded=0;whiteSpace=wrap;html=0;fillColor=#F8FAFC;strokeColor=#E2E8F0;strokeWidth=1;fontColor=#0F172A;fontSize=11.5;fontStyle=1;align=center;verticalAlign=middle;spacing=6;fontFamily=Segoe UI;" parent="1" vertex="1">
+          <mxGeometry x="415" y="182" width="777" height="36" as="geometry"/>
+        </mxCell>
+        <mxCell id="02_gantt_phase2_26" value="W3-W6" style="rounded=1;arcSize=12;whiteSpace=wrap;html=0;fillColor=#335C81;strokeColor=#335C81;strokeWidth=1;fontColor=#FFFFFF;fontSize=9.5;fontStyle=1;align=center;verticalAlign=middle;spacing=6;fontFamily=Segoe UI;" parent="1" vertex="1">
+          <mxGeometry x="530.0" y="189" width="214.0" height="22" as="geometry"/>
+        </mxCell>
+        <mxCell id="02_gantt_phase2_27" value="T2.2 YOLOv11n-ADAS-v2 150-Ep &amp; Test Audit" style="rounded=0;whiteSpace=wrap;html=0;fillColor=#FFFFFF;strokeColor=#E2E8F0;strokeWidth=1;fontColor=#0F172A;fontSize=10.8;fontStyle=0;align=left;verticalAlign=middle;spacing=6;fontFamily=Segoe UI;" parent="1" vertex="1">
+          <mxGeometry x="24" y="218" width="391" height="36" as="geometry"/>
+        </mxCell>
+        <mxCell id="02_gantt_phase2_28" value="" style="rounded=0;whiteSpace=wrap;html=0;fillColor=#FFFFFF;strokeColor=#E2E8F0;strokeWidth=1;fontColor=#0F172A;fontSize=11.5;fontStyle=1;align=center;verticalAlign=middle;spacing=6;fontFamily=Segoe UI;" parent="1" vertex="1">
+          <mxGeometry x="415" y="218" width="777" height="36" as="geometry"/>
+        </mxCell>
+        <mxCell id="02_gantt_phase2_29" value="W5-W7" style="rounded=1;arcSize=12;whiteSpace=wrap;html=0;fillColor=#335C81;strokeColor=#335C81;strokeWidth=1;fontColor=#FFFFFF;fontSize=9.5;fontStyle=1;align=center;verticalAlign=middle;spacing=6;fontFamily=Segoe UI;" parent="1" vertex="1">
+          <mxGeometry x="641.0" y="225" width="158.5" height="22" as="geometry"/>
+        </mxCell>
+        <mxCell id="02_gantt_phase2_30" value="T3.1 ONNX Runtime &amp; LocationTracker" style="rounded=0;whiteSpace=wrap;html=0;fillColor=#F8FAFC;strokeColor=#E2E8F0;strokeWidth=1;fontColor=#0F172A;fontSize=10.8;fontStyle=0;align=left;verticalAlign=middle;spacing=6;fontFamily=Segoe UI;" parent="1" vertex="1">
+          <mxGeometry x="24" y="254" width="391" height="36" as="geometry"/>
+        </mxCell>
+        <mxCell id="02_gantt_phase2_31" value="" style="rounded=0;whiteSpace=wrap;html=0;fillColor=#F8FAFC;strokeColor=#E2E8F0;strokeWidth=1;fontColor=#0F172A;fontSize=11.5;fontStyle=1;align=center;verticalAlign=middle;spacing=6;fontFamily=Segoe UI;" parent="1" vertex="1">
+          <mxGeometry x="415" y="254" width="777" height="36" as="geometry"/>
+        </mxCell>
+        <mxCell id="02_gantt_phase2_32" value="W6-W8" style="rounded=1;arcSize=12;whiteSpace=wrap;html=0;fillColor=#3B4D75;strokeColor=#3B4D75;strokeWidth=1;fontColor=#FFFFFF;fontSize=9.5;fontStyle=1;align=center;verticalAlign=middle;spacing=6;fontFamily=Segoe UI;" parent="1" vertex="1">
+          <mxGeometry x="696.5" y="261" width="158.5" height="22" as="geometry"/>
+        </mxCell>
+        <mxCell id="02_gantt_phase2_33" value="T3.2 AdasSignVerifier Bayesian + ML Kit OCR" style="rounded=0;whiteSpace=wrap;html=0;fillColor=#FFFFFF;strokeColor=#E2E8F0;strokeWidth=1;fontColor=#0F172A;fontSize=10.8;fontStyle=0;align=left;verticalAlign=middle;spacing=6;fontFamily=Segoe UI;" parent="1" vertex="1">
+          <mxGeometry x="24" y="290" width="391" height="36" as="geometry"/>
+        </mxCell>
+        <mxCell id="02_gantt_phase2_34" value="" style="rounded=0;whiteSpace=wrap;html=0;fillColor=#FFFFFF;strokeColor=#E2E8F0;strokeWidth=1;fontColor=#0F172A;fontSize=11.5;fontStyle=1;align=center;verticalAlign=middle;spacing=6;fontFamily=Segoe UI;" parent="1" vertex="1">
+          <mxGeometry x="415" y="290" width="777" height="36" as="geometry"/>
+        </mxCell>
+        <mxCell id="02_gantt_phase2_35" value="W7-W9" style="rounded=1;arcSize=12;whiteSpace=wrap;html=0;fillColor=#3B4D75;strokeColor=#3B4D75;strokeWidth=1;fontColor=#FFFFFF;fontSize=9.5;fontStyle=1;align=center;verticalAlign=middle;spacing=6;fontFamily=Segoe UI;" parent="1" vertex="1">
+          <mxGeometry x="752.0" y="297" width="158.5" height="22" as="geometry"/>
+        </mxCell>
+        <mxCell id="02_gantt_phase2_36" value="M1 Midterm Progress Review (Week 9)" style="rounded=0;whiteSpace=wrap;html=0;fillColor=#F8FAFC;strokeColor=#E2E8F0;strokeWidth=1;fontColor=#0F172A;fontSize=10.8;fontStyle=1;align=left;verticalAlign=middle;spacing=6;fontFamily=Segoe UI;" parent="1" vertex="1">
+          <mxGeometry x="24" y="326" width="391" height="36" as="geometry"/>
+        </mxCell>
+        <mxCell id="02_gantt_phase2_37" value="" style="rounded=0;whiteSpace=wrap;html=0;fillColor=#F8FAFC;strokeColor=#E2E8F0;strokeWidth=1;fontColor=#0F172A;fontSize=11.5;fontStyle=1;align=center;verticalAlign=middle;spacing=6;fontFamily=Segoe UI;" parent="1" vertex="1">
+          <mxGeometry x="415" y="326" width="777" height="36" as="geometry"/>
+        </mxCell>
+        <mxCell id="02_gantt_phase2_38" value="" style="rhombus;whiteSpace=wrap;html=0;fillColor=#8B3A3A;strokeColor=#8B3A3A;strokeWidth=2;fontColor=#0F172A;fontSize=10.8;fontStyle=1;spacing=4;fontFamily=Segoe UI;" parent="1" vertex="1">
+          <mxGeometry x="874.8" y="332" width="24" height="24" as="geometry"/>
+        </mxCell>
+        <mxCell id="02_gantt_phase2_39" value="T4.1 SoundPool 40 MP3s &amp; Temporal Consensus" style="rounded=0;whiteSpace=wrap;html=0;fillColor=#FFFFFF;strokeColor=#E2E8F0;strokeWidth=1;fontColor=#0F172A;fontSize=10.8;fontStyle=0;align=left;verticalAlign=middle;spacing=6;fontFamily=Segoe UI;" parent="1" vertex="1">
+          <mxGeometry x="24" y="362" width="391" height="36" as="geometry"/>
+        </mxCell>
+        <mxCell id="02_gantt_phase2_40" value="" style="rounded=0;whiteSpace=wrap;html=0;fillColor=#FFFFFF;strokeColor=#E2E8F0;strokeWidth=1;fontColor=#0F172A;fontSize=11.5;fontStyle=1;align=center;verticalAlign=middle;spacing=6;fontFamily=Segoe UI;" parent="1" vertex="1">
+          <mxGeometry x="415" y="362" width="777" height="36" as="geometry"/>
+        </mxCell>
+        <mxCell id="02_gantt_phase2_41" value="W8-W10" style="rounded=1;arcSize=12;whiteSpace=wrap;html=0;fillColor=#2B5B84;strokeColor=#2B5B84;strokeWidth=1;fontColor=#FFFFFF;fontSize=9.5;fontStyle=1;align=center;verticalAlign=middle;spacing=6;fontFamily=Segoe UI;" parent="1" vertex="1">
+          <mxGeometry x="807.5" y="369" width="158.5" height="22" as="geometry"/>
+        </mxCell>
+        <mxCell id="02_gantt_phase2_42" value="T4.2 SQLite v4, RBAC, Admin Matrix &amp; Cloud" style="rounded=0;whiteSpace=wrap;html=0;fillColor=#F8FAFC;strokeColor=#E2E8F0;strokeWidth=1;fontColor=#0F172A;fontSize=10.8;fontStyle=0;align=left;verticalAlign=middle;spacing=6;fontFamily=Segoe UI;" parent="1" vertex="1">
+          <mxGeometry x="24" y="398" width="391" height="36" as="geometry"/>
+        </mxCell>
+        <mxCell id="02_gantt_phase2_43" value="" style="rounded=0;whiteSpace=wrap;html=0;fillColor=#F8FAFC;strokeColor=#E2E8F0;strokeWidth=1;fontColor=#0F172A;fontSize=11.5;fontStyle=1;align=center;verticalAlign=middle;spacing=6;fontFamily=Segoe UI;" parent="1" vertex="1">
+          <mxGeometry x="415" y="398" width="777" height="36" as="geometry"/>
+        </mxCell>
+        <mxCell id="02_gantt_phase2_44" value="W9-W11" style="rounded=1;arcSize=12;whiteSpace=wrap;html=0;fillColor=#2B5B84;strokeColor=#2B5B84;strokeWidth=1;fontColor=#FFFFFF;fontSize=9.5;fontStyle=1;align=center;verticalAlign=middle;spacing=6;fontFamily=Segoe UI;" parent="1" vertex="1">
+          <mxGeometry x="863.0" y="405" width="158.5" height="22" as="geometry"/>
+        </mxCell>
+        <mxCell id="02_gantt_phase2_45" value="T5.1 In-Vehicle Road Trials, CSV Export &amp; UAT" style="rounded=0;whiteSpace=wrap;html=0;fillColor=#FFFFFF;strokeColor=#E2E8F0;strokeWidth=1;fontColor=#0F172A;fontSize=10.8;fontStyle=0;align=left;verticalAlign=middle;spacing=6;fontFamily=Segoe UI;" parent="1" vertex="1">
+          <mxGeometry x="24" y="434" width="391" height="36" as="geometry"/>
+        </mxCell>
+        <mxCell id="02_gantt_phase2_46" value="" style="rounded=0;whiteSpace=wrap;html=0;fillColor=#FFFFFF;strokeColor=#E2E8F0;strokeWidth=1;fontColor=#0F172A;fontSize=11.5;fontStyle=1;align=center;verticalAlign=middle;spacing=6;fontFamily=Segoe UI;" parent="1" vertex="1">
+          <mxGeometry x="415" y="434" width="777" height="36" as="geometry"/>
+        </mxCell>
+        <mxCell id="02_gantt_phase2_47" value="W10-W12" style="rounded=1;arcSize=12;whiteSpace=wrap;html=0;fillColor=#475569;strokeColor=#475569;strokeWidth=1;fontColor=#FFFFFF;fontSize=9.5;fontStyle=1;align=center;verticalAlign=middle;spacing=6;fontFamily=Segoe UI;" parent="1" vertex="1">
+          <mxGeometry x="918.5" y="441" width="158.5" height="22" as="geometry"/>
+        </mxCell>
+        <mxCell id="02_gantt_phase2_48" value="M2 Pre-Final Report &amp; 12/12 JVM Suite" style="rounded=0;whiteSpace=wrap;html=0;fillColor=#F8FAFC;strokeColor=#E2E8F0;strokeWidth=1;fontColor=#0F172A;fontSize=10.8;fontStyle=1;align=left;verticalAlign=middle;spacing=6;fontFamily=Segoe UI;" parent="1" vertex="1">
+          <mxGeometry x="24" y="470" width="391" height="36" as="geometry"/>
+        </mxCell>
+        <mxCell id="02_gantt_phase2_49" value="" style="rounded=0;whiteSpace=wrap;html=0;fillColor=#F8FAFC;strokeColor=#E2E8F0;strokeWidth=1;fontColor=#0F172A;fontSize=11.5;fontStyle=1;align=center;verticalAlign=middle;spacing=6;fontFamily=Segoe UI;" parent="1" vertex="1">
+          <mxGeometry x="415" y="470" width="777" height="36" as="geometry"/>
+        </mxCell>
+        <mxCell id="02_gantt_phase2_50" value="" style="rhombus;whiteSpace=wrap;html=0;fillColor=#8B3A3A;strokeColor=#8B3A3A;strokeWidth=2;fontColor=#0F172A;fontSize=10.8;fontStyle=1;spacing=4;fontFamily=Segoe UI;" parent="1" vertex="1">
+          <mxGeometry x="1041.2" y="476" width="24" height="24" as="geometry"/>
+        </mxCell>
+        <mxCell id="02_gantt_phase2_51" value="T5.2 Final Thesis Report, Diagrams &amp; Slides" style="rounded=0;whiteSpace=wrap;html=0;fillColor=#FFFFFF;strokeColor=#E2E8F0;strokeWidth=1;fontColor=#0F172A;fontSize=10.8;fontStyle=0;align=left;verticalAlign=middle;spacing=6;fontFamily=Segoe UI;" parent="1" vertex="1">
+          <mxGeometry x="24" y="506" width="391" height="36" as="geometry"/>
+        </mxCell>
+        <mxCell id="02_gantt_phase2_52" value="" style="rounded=0;whiteSpace=wrap;html=0;fillColor=#FFFFFF;strokeColor=#E2E8F0;strokeWidth=1;fontColor=#0F172A;fontSize=11.5;fontStyle=1;align=center;verticalAlign=middle;spacing=6;fontFamily=Segoe UI;" parent="1" vertex="1">
+          <mxGeometry x="415" y="506" width="777" height="36" as="geometry"/>
+        </mxCell>
+        <mxCell id="02_gantt_phase2_53" value="W11-W13" style="rounded=1;arcSize=12;whiteSpace=wrap;html=0;fillColor=#2C5E50;strokeColor=#2C5E50;strokeWidth=1;fontColor=#FFFFFF;fontSize=9.5;fontStyle=1;align=center;verticalAlign=middle;spacing=6;fontFamily=Segoe UI;" parent="1" vertex="1">
+          <mxGeometry x="974.0" y="513" width="158.5" height="22" as="geometry"/>
+        </mxCell>
+        <mxCell id="02_gantt_phase2_54" value="M3 Final Oral Defense &amp; Demo (Dec 2026)" style="rounded=0;whiteSpace=wrap;html=0;fillColor=#F8FAFC;strokeColor=#E2E8F0;strokeWidth=1;fontColor=#0F172A;fontSize=10.8;fontStyle=0;align=left;verticalAlign=middle;spacing=6;fontFamily=Segoe UI;" parent="1" vertex="1">
+          <mxGeometry x="24" y="542" width="391" height="36" as="geometry"/>
+        </mxCell>
+        <mxCell id="02_gantt_phase2_55" value="" style="rounded=0;whiteSpace=wrap;html=0;fillColor=#F8FAFC;strokeColor=#E2E8F0;strokeWidth=1;fontColor=#0F172A;fontSize=11.5;fontStyle=1;align=center;verticalAlign=middle;spacing=6;fontFamily=Segoe UI;" parent="1" vertex="1">
+          <mxGeometry x="415" y="542" width="777" height="36" as="geometry"/>
+        </mxCell>
+        <mxCell id="02_gantt_phase2_56" value="W13-14" style="rounded=1;arcSize=12;whiteSpace=wrap;html=0;fillColor=#8B3A3A;strokeColor=#8B3A3A;strokeWidth=1;fontColor=#FFFFFF;fontSize=9.5;fontStyle=1;align=center;verticalAlign=middle;spacing=6;fontFamily=Segoe UI;" parent="1" vertex="1">
+          <mxGeometry x="1085.0" y="549" width="103.0" height="22" as="geometry"/>
+        </mxCell>
+      </root>
+    </mxGraphModel>
+  </diagram>
+</mxfile>

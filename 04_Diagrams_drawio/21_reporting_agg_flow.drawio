@@ -1,0 +1,77 @@
+<?xml version="1.0" ?>
+<mxfile host="app.diagrams.net" modified="2026-11-14T06:00:00Z" agent="draw.io" version="24.7.0">
+  <diagram id="21_reporting_agg_flow" name="Logical Transformation Flow for Safety Analytics">
+    <mxGraphModel dx="1420" dy="820" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="1200" pageHeight="560" background="#FFFFFF">
+      <root>
+        <mxCell id="0"/>
+        <mxCell id="1" parent="0"/>
+        <mxCell id="21_reporting_agg_flow_2" value="Logical Transformation Flow for Safety Analytics &amp; Field Reporting" style="rounded=1;whiteSpace=wrap;html=0;fillColor=#1B365D;strokeColor=#1B365D;fontColor=#FFFFFF;fontSize=15;fontStyle=1;align=left;spacingLeft=18;fontFamily=Segoe UI;" parent="1" vertex="1">
+          <mxGeometry x="16" y="12" width="1168" height="38" as="geometry"/>
+        </mxCell>
+        <mxCell id="21_reporting_agg_flow_3" value="TIER 1: Presentation Tier (AnalyticsScreen, HistoryScreen &amp; AdminDashboard)" style="swimlane;whiteSpace=wrap;html=0;startSize=30;rounded=1;arcSize=8;fillColor=#1B365D;swimlaneFillColor=#F4F7FA;strokeColor=#2C5E50;strokeWidth=2;fontColor=#FFFFFF;fontSize=12;fontStyle=1;collapsible=0;fontFamily=Segoe UI;" parent="1" vertex="1">
+          <mxGeometry x="24" y="72" width="1152" height="136" as="geometry"/>
+        </mxCell>
+        <mxCell id="21_reporting_agg_flow_4" value="1. User Selects Filter Scope&#10;Date Window / Hazard Class / Export" style="rounded=1;arcSize=12;whiteSpace=wrap;html=0;fillColor=#FFFFFF;strokeColor=#2B5B84;strokeWidth=2;fontColor=#0F172A;fontSize=11;fontStyle=1;align=center;verticalAlign=middle;spacing=6;fontFamily=Segoe UI;" parent="1" vertex="1">
+          <mxGeometry x="65" y="120" width="320" height="64" as="geometry"/>
+        </mxCell>
+        <mxCell id="21_reporting_agg_flow_5" value="5. Render Aggregated UI &amp; Exports&#10;Compose Charts, GPS Cards, TXT &amp; CSV" style="rounded=1;arcSize=12;whiteSpace=wrap;html=0;fillColor=#FFFFFF;strokeColor=#2C5E50;strokeWidth=2;fontColor=#0F172A;fontSize=11;fontStyle=1;align=center;verticalAlign=middle;spacing=6;fontFamily=Segoe UI;" parent="1" vertex="1">
+          <mxGeometry x="790" y="120" width="350" height="64" as="geometry"/>
+        </mxCell>
+        <mxCell id="21_reporting_agg_flow_6" value="TIER 2: Application Tier (Query Parameterization &amp; TripExportHelper)" style="swimlane;whiteSpace=wrap;html=0;startSize=30;rounded=1;arcSize=8;fillColor=#335C81;swimlaneFillColor=#EFF4FA;strokeColor=#335C81;strokeWidth=2;fontColor=#FFFFFF;fontSize=12;fontStyle=1;collapsible=0;fontFamily=Segoe UI;" parent="1" vertex="1">
+          <mxGeometry x="24" y="228" width="1152" height="152" as="geometry"/>
+        </mxCell>
+        <mxCell id="21_reporting_agg_flow_7" value="2. Safe Input Validation&#10;Parameterize SQL Filter Arguments" style="rounded=1;arcSize=12;whiteSpace=wrap;html=0;fillColor=#FFFFFF;strokeColor=#335C81;strokeWidth=2;fontColor=#0F172A;fontSize=11;fontStyle=1;align=center;verticalAlign=middle;spacing=6;fontFamily=Segoe UI;" parent="1" vertex="1">
+          <mxGeometry x="65" y="282" width="280" height="68" as="geometry"/>
+        </mxCell>
+        <mxCell id="21_reporting_agg_flow_8" value="4. Compute Safety Metrics &amp; Exports&#10;Total Hazards, Top Hazard, BOM CSV &amp; TXT" style="rounded=1;arcSize=12;whiteSpace=wrap;html=0;fillColor=#FFFFFF;strokeColor=#3B4D75;strokeWidth=2;fontColor=#0F172A;fontSize=11;fontStyle=1;align=center;verticalAlign=middle;spacing=6;fontFamily=Segoe UI;" parent="1" vertex="1">
+          <mxGeometry x="790" y="282" width="350" height="68" as="geometry"/>
+        </mxCell>
+        <mxCell id="21_reporting_agg_flow_9" value="TIER 3: Data Tier (DatabaseHelper vision_local.db SQLite v4 &amp; CSV Buffers)" style="swimlane;whiteSpace=wrap;html=0;startSize=30;rounded=1;arcSize=8;fillColor=#475569;swimlaneFillColor=#F4F6F9;strokeColor=#475569;strokeWidth=2;fontColor=#FFFFFF;fontSize=12;fontStyle=1;collapsible=0;fontFamily=Segoe UI;" parent="1" vertex="1">
+          <mxGeometry x="24" y="400" width="1152" height="138" as="geometry"/>
+        </mxCell>
+        <mxCell id="21_reporting_agg_flow_10" value="DETECTION_RECORD + TRIP&#10;Indexed SQLite v4 Storage" style="shape=cylinder3;whiteSpace=wrap;boundedLbl=1;backgroundOutline=1;size=14;fillColor=#FFFFFF;strokeColor=#1B365D;strokeWidth=2;fontColor=#0F172A;fontSize=10.5;fontStyle=1;spacing=6;fontFamily=Segoe UI;" parent="1" vertex="1">
+          <mxGeometry x="290" y="444" width="290" height="80" as="geometry"/>
+        </mxCell>
+        <mxCell id="21_reporting_agg_flow_11" value="3. SQL Aggregation Engine&#10;COUNT, GROUP BY &amp; Sync Status Query" style="rounded=1;arcSize=12;whiteSpace=wrap;html=0;fillColor=#FFFFFF;strokeColor=#475569;strokeWidth=2;fontColor=#0F172A;fontSize=10.8;fontStyle=1;align=center;verticalAlign=middle;spacing=6;fontFamily=Segoe UI;" parent="1" vertex="1">
+          <mxGeometry x="640" y="450" width="300" height="68" as="geometry"/>
+        </mxCell>
+        <mxCell id="21_reporting_agg_flow_12" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=1;orthogonalLoop=1;jettySize=auto;html=0;strokeColor=#2B5B84;strokeWidth=1.9;startArrow=none;endArrow=classic;fontSize=10.5;fontColor=#0F172A;fontStyle=1;fontFamily=Segoe UI;labelBackgroundColor=#FFFFFF;labelBorderColor=none;" edge="1" parent="1">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="205" y="184" as="sourcePoint"/>
+            <mxPoint x="205" y="282" as="targetPoint"/>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="21_reporting_agg_flow_13" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=1;orthogonalLoop=1;jettySize=auto;html=0;strokeColor=#335C81;strokeWidth=1.9;startArrow=none;endArrow=classic;fontSize=10.5;fontColor=#0F172A;fontStyle=1;fontFamily=Segoe UI;labelBackgroundColor=#FFFFFF;labelBorderColor=none;" edge="1" parent="1">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="205" y="350" as="sourcePoint"/>
+            <mxPoint x="290" y="484" as="targetPoint"/>
+            <Array as="points">
+              <mxPoint x="205" y="484"/>
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="21_reporting_agg_flow_14" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=1;orthogonalLoop=1;jettySize=auto;html=0;strokeColor=#475569;strokeWidth=1.9;startArrow=none;endArrow=classic;fontSize=10.5;fontColor=#0F172A;fontStyle=1;fontFamily=Segoe UI;labelBackgroundColor=#FFFFFF;labelBorderColor=none;" edge="1" parent="1">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="580" y="484" as="sourcePoint"/>
+            <mxPoint x="640" y="484" as="targetPoint"/>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="21_reporting_agg_flow_15" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=1;orthogonalLoop=1;jettySize=auto;html=0;strokeColor=#3B4D75;strokeWidth=1.9;startArrow=none;endArrow=classic;fontSize=10.5;fontColor=#0F172A;fontStyle=1;fontFamily=Segoe UI;labelBackgroundColor=#FFFFFF;labelBorderColor=none;" edge="1" parent="1">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="940" y="484" as="sourcePoint"/>
+            <mxPoint x="965" y="350" as="targetPoint"/>
+            <Array as="points">
+              <mxPoint x="965" y="484"/>
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="21_reporting_agg_flow_16" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=1;orthogonalLoop=1;jettySize=auto;html=0;strokeColor=#2C5E50;strokeWidth=1.9;startArrow=none;endArrow=classic;fontSize=10.5;fontColor=#0F172A;fontStyle=1;fontFamily=Segoe UI;labelBackgroundColor=#FFFFFF;labelBorderColor=none;" edge="1" parent="1">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="965" y="282" as="sourcePoint"/>
+            <mxPoint x="965" y="184" as="targetPoint"/>
+          </mxGeometry>
+        </mxCell>
+      </root>
+    </mxGraphModel>
+  </diagram>
+</mxfile>

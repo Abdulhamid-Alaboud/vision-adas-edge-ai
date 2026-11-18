@@ -1,0 +1,218 @@
+<?xml version="1.0" ?>
+<mxfile host="app.diagrams.net" modified="2026-11-14T06:00:00Z" agent="draw.io" version="24.7.0">
+  <diagram id="03_use_case" name="RBAC Use Case Diagram (Guest, Driver &amp; Administr">
+    <mxGraphModel dx="1420" dy="820" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="1220" pageHeight="665" background="#FFFFFF">
+      <root>
+        <mxCell id="0"/>
+        <mxCell id="1" parent="0"/>
+        <mxCell id="03_use_case_2" value="RBAC Use Case Diagram (Guest, Driver &amp; Administrator)" style="rounded=1;whiteSpace=wrap;html=0;fillColor=#1B365D;strokeColor=#1B365D;fontColor=#FFFFFF;fontSize=15;fontStyle=1;align=left;spacingLeft=18;fontFamily=Segoe UI;" parent="1" vertex="1">
+          <mxGeometry x="16" y="12" width="1188" height="38" as="geometry"/>
+        </mxCell>
+        <mxCell id="03_use_case_3" value="VISION Android ADAS Application (Offline-First + Optional Firebase RTDB)" style="swimlane;whiteSpace=wrap;html=0;startSize=30;rounded=1;arcSize=8;fillColor=#1B365D;swimlaneFillColor=#F8FAFC;strokeColor=#1B365D;strokeWidth=2;fontColor=#FFFFFF;fontSize=12;fontStyle=1;collapsible=0;fontFamily=Segoe UI;" parent="1" vertex="1">
+          <mxGeometry x="220" y="68" width="760" height="574" as="geometry"/>
+        </mxCell>
+        <mxCell id="03_use_case_4" value="Guest&#10;(tripId = 0)" style="shape=umlActor;verticalLabelPosition=bottom;verticalAlign=top;html=0;outlineConnect=0;fillColor=#FFFFFF;strokeColor=#475569;strokeWidth=2;fontStyle=1;fontSize=11;fontColor=#0F172A;fontFamily=Segoe UI;" parent="1" vertex="1">
+          <mxGeometry x="75" y="165" width="36" height="62" as="geometry"/>
+        </mxCell>
+        <mxCell id="03_use_case_5" value="Driver&#10;(Authenticated)" style="shape=umlActor;verticalLabelPosition=bottom;verticalAlign=top;html=0;outlineConnect=0;fillColor=#FFFFFF;strokeColor=#2B5B84;strokeWidth=2;fontStyle=1;fontSize=11;fontColor=#0F172A;fontFamily=Segoe UI;" parent="1" vertex="1">
+          <mxGeometry x="75" y="445" width="36" height="62" as="geometry"/>
+        </mxCell>
+        <mxCell id="03_use_case_6" value="Administrator&#10;(Fleet &amp; Tuning)" style="shape=umlActor;verticalLabelPosition=bottom;verticalAlign=top;html=0;outlineConnect=0;fillColor=#FFFFFF;strokeColor=#3B4D75;strokeWidth=2;fontStyle=1;fontSize=11;fontColor=#0F172A;fontFamily=Segoe UI;" parent="1" vertex="1">
+          <mxGeometry x="1085" y="290" width="36" height="62" as="geometry"/>
+        </mxCell>
+        <mxCell id="03_use_case_7" value="UC-01: Sign In / Register&#10;(SHA-256 Local Auth)" style="ellipse;whiteSpace=wrap;html=0;fillColor=#EDF3F9;strokeColor=#335C81;strokeWidth=2;fontColor=#0F172A;fontSize=10.5;fontStyle=1;spacing=6;fontFamily=Segoe UI;" parent="1" vertex="1">
+          <mxGeometry x="320" y="122" width="245" height="52" as="geometry"/>
+        </mxCell>
+        <mxCell id="03_use_case_8" value="UC-02: Enter Guest Mode&#10;(Zero History Persistence)" style="ellipse;whiteSpace=wrap;html=0;fillColor=#EDF3F9;strokeColor=#335C81;strokeWidth=2;fontColor=#0F172A;fontSize=10.5;fontStyle=1;spacing=6;fontFamily=Segoe UI;" parent="1" vertex="1">
+          <mxGeometry x="320" y="194" width="245" height="52" as="geometry"/>
+        </mxCell>
+        <mxCell id="03_use_case_9" value="UC-03: Live Hazard Detection&#10;(YOLOv11n ONNX + OCR/Bayes)" style="ellipse;whiteSpace=wrap;html=0;fillColor=#EDF3F9;strokeColor=#335C81;strokeWidth=2;fontColor=#0F172A;fontSize=10.5;fontStyle=1;spacing=6;fontFamily=Segoe UI;" parent="1" vertex="1">
+          <mxGeometry x="320" y="266" width="245" height="54" as="geometry"/>
+        </mxCell>
+        <mxCell id="03_use_case_10" value="UC-04: Bilingual Audio Alerts&#10;(40 MP3s SoundPool + HUD)" style="ellipse;whiteSpace=wrap;html=0;fillColor=#EDF3F9;strokeColor=#335C81;strokeWidth=2;fontColor=#0F172A;fontSize=10.5;fontStyle=1;spacing=6;fontFamily=Segoe UI;" parent="1" vertex="1">
+          <mxGeometry x="320" y="340" width="245" height="54" as="geometry"/>
+        </mxCell>
+        <mxCell id="03_use_case_11" value="UC-05: Configure Preferences&#10;(AR/EN, Vol, Thresh, Classes)" style="ellipse;whiteSpace=wrap;html=0;fillColor=#EDF3F9;strokeColor=#335C81;strokeWidth=2;fontColor=#0F172A;fontSize=10.5;fontStyle=1;spacing=6;fontFamily=Segoe UI;" parent="1" vertex="1">
+          <mxGeometry x="320" y="414" width="245" height="54" as="geometry"/>
+        </mxCell>
+        <mxCell id="03_use_case_12" value="UC-06: View Trip History &amp;&#10;Live GPS Logs (SQLite v4)" style="ellipse;whiteSpace=wrap;html=0;fillColor=#E8EEF5;strokeColor=#2B5B84;strokeWidth=2;fontColor=#0F172A;fontSize=10.5;fontStyle=1;spacing=6;fontFamily=Segoe UI;" parent="1" vertex="1">
+          <mxGeometry x="320" y="492" width="245" height="54" as="geometry"/>
+        </mxCell>
+        <mxCell id="03_use_case_13" value="UC-07: Safety Analytics &amp;&#10;Category Distribution Charts" style="ellipse;whiteSpace=wrap;html=0;fillColor=#E8EEF5;strokeColor=#2B5B84;strokeWidth=2;fontColor=#0F172A;fontSize=10.5;fontStyle=1;spacing=6;fontFamily=Segoe UI;" parent="1" vertex="1">
+          <mxGeometry x="320" y="566" width="245" height="54" as="geometry"/>
+        </mxCell>
+        <mxCell id="03_use_case_14" value="UC-08: Export CSV/TXT Logs&#10;&amp; Upload Cloud Summary" style="ellipse;whiteSpace=wrap;html=0;fillColor=#E8EEF5;strokeColor=#2B5B84;strokeWidth=2;fontColor=#0F172A;fontSize=10.5;fontStyle=1;spacing=6;fontFamily=Segoe UI;" parent="1" vertex="1">
+          <mxGeometry x="680" y="530" width="270" height="56" as="geometry"/>
+        </mxCell>
+        <mxCell id="03_use_case_15" value="UC-09: Monitor Multi-Driver&#10;Cloud Telemetry (Firebase)" style="ellipse;whiteSpace=wrap;html=0;fillColor=#EEF1F7;strokeColor=#3B4D75;strokeWidth=2;fontColor=#0F172A;fontSize=10.5;fontStyle=1;spacing=6;fontFamily=Segoe UI;" parent="1" vertex="1">
+          <mxGeometry x="680" y="134" width="270" height="54" as="geometry"/>
+        </mxCell>
+        <mxCell id="03_use_case_16" value="UC-10: Tune Class Thresholds&#10;(Calibrated Precision Matrix)" style="ellipse;whiteSpace=wrap;html=0;fillColor=#EEF1F7;strokeColor=#3B4D75;strokeWidth=2;fontColor=#0F172A;fontSize=10.5;fontStyle=1;spacing=6;fontFamily=Segoe UI;" parent="1" vertex="1">
+          <mxGeometry x="680" y="214" width="270" height="54" as="geometry"/>
+        </mxCell>
+        <mxCell id="03_use_case_17" value="UC-11: Manage User Accounts&#10;&amp; System Diagnostics" style="ellipse;whiteSpace=wrap;html=0;fillColor=#EEF1F7;strokeColor=#3B4D75;strokeWidth=2;fontColor=#0F172A;fontSize=10.5;fontStyle=1;spacing=6;fontFamily=Segoe UI;" parent="1" vertex="1">
+          <mxGeometry x="680" y="294" width="270" height="54" as="geometry"/>
+        </mxCell>
+        <mxCell id="03_use_case_18" value="UC-12: Export Fleet Report&#10;(CSV Downloads &amp; Shared TXT)" style="ellipse;whiteSpace=wrap;html=0;fillColor=#EEF1F7;strokeColor=#3B4D75;strokeWidth=2;fontColor=#0F172A;fontSize=10.5;fontStyle=1;spacing=6;fontFamily=Segoe UI;" parent="1" vertex="1">
+          <mxGeometry x="680" y="374" width="270" height="54" as="geometry"/>
+        </mxCell>
+        <mxCell id="03_use_case_19" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=1;orthogonalLoop=1;jettySize=auto;html=0;strokeColor=#475569;strokeWidth=1.6;startArrow=none;endArrow=none;fontSize=10.5;fontColor=#0F172A;fontStyle=1;fontFamily=Segoe UI;labelBackgroundColor=#FFFFFF;labelBorderColor=none;" edge="1" parent="1">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="125" y="196" as="sourcePoint"/>
+            <mxPoint x="320" y="220" as="targetPoint"/>
+            <Array as="points">
+              <mxPoint x="255" y="196"/>
+              <mxPoint x="255" y="220"/>
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="03_use_case_20" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=1;orthogonalLoop=1;jettySize=auto;html=0;strokeColor=#475569;strokeWidth=1.6;startArrow=none;endArrow=none;fontSize=10.5;fontColor=#0F172A;fontStyle=1;fontFamily=Segoe UI;labelBackgroundColor=#FFFFFF;labelBorderColor=none;" edge="1" parent="1">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="125" y="196" as="sourcePoint"/>
+            <mxPoint x="320" y="293" as="targetPoint"/>
+            <Array as="points">
+              <mxPoint x="255" y="196"/>
+              <mxPoint x="255" y="293"/>
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="03_use_case_21" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=1;orthogonalLoop=1;jettySize=auto;html=0;strokeColor=#475569;strokeWidth=1.6;startArrow=none;endArrow=none;fontSize=10.5;fontColor=#0F172A;fontStyle=1;fontFamily=Segoe UI;labelBackgroundColor=#FFFFFF;labelBorderColor=none;" edge="1" parent="1">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="125" y="196" as="sourcePoint"/>
+            <mxPoint x="320" y="367" as="targetPoint"/>
+            <Array as="points">
+              <mxPoint x="255" y="196"/>
+              <mxPoint x="255" y="367"/>
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="03_use_case_22" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=1;orthogonalLoop=1;jettySize=auto;html=0;strokeColor=#475569;strokeWidth=1.6;startArrow=none;endArrow=none;fontSize=10.5;fontColor=#0F172A;fontStyle=1;fontFamily=Segoe UI;labelBackgroundColor=#FFFFFF;labelBorderColor=none;" edge="1" parent="1">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="125" y="196" as="sourcePoint"/>
+            <mxPoint x="320" y="441" as="targetPoint"/>
+            <Array as="points">
+              <mxPoint x="255" y="196"/>
+              <mxPoint x="255" y="441"/>
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="03_use_case_23" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=1;orthogonalLoop=1;jettySize=auto;html=0;strokeColor=#2B5B84;strokeWidth=1.6;startArrow=none;endArrow=none;fontSize=10.5;fontColor=#0F172A;fontStyle=1;fontFamily=Segoe UI;labelBackgroundColor=#FFFFFF;labelBorderColor=none;" edge="1" parent="1">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="125" y="476" as="sourcePoint"/>
+            <mxPoint x="320" y="148" as="targetPoint"/>
+            <Array as="points">
+              <mxPoint x="275" y="476"/>
+              <mxPoint x="275" y="148"/>
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="03_use_case_24" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=1;orthogonalLoop=1;jettySize=auto;html=0;strokeColor=#2B5B84;strokeWidth=1.6;startArrow=none;endArrow=none;fontSize=10.5;fontColor=#0F172A;fontStyle=1;fontFamily=Segoe UI;labelBackgroundColor=#FFFFFF;labelBorderColor=none;" edge="1" parent="1">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="125" y="476" as="sourcePoint"/>
+            <mxPoint x="320" y="293" as="targetPoint"/>
+            <Array as="points">
+              <mxPoint x="275" y="476"/>
+              <mxPoint x="275" y="293"/>
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="03_use_case_25" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=1;orthogonalLoop=1;jettySize=auto;html=0;strokeColor=#2B5B84;strokeWidth=1.6;startArrow=none;endArrow=none;fontSize=10.5;fontColor=#0F172A;fontStyle=1;fontFamily=Segoe UI;labelBackgroundColor=#FFFFFF;labelBorderColor=none;" edge="1" parent="1">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="125" y="476" as="sourcePoint"/>
+            <mxPoint x="320" y="367" as="targetPoint"/>
+            <Array as="points">
+              <mxPoint x="275" y="476"/>
+              <mxPoint x="275" y="367"/>
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="03_use_case_26" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=1;orthogonalLoop=1;jettySize=auto;html=0;strokeColor=#2B5B84;strokeWidth=1.6;startArrow=none;endArrow=none;fontSize=10.5;fontColor=#0F172A;fontStyle=1;fontFamily=Segoe UI;labelBackgroundColor=#FFFFFF;labelBorderColor=none;" edge="1" parent="1">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="125" y="476" as="sourcePoint"/>
+            <mxPoint x="320" y="441" as="targetPoint"/>
+            <Array as="points">
+              <mxPoint x="275" y="476"/>
+              <mxPoint x="275" y="441"/>
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="03_use_case_27" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=1;orthogonalLoop=1;jettySize=auto;html=0;strokeColor=#2B5B84;strokeWidth=1.6;startArrow=none;endArrow=none;fontSize=10.5;fontColor=#0F172A;fontStyle=1;fontFamily=Segoe UI;labelBackgroundColor=#FFFFFF;labelBorderColor=none;" edge="1" parent="1">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="125" y="476" as="sourcePoint"/>
+            <mxPoint x="320" y="519" as="targetPoint"/>
+            <Array as="points">
+              <mxPoint x="275" y="476"/>
+              <mxPoint x="275" y="519"/>
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="03_use_case_28" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=1;orthogonalLoop=1;jettySize=auto;html=0;strokeColor=#2B5B84;strokeWidth=1.6;startArrow=none;endArrow=none;fontSize=10.5;fontColor=#0F172A;fontStyle=1;fontFamily=Segoe UI;labelBackgroundColor=#FFFFFF;labelBorderColor=none;" edge="1" parent="1">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="125" y="476" as="sourcePoint"/>
+            <mxPoint x="320" y="593" as="targetPoint"/>
+            <Array as="points">
+              <mxPoint x="275" y="476"/>
+              <mxPoint x="275" y="593"/>
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="03_use_case_29" value="&lt;&lt;include&gt;&gt;" style="edgeStyle=orthogonalEdgeStyle;rounded=1;orthogonalLoop=1;jettySize=auto;html=0;strokeColor=#2B5B84;strokeWidth=1.9;startArrow=none;endArrow=classic;dashed=1;fontSize=10;fontColor=#0F172A;fontStyle=1;fontFamily=Segoe UI;labelBackgroundColor=#FFFFFF;labelBorderColor=none;" edge="1" parent="1">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="565" y="558" as="sourcePoint"/>
+            <mxPoint x="680" y="558" as="targetPoint"/>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="03_use_case_30" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=1;orthogonalLoop=1;jettySize=auto;html=0;strokeColor=#3B4D75;strokeWidth=1.6;startArrow=none;endArrow=none;fontSize=10.5;fontColor=#0F172A;fontStyle=1;fontFamily=Segoe UI;labelBackgroundColor=#FFFFFF;labelBorderColor=none;" edge="1" parent="1">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="1075" y="321" as="sourcePoint"/>
+            <mxPoint x="950" y="161" as="targetPoint"/>
+            <Array as="points">
+              <mxPoint x="1025" y="321"/>
+              <mxPoint x="1025" y="161"/>
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="03_use_case_31" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=1;orthogonalLoop=1;jettySize=auto;html=0;strokeColor=#3B4D75;strokeWidth=1.6;startArrow=none;endArrow=none;fontSize=10.5;fontColor=#0F172A;fontStyle=1;fontFamily=Segoe UI;labelBackgroundColor=#FFFFFF;labelBorderColor=none;" edge="1" parent="1">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="1075" y="321" as="sourcePoint"/>
+            <mxPoint x="950" y="241" as="targetPoint"/>
+            <Array as="points">
+              <mxPoint x="1025" y="321"/>
+              <mxPoint x="1025" y="241"/>
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="03_use_case_32" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=1;orthogonalLoop=1;jettySize=auto;html=0;strokeColor=#3B4D75;strokeWidth=1.6;startArrow=none;endArrow=none;fontSize=10.5;fontColor=#0F172A;fontStyle=1;fontFamily=Segoe UI;labelBackgroundColor=#FFFFFF;labelBorderColor=none;" edge="1" parent="1">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="1075" y="321" as="sourcePoint"/>
+            <mxPoint x="950" y="321" as="targetPoint"/>
+            <Array as="points">
+              <mxPoint x="1025" y="321"/>
+              <mxPoint x="1025" y="321"/>
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="03_use_case_33" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=1;orthogonalLoop=1;jettySize=auto;html=0;strokeColor=#3B4D75;strokeWidth=1.6;startArrow=none;endArrow=none;fontSize=10.5;fontColor=#0F172A;fontStyle=1;fontFamily=Segoe UI;labelBackgroundColor=#FFFFFF;labelBorderColor=none;" edge="1" parent="1">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="1075" y="321" as="sourcePoint"/>
+            <mxPoint x="950" y="401" as="targetPoint"/>
+            <Array as="points">
+              <mxPoint x="1025" y="321"/>
+              <mxPoint x="1025" y="401"/>
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="03_use_case_34" value="&lt;&lt;include&gt;&gt;" style="edgeStyle=orthogonalEdgeStyle;rounded=1;orthogonalLoop=1;jettySize=auto;html=0;strokeColor=#3B4D75;strokeWidth=1.9;startArrow=none;endArrow=classic;dashed=1;fontSize=10;fontColor=#0F172A;fontStyle=1;fontFamily=Segoe UI;labelBackgroundColor=#FFFFFF;labelBorderColor=none;" edge="1" parent="1">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="680" y="161" as="sourcePoint"/>
+            <mxPoint x="565" y="148" as="targetPoint"/>
+            <Array as="points">
+              <mxPoint x="615" y="161"/>
+              <mxPoint x="615" y="148"/>
+            </Array>
+          </mxGeometry>
+        </mxCell>
+      </root>
+    </mxGraphModel>
+  </diagram>
+</mxfile>
