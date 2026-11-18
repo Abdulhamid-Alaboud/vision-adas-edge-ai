@@ -1,0 +1,7 @@
+!pip install roboflow
+
+import os
+from roboflow import Roboflow
+rf = Roboflow(api_key=os.environ.get("ROBOFLOW_API_KEY", "YOUR_ROBOFLOW_API_KEY"))
+project = rf.workspace("abdulhamid-alaboud").project("Offline Arabic ADAS")
+dataset = project.version(1).download("yolov11")

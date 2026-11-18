@@ -1,0 +1,16 @@
+cff-version: 1.2.0
+message: "If you use this software or dataset, please cite it as below."
+title: "VISION: An Intelligent Driving Agent for Enhanced Road Safety"
+authors:
+  - family-names: "Alaboud"
+    given-names: "Abdulhamid"
+date-released: 2026-11-19
+license: MIT
+keywords:
+  - ADAS
+  - Edge AI
+  - YOLOv11
+  - ONNX Runtime
+  - Android
+  - Computer Vision
+  - Road Safety
