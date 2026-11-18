@@ -55,12 +55,12 @@ On a strictly held-out, unaugmented test split of **884 Arabic road images**, th
 
 All four architectures were evaluated on CPU to verify compliance with the `< 150 ms` end-to-end real-time driving safety budget:
 
-| Model | Format | Mean CPU Latency | Speedup vs. D-FINE-N | Validation / Unseen Accuracy | Decision |
+| Model | Params / Format | Mean CPU Latency | Speedup vs. D-FINE-N | Val mAP@50 / mAP@50-95 | Decision |
 | :--- | :--- | :---: | :---: | :---: | :--- |
-| **YOLOv11n-ADAS-v2** | **FP32 ONNX (`10.12 MiB`)** | **34.58 ms (~28.9 FPS)** | **10.8×** | **96.33% Val / 95.82% Test mAP@50** | **Selected** |
-| YOLO26n | INT8 | 118.6 ms | 3.15× | 82.5% mAP@50-95 | Rejected (lower mAP@50-95 & slower) |
-| D-FINE-N | Transformer | 373.82 ms (2.7 FPS) | 1.0× | — | Rejected (exceeds 150 ms budget) |
-| RT-DETRv2-S | Transformer | 681.45 ms (1.5 FPS) | 0.55× | — | Rejected (exceeds 150 ms budget) |
+| **YOLOv11n-ADAS-v2** | **2.59M · FP32 ONNX (`10.12 MiB`)** | **34.58 ms (~28.9 FPS)** | **10.8×** | **96.33% / 85.62%** *(95.82% Unseen Test)* | **Selected** |
+| YOLO26n | 2.51M · INT8 TFLite (`2.76 MiB`) | 118.6 ms (~8.4 FPS) | 3.15× | 96.8% / 82.5% | Superseded (lower mAP@50-95 & 3.4× slower) |
+| D-FINE-N (DEIM) | 3.73M · ONNX (`14.54 MB`) | 373.82 ms (2.7 FPS) | 1.0× | 97.0% / 86.4% | Rejected (exceeds 150 ms budget; 6 GridSample ops) |
+| RT-DETRv2-S | 20.1M · ONNX / Ckpt | 681.45 ms (~1.5 FPS) | 0.55× | 96.7% / 86.2% | Rejected (1,735 ms mobile CPU; 20.1M params) |
 
 ### Unseen Test Set Performance (`n = 884` images, `1,278` instances)
 - **mAP@50:** `95.82%`
