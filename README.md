@@ -193,7 +193,11 @@ Transparent engineering documentation of current system boundaries:
 
 ---
 
-## 11. Authors & Citation
+## 11. Authors, Supervision & Citation
+
+**Supervisor:** Dr. Haitham Nasser Assiri  
+**Institution:** Department of Computer Science, College of Engineering and Computer Science, Jazan University  
+**Course:** COMP 583 — Graduation Project (Phase-II) | **Group:** 16972
 
 | Name | Role |
 | :--- | :--- |
